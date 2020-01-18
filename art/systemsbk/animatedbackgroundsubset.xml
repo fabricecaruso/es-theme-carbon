@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <animatedBackground>Animated background</animatedBackground>
+  </variables>
+  <variables lang="fr">
+    <animatedBackground>Animation du fond</animatedBackground>
+  </variables>
+  <subset name="animatedBackground" displayName="${animatedBackground}">
+    <include name="yes" displayName="${yes}">./animatedbackground.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+</theme>
