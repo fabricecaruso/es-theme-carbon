@@ -159,6 +159,8 @@ originally based on: "simple" by nils bonenberger
     <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
     <include name="random video">./art/systemsbk/video.xml</include>
+    <include name="system video">./art/systemsbk/systemvideo.xml</include>
+    <include name="system video or random">./art/systemsbk/systemvideoorrandom.xml</include>
     <include name="random image">./art/systemsbk/image.xml</include>
     <include name="random box">./art/systemsbk/box.xml</include>
     <include name="mini random image">./art/systemsbk/smallscreen.xml</include>
