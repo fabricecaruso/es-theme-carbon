@@ -7,8 +7,8 @@
   <variables lang="fr">
     <animatedBackground>Animation du fond</animatedBackground>
   </variables>
-  <subset name="animatedBackground" displayName="${animatedBackground}">
-    <include name="yes" displayName="${yes}">./animatedbackground.xml</include>
+  <subset tinyScreen="false" name="animatedBackground" displayName="${animatedBackground}">
     <include name="no" displayName="${no}"/>
+    <include name="yes" displayName="${yes}">./animatedbackground.xml</include>
   </subset>
 </theme>

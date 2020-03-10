@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<theme defaultView="grid">
+<theme defaultView="Tiles">
   <formatVersion>7</formatVersion>
   <view name="menu">
     <menuText name="menutext">
       <fontSize>0.0415</fontSize>
     </menuText>
+    <menuTextSmall name="menutextsmall">
+      <fontSize>0.03</fontSize>
+    </menuTextSmall>
   </view>
   <view name="system">
     <carousel name="systemcarousel">
@@ -41,15 +44,19 @@
     <image name="carousel-shadow" extra="true">
       <visible>false</visible>
     </image>
+    <image name="carousel-inner" extra="true">
+      <visible>false</visible>
+    </image>
   </view>
   <view name="system, basic, detailed, grid">
     <helpsystem name="help">
-      <fontSize>0.024</fontSize>
+      <fontSize>0.026</fontSize>
     </helpsystem>
   </view>
   <view name="grid">
     <imagegrid name="gamegrid">
       <autoLayout>1 1</autoLayout>
+      <size>0.950 0.78</size>
       <padding>0.03 0.06 0.03 0.04</padding>
       <margin>0.010 0.03</margin>
       <scrollDirection>horizontal</scrollDirection>
@@ -62,8 +69,39 @@
       <backgroundEdgeColor>00000000</backgroundEdgeColor>
     </gridtile>
     <text name="gridtile">
-      <size>1 0.20</size>
+     
       <fontSize>0.039</fontSize>
     </text>
   </view>
+  <customView name="Carousel,Boxes,Tiles,grid">
+    <ninepatch name="gridtile.background:selected">
+      <animateColorTime>0</animateColorTime>
+    </ninepatch>
+  </customView>
+
+
+ <customView name="Tiles">
+    <imagegrid name="gamegrid">
+      <pos>0 0.15</pos>
+      <size>1 0.80</size>
+      <padding>0 0</padding>
+      <margin>0 0</margin>
+      <scrollDirection>horizontal</scrollDirection>
+    </imagegrid>
+
+    <imagegrid ifHelpPrompts="false" name="gamegrid">
+      <size>1 0.85</size>
+    </imagegrid>
+
+    <gridtile name="default">
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+    </gridtile>
+    <image name="gridtile.image">
+      <roundCorners>0</roundCorners>
+    </image>
+  </customView>
+
 </theme>

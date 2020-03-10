@@ -16,6 +16,8 @@ originally based on: "simple" by nils bonenberger
     <bottomBarColor>8b0000c0</bottomBarColor>
     <glowColor>Ab000020</glowColor>
     <systemInfoColor>DDDDDDD8</systemInfoColor>
+    <groupColor>BD4747</groupColor>
+    <groupSeparatorColor>BD4747</groupSeparatorColor>    
     <backgroundImage>./art/fiber.png</backgroundImage>
     <tilesViewName>Tiles</tilesViewName>
     <roundBorderSubsetName>Round borders</roundBorderSubsetName>
@@ -25,6 +27,7 @@ originally based on: "simple" by nils bonenberger
     <zoomboxesSubsetName>Zoom boxes</zoomboxesSubsetName>
     <hideselectionSubsetName>Hide selection</hideselectionSubsetName>
     <systemBackgroundName>System background</systemBackgroundName>
+    <optimizesmallscreensSubsetName>Optimize for small screens</optimizesmallscreensSubsetName>
     <helpSubsetName>Help icons</helpSubsetName>
     <systemViewName>System view</systemViewName>
     <colored>Colored</colored>
@@ -51,6 +54,7 @@ originally based on: "simple" by nils bonenberger
     <videoboxesSubsetName>Afficher la video en mode boite</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoomer les boites</zoomboxesSubsetName>
     <hideselectionSubsetName>Masquer la sélection</hideselectionSubsetName>
+    <optimizesmallscreensSubsetName>Optimiser pour les petits écrans</optimizesmallscreensSubsetName>
     <helpSubsetName>Icônes d'aide</helpSubsetName>
     <colored>Colorés</colored>
     <subset.colorset>Jeux de couleurs</subset.colorset>
@@ -154,8 +158,9 @@ originally based on: "simple" by nils bonenberger
 
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
-    <include name="mini-consoles">./art/systemsbk/consoles.xml</include>
+    <include tinyScreen="false" name="mini-consoles">./art/systemsbk/consoles.xml</include> <!-- change default for small screens -->
     <include name="consoles">./art/systemsbk/batomachines.xml</include>
+    <include tinyScreen="true" name="mini-consoles">./art/systemsbk/consoles.xml</include>
     <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
     <include name="random video">./art/systemsbk/video.xml</include>
@@ -176,7 +181,7 @@ originally based on: "simple" by nils bonenberger
 
   <view name="screen">
     <text name="clock">
-      <textColor>777777FF</textColor>
+      <color>777777FF</color>
       <fontSize>0.035</fontSize>
       <pos>0.90 0.94</pos>
       <size>0.09 0.058</size>
@@ -217,8 +222,18 @@ originally based on: "simple" by nils bonenberger
     <menuTextSmall name="menutextsmall">
       <fontPath>./art/Cabin-Regular.ttf</fontPath>
       <fontSize>0.02</fontSize>
-      <color>909090FF</color>
+      <color>${groupColor}</color>
     </menuTextSmall>
+
+    <menuGroup name="menugroup">
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.025</fontSize>
+      <color>${groupColor}</color>
+      <separatorColor>${groupSeparatorColor}</separatorColor>    
+      <backgroundColor>00000000</backgroundColor>
+      <lineSpacing>2.5</lineSpacing>
+    </menuGroup>
+
     <menuBackground name="menubg">
       <color>242424</color>
       <cornerSize>32 32</cornerSize>
@@ -245,6 +260,10 @@ originally based on: "simple" by nils bonenberger
       <inactive>./art/textinput_ninepatch.png</inactive>
       <active>./art/textinput_ninepatch_active.png</active>
     </menuTextEdit>
+    <menuButton name="menubutton">
+      <path>./art/button.png</path>
+      <filledPath>./art/button_filled.png</filledPath>
+    </menuButton>
   </view>
   <view name="basic">
     <image name="background" extra="true">
@@ -271,13 +290,14 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="detailed">
     <video name="md_video">
-      <pos>0.763 0.400</pos>
-      <maxSize>0.453 0.436</maxSize>
+      <pos>0.76 0.408</pos>
+      <maxSize>0.46 0.436</maxSize>
       <origin>0.5 0.5</origin>
       <delay>0.8</delay>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
-      <loops>0</loops>
+      <loops>1</loops>
+      <roundCorners>0.02</roundCorners>
     </video>
     <image name="background">
       <tile>true</tile>
@@ -304,33 +324,49 @@ originally based on: "simple" by nils bonenberger
     <datetime name="md_lastplayed">
       <pos>1 1</pos>
     </datetime>
-    <datetime name="md_releasedate">
-      <pos>0.53 0.63</pos>
-      <size>0 0.033</size>
-    </datetime>
-    <text name="md_genre">
-      <pos>0.53 0.66</pos>
-      <size>0 0.033</size>
-    </text>
+
     <text name="md_developer">
-      <pos>0.53 0.69</pos>
-      <size>0 0.033</size>
-    </text>
-    <text name="md_lbl_players, md_players">
-      <pos>0.91 0.63</pos>
+      <color>EFEFFF</color>
+      <pos>0.530 0.875</pos>
+      <size>0.30 0.05</size>
+      <alignment>left</alignment>
+      <fontSize>0.025</fontSize>
+    </text>    
+    <rating name="md_rating">
+      <pos>0.9 0.886</pos>
+      <size>0.05 0.03</size>
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+    </rating>
+    <text name="md_lbl_players">
+      <pos>0.9 0.645</pos>
       <size>0.09 0</size>
     </text>
     <text name="md_players">
-      <pos>0.98 0.63</pos>
+      <color>EFEFFF</color>
+      <pos>0.965 0.645</pos>
       <size>0.02 0</size>
     </text>
+
+    <text name="md_lbl_releasedate">
+      <color>969696</color>
+      <pos>0.53 0.645</pos>
+      <size>0.2 0</size>
+    </text>
+
+    <datetime name="md_releasedate">
+    <color>EFEFFF</color>
+      <pos>0.63 0.645</pos>
+      <size>0 0.033</size>
+    </datetime>
+
     <text name="md_description">
+      <pos>0.530 0.7</pos>
+      <size>0.46 0.16</size>    
       <color>969696</color>
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.023</fontSize>
-      <size>0.467 0.16</size>
-      <pos>0.530 0.746</pos>
     </text>
     <textlist name="gamelist">
       <selectorColor>1c1c1c</selectorColor>
@@ -339,8 +375,8 @@ originally based on: "simple" by nils bonenberger
       <secondaryColor>7a6161</secondaryColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <forceUppercase>1</forceUppercase>
-      <pos>0.021 0.168</pos>
-      <size>0.489 0.754</size>
+      <pos>0.021 0.18</pos>
+      <size>0.489 0.73</size>
       <alignment>left</alignment>
       <horizontalMargin>0.00</horizontalMargin>
       <fontSize>0.03</fontSize>
@@ -640,10 +676,16 @@ originally based on: "simple" by nils bonenberger
 
   <!-- Specific layout for systems -->
   <include>./art/layouts/${system.theme}.xml</include>
-  <!-- Layout for small screens -->
-  <include tinyScreen="true">./art/layouts/gpicase.xml</include>
+    
   <!-- Layout when help is disabled -->
   <include ifHelpPrompts="false">./art/layouts/nohelp.xml</include>
+
+  <!-- Layout for small screens -->
+  <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
+    <include name="yes" displayName="${yes}">./art/layouts/gpicase.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset> 
+
   <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
@@ -666,7 +708,7 @@ originally based on: "simple" by nils bonenberger
     <include name="yes" displayName="${yes}">./art/grid/previewbar.xml</include>
   </subset>
   <!-- Subset options for Tiles view -->
-  <subset name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">
+  <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./art/tiles/squareborders.xml</include>
   </subset>

@@ -9,5 +9,7 @@
     <glowColor>8B157118</glowColor>
     <systemInfoColor>FAFFFAB0</systemInfoColor>
     <backgroundColor>250515</backgroundColor>
+    <groupColor>D949AF</groupColor>
+    <groupSeparatorColor>D331A3</groupSeparatorColor>
   </variables>
 </theme>
