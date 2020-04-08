@@ -197,6 +197,27 @@ originally based on: "simple" by nils bonenberger
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
     </controllerActivity>
+<!--
+    <controllerActivity name="controllerActivity" tinyScreen="true">
+     <visible>false</visible>
+    </controllerActivity>
+-->
+    <batteryIndicator name="batteryIndicator">
+      <pos>0.955 0.0125</pos>
+      <size>0.033 0.033</size>
+      <incharge>./art/battery/incharge.svg</incharge>
+      <full>./art/battery/full.svg</full>
+      <at75>./art/battery/75.svg</at75>
+      <at50>./art/battery/50.svg</at50>
+      <at25>./art/battery/25.svg</at25>
+      <empty>./art/battery/empty.svg</empty>
+      <color>FFFFFFA0</color>
+    </batteryIndicator>
+
+    <batteryIndicator name="batteryIndicator" tinyScreen="true">
+      <pos>0.915 0.013</pos>
+      <size>0.07 0.07</size>
+    </batteryIndicator>
   </view>
   <view name="menu">
     <menuText name="menutitle">

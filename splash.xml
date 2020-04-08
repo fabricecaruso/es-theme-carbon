@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="splash">
+<!--
+    <splash name="splash">
+      <backgroundColor>202020FF</backgroundColor>
+    </splash>
+   
+    <image name="progressbar">
+      <color>505050FF</color>
+    </image>
+    
+    <image name="progressbar:active">
+      <color>FF00FFFF</color>
+    </image>
+   
+    <image name="background">
+      <pos>0.50 0.18</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.24 0.24</maxSize>
+    </image>
+
+    <text name="label">
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <color>00FFFFFF</color>
+      <forceUppercase>true</forceUppercase>
+    </text>
+-->
+  </view>
+</theme>
