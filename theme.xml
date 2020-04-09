@@ -81,6 +81,7 @@ originally based on: "simple" by nils bonenberger
   <view name="system">
     <!-- Used by random box need to be declared there -->
     <image name="box" extra="true">
+	<linearSmooth>true</linearSmooth>
       <pos>0.50 0.18</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.24 0.24</maxSize>
@@ -111,6 +112,7 @@ originally based on: "simple" by nils bonenberger
       <forceUppercase>true</forceUppercase>
     </text>
     <image name="logo">
+	<linearSmooth>true</linearSmooth>
       <!-- try png -->
       <path>./art/logos/${system.theme}.png</path>
       <!-- try svg -->
@@ -127,6 +129,7 @@ originally based on: "simple" by nils bonenberger
     </image>
 
     <image name="BottomBar" extra="static">
+	<linearSmooth>true</linearSmooth>
       <tile>false</tile>
       <size>1 0.065</size>
       <pos>0 1</pos>
@@ -136,6 +139,7 @@ originally based on: "simple" by nils bonenberger
       <zIndex>50</zIndex>
     </image>
     <image name="ControllerOverlay" extra="true">
+	<linearSmooth>true</linearSmooth>
       <tile>false</tile>
       <pos>0.5 0.19</pos>
       <origin>0.5 0.5</origin>
@@ -288,6 +292,7 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="basic">
     <image name="background" extra="true">
+	<linearSmooth>true</linearSmooth>
       <tile>true</tile>
       <pos>0 0</pos>
       <origin>0 0</origin>
@@ -321,6 +326,7 @@ originally based on: "simple" by nils bonenberger
       <roundCorners>0.02</roundCorners>
     </video>
     <image name="background">
+	<linearSmooth>true</linearSmooth>
       <tile>true</tile>
       <pos>0 0</pos>
       <origin>0 0</origin>
@@ -404,6 +410,7 @@ originally based on: "simple" by nils bonenberger
       <scrollSound>./art/scroll.wav</scrollSound>
     </textlist>
     <image name="md_hidden">
+	<linearSmooth>true</linearSmooth>
       <pos>0.823 0.700</pos>
       <path>./art/hidden.svg</path>
       <maxSize>0.032 0.032</maxSize>
@@ -411,6 +418,7 @@ originally based on: "simple" by nils bonenberger
       <color>969696</color>
     </image>
     <image name="md_kidgame">
+	<linearSmooth>true</linearSmooth>
       <pos>0.883 0.700</pos>
       <path>./art/kid.svg</path>
       <maxSize>0.032 0.032</maxSize>
@@ -418,6 +426,7 @@ originally based on: "simple" by nils bonenberger
       <color>969696</color>
     </image>
     <image name="md_favorite">
+	<linearSmooth>true</linearSmooth>
       <pos>0.940 0.700</pos>
       <path>./art/favorite.svg</path>
       <maxSize>0.032 0.032</maxSize>
@@ -427,6 +436,7 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="basic, detailed, grid">
     <image name="bottom" extra="true">
+	<linearSmooth>true</linearSmooth>
       <pos>0 1</pos>
       <origin>0 1</origin>   
       <size>1 0.065</size>
@@ -435,6 +445,7 @@ originally based on: "simple" by nils bonenberger
       <zIndex>13</zIndex>
     </image>
     <image name="top-shadow" extra="true">
+	<linearSmooth>true</linearSmooth>
       <path>./art/shadow.png</path>
       <color>FFFFFF90</color>
       <pos>0 0.16</pos>
@@ -443,6 +454,7 @@ originally based on: "simple" by nils bonenberger
       <zIndex>11</zIndex>
     </image>
     <image name="top" extra="true">
+	<linearSmooth>true</linearSmooth>
       <pos>0 0</pos>
       <origin>0 0</origin>
       <size>1 0.16</size>
@@ -460,6 +472,7 @@ originally based on: "simple" by nils bonenberger
       <!-- <forceUppercase>true</forceUppercase>-->
     </text>
     <image name="logo">
+	<linearSmooth>true</linearSmooth>
       <!-- try png -->
       <path>./art/logos/${system.theme}.png</path>
       <path>./art/logos/${system.theme}.svg</path>
@@ -475,6 +488,7 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="grid">
     <image name="background">
+	<linearSmooth>true</linearSmooth>
       <tile>true</tile>
       <pos>0 0</pos>
       <origin>0 0</origin>
@@ -557,6 +571,7 @@ originally based on: "simple" by nils bonenberger
       <visible>false</visible>
     </text>
     <image name="gridtile.favorite">
+	<linearSmooth>true</linearSmooth>
       <path>:/star_filled.svg</path>
       <pos>0.91 0.09</pos>
       <maxSize>0.14 0.14</maxSize>
@@ -649,6 +664,7 @@ originally based on: "simple" by nils bonenberger
     </gridtile>
 
     <image name="gridtile.image">
+	<linearSmooth>true</linearSmooth>
       <roundCorners>0.06</roundCorners>
     </image>
     <text name="gridtile">
@@ -670,6 +686,7 @@ originally based on: "simple" by nils bonenberger
       <glowSize>2</glowSize>
     </text>
     <image name="gridtile.favorite">
+	<linearSmooth>true</linearSmooth>
       <path>:/star_filled.svg</path>
       <pos>0.93 0.07</pos>
       <maxSize>0.10 0.10</maxSize>
@@ -678,6 +695,7 @@ originally based on: "simple" by nils bonenberger
       <color>FFFF0080</color>
     </image>
     <image name="gridtile.favorite:selected">
+	<linearSmooth>true</linearSmooth>
       <color>FFFF00D0</color>
     </image>
   </customView>
