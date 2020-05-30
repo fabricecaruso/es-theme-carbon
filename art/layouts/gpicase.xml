@@ -13,11 +13,11 @@
     <carousel name="systemcarousel">
       <color>FFFFFF00</color>
       <colorEnd>FFFFFF00</colorEnd>
-      <pos>0 0.40</pos>
+  <!--    <pos>0 0.40</pos>
       <size>1 0.45</size>
       <maxLogoCount>1</maxLogoCount>
       <logoSize>0.25 0.15</logoSize>
-      <logoScale>2.6</logoScale>
+      <logoScale>2.6</logoScale>-->
     </carousel>
     <text name="systemInfo">
       <pos>0.05 0.83</pos>

@@ -17,7 +17,7 @@ originally based on: "simple" by nils bonenberger
     <glowColor>Ab000020</glowColor>
     <systemInfoColor>DDDDDDD8</systemInfoColor>
     <groupColor>BD4747</groupColor>
-    <groupSeparatorColor>BD4747</groupSeparatorColor>    
+    <groupSeparatorColor>BD4747</groupSeparatorColor>
     <backgroundImage>./art/fiber.png</backgroundImage>
     <tilesViewName>Tiles</tilesViewName>
     <roundBorderSubsetName>Round borders</roundBorderSubsetName>
@@ -66,18 +66,16 @@ originally based on: "simple" by nils bonenberger
     <include name="red" displayName="${red}"/>
     <include name="green" displayName="${green}">./art/colors/green.xml</include>
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
-    <include name="violet" >./art/colors/violet.xml</include>
-    <include name="cyan" >./art/colors/cyan.xml</include>
-    <include name="orange" >./art/colors/orange.xml</include>
+    <include name="violet">./art/colors/violet.xml</include>
+    <include name="cyan">./art/colors/cyan.xml</include>
+    <include name="orange">./art/colors/orange.xml</include>
   </subset>
-
   <view name="system,basic,detailed,grid">
     <helpsystem name="help">
       <textColor>7d7d7d</textColor>
       <iconColor>7d7d7d</iconColor>
     </helpsystem>
   </view>
-
   <view name="system">
     <!-- Used by random box need to be declared there -->
     <image name="box" extra="true">
@@ -94,17 +92,15 @@ originally based on: "simple" by nils bonenberger
       <visible>false</visible>
       <zIndex>12</zIndex>
     </video>
-          
     <image name="background" extra="static">
       <tile>false</tile>
       <size>1 1</size>
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <path>./art/bg.png</path>      
+      <path>./art/bg.png</path>
       <color>${backgroundColor}</color>
       <zIndex>10</zIndex>
     </image>
-      
     <text name="logoText">
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <color>${baseColor}</color>
@@ -125,7 +121,6 @@ originally based on: "simple" by nils bonenberger
       <path>/userdata/themes/${system.theme}/art/${system}-${lang}.svg</path>
       -->
     </image>
-
     <image name="BottomBar" extra="static">
       <tile>false</tile>
       <size>1 0.065</size>
@@ -149,16 +144,16 @@ originally based on: "simple" by nils bonenberger
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="horizontal">./art/systemview/horizontal.xml</include>
-    <include name="legacy">./art/systemview/legacy.xml</include>
-    <include name="transparent">./art/systemview/transparent.xml</include>
+    <include name="legacy" tinyScreen="false">./art/systemview/legacy.xml</include>
+    <include name="transparent" tinyScreen="false">./art/systemview/transparent.xml</include>
     <include name="simple">./art/systemview/verticalone.xml</include>
     <include name="vertical">./art/systemview/vertical.xml</include>
     <include name="wheel">./art/systemview/wheel.xml</include>
   </subset>
-
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
-    <include tinyScreen="false" name="mini-consoles">./art/systemsbk/consoles.xml</include> <!-- change default for small screens -->
+    <include tinyScreen="false" name="mini-consoles">./art/systemsbk/consoles.xml</include>
+    <!-- change default for small screens -->
     <include name="consoles">./art/systemsbk/batomachines.xml</include>
     <include tinyScreen="true" name="mini-consoles">./art/systemsbk/consoles.xml</include>
     <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
@@ -170,15 +165,12 @@ originally based on: "simple" by nils bonenberger
     <include name="mini random box">./art/systemsbk/smallbox.xml</include>
     <include name="mini random video">./art/systemsbk/smallvideo.xml</include>
   </subset>
-
   <!-- Fix for controller image size -->
   <include subset="systemview" name="simple">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="vertical">./art/systemview/controllersizefix.xml</include>
   <include subset="systemview" name="wheel">./art/systemview/controllersizefix.xml</include>
-
   <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
   <include subset="systemview" name="legacy">./art/systemview/legacyfix.xml</include>
-
   <view name="screen">
     <text name="clock">
       <color>777777FF</color>
@@ -197,7 +189,7 @@ originally based on: "simple" by nils bonenberger
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
     </controllerActivity>
-<!--
+    <!--
     <controllerActivity name="controllerActivity" tinyScreen="true">
      <visible>false</visible>
     </controllerActivity>
@@ -213,7 +205,6 @@ originally based on: "simple" by nils bonenberger
       <empty>./art/battery/empty.svg</empty>
       <color>FFFFFFA0</color>
     </batteryIndicator>
-
     <batteryIndicator name="batteryIndicator" tinyScreen="true">
       <pos>0.915 0.013</pos>
       <size>0.07 0.07</size>
@@ -245,16 +236,14 @@ originally based on: "simple" by nils bonenberger
       <fontSize>0.02</fontSize>
       <color>${groupColor}</color>
     </menuTextSmall>
-
     <menuGroup name="menugroup">
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.025</fontSize>
       <color>${groupColor}</color>
-      <separatorColor>${groupSeparatorColor}</separatorColor>    
+      <separatorColor>${groupSeparatorColor}</separatorColor>
       <backgroundColor>00000000</backgroundColor>
       <lineSpacing>2.5</lineSpacing>
     </menuGroup>
-
     <menuBackground name="menubg">
       <color>242424</color>
       <cornerSize>32 32</cornerSize>
@@ -298,7 +287,7 @@ originally based on: "simple" by nils bonenberger
       <selectorColor>1c1c1c</selectorColor>
       <selectedColor>${basecolor}</selectedColor>
       <primaryColor>969696</primaryColor>
-      <secondaryColor>7a6161</secondaryColor>
+      <secondaryColor>808080</secondaryColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.030</fontSize>
       <pos>0.025 0.18</pos>
@@ -307,6 +296,8 @@ originally based on: "simple" by nils bonenberger
       <horizontalMargin>0.01</horizontalMargin>
       <forceUppercase>1</forceUppercase>
       <scrollSound>./art/scroll.wav</scrollSound>
+<lines>17</lines>
+<horizontalMargin>0.005</horizontalMargin>
     </textlist>
   </view>
   <view name="detailed">
@@ -345,14 +336,18 @@ originally based on: "simple" by nils bonenberger
     <datetime name="md_lastplayed">
       <pos>1 1</pos>
     </datetime>
-
+    <image name="md_flag">
+      <origin>0 0.5</origin>
+      <pos>0.530 0.9</pos>
+      <maxSize>0.02 0.05</maxSize>
+    </image>
     <text name="md_developer">
       <color>EFEFFF</color>
-      <pos>0.530 0.875</pos>
+      <pos>0.558 0.875</pos>
       <size>0.30 0.05</size>
       <alignment>left</alignment>
       <fontSize>0.025</fontSize>
-    </text>    
+    </text>
     <rating name="md_rating">
       <pos>0.9 0.886</pos>
       <size>0.05 0.03</size>
@@ -368,22 +363,19 @@ originally based on: "simple" by nils bonenberger
       <pos>0.965 0.645</pos>
       <size>0.02 0</size>
     </text>
-
     <text name="md_lbl_releasedate">
       <color>969696</color>
       <pos>0.53 0.645</pos>
       <size>0.2 0</size>
     </text>
-
     <datetime name="md_releasedate">
-    <color>EFEFFF</color>
+      <color>EFEFFF</color>
       <pos>0.63 0.645</pos>
       <size>0 0.033</size>
     </datetime>
-
     <text name="md_description">
       <pos>0.530 0.7</pos>
-      <size>0.46 0.16</size>    
+      <size>0.46 0.16</size>
       <color>969696</color>
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
@@ -393,7 +385,7 @@ originally based on: "simple" by nils bonenberger
       <selectorColor>1c1c1c</selectorColor>
       <selectedColor>${baseColor}</selectedColor>
       <primaryColor>969696</primaryColor>
-      <secondaryColor>7a6161</secondaryColor>
+      <secondaryColor>808080</secondaryColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <forceUppercase>1</forceUppercase>
       <pos>0.021 0.18</pos>
@@ -402,35 +394,42 @@ originally based on: "simple" by nils bonenberger
       <horizontalMargin>0.00</horizontalMargin>
       <fontSize>0.03</fontSize>
       <scrollSound>./art/scroll.wav</scrollSound>
+<lines>17</lines>
+<horizontalMargin>0.005</horizontalMargin>
     </textlist>
     <image name="md_hidden">
-      <pos>0.823 0.700</pos>
       <path>./art/hidden.svg</path>
-      <maxSize>0.032 0.032</maxSize>
+      <pos>0.975 0.21</pos>
+      <maxSize>0.02 0.03</maxSize>      
       <origin>0.5 0.5</origin>
       <color>969696</color>
+      <zIndex>150</zIndex>
     </image>
-    <image name="md_kidgame">
-      <pos>0.883 0.700</pos>
+
+    <image name="md_kidgame">     
       <path>./art/kid.svg</path>
-      <maxSize>0.032 0.032</maxSize>
+      <pos>0.882 0.9</pos>
+      <maxSize>0.02 0.03</maxSize>      
       <origin>0.5 0.5</origin>
       <color>969696</color>
+      <zIndex>150</zIndex>
     </image>
+<!--
     <image name="md_favorite">
-      <pos>0.940 0.700</pos>
+      <pos>0.975 0.21</pos>
+      <maxSize>0.02 0.03</maxSize>      
       <path>./art/favorite.svg</path>
-      <maxSize>0.032 0.032</maxSize>
       <origin>0.5 0.5</origin>
       <color>969696</color>
-    </image>
+      <zIndex>60</zIndex>
+    </image>-->
   </view>
   <view name="basic, detailed, grid">
     <image name="bottom" extra="true">
       <pos>0 1</pos>
-      <origin>0 1</origin>   
+      <origin>0 1</origin>
       <size>1 0.065</size>
-      <path>./art/bottom.png</path>      
+      <path>./art/bottom.png</path>
       <color>${bottomBarColor}</color>
       <zIndex>13</zIndex>
     </image>
@@ -469,9 +468,19 @@ originally based on: "simple" by nils bonenberger
       <path>./art/logos/${system.theme}2.svg</path>
       <!--<pos>0.266 0.074</pos><maxSize>0.460 0.126</maxSize>-->
       <pos>0.5 0.074</pos>
-      <maxSize>0.3 0.126</maxSize>
+      <maxSize>0.3 0.120</maxSize>
       <origin>0.5 0.5</origin>
     </image>
+    <text name="folderpath">
+      <pos>0.05 0.132</pos>
+      <size>0.90 0.02</size>  
+      <color>B0B0B0</color>  
+      <alignment>center</alignment>
+      <fontSize>0.016</fontSize>
+      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <forceUppercase>true</forceUppercase>
+      <zIndex>200</zIndex>
+    </text>  
   </view>
   <view name="grid">
     <image name="background">
@@ -497,18 +506,16 @@ originally based on: "simple" by nils bonenberger
       <unfilledColor>808080</unfilledColor>
     </rating>
     <imagegrid name="gamegrid">
-    <!--
+      <!--
       <pos>0.025 0.16</pos>
       <size>0.950 0.774</size>
       <padding>0.03 0.05 0.03 0.04</padding>
 -->
       <margin>0.005 0.010</margin>
-
       <pos>0.025 0.16</pos>
       <size>0.950 0.84</size>
       <padding>0.03 0.04 0.03 0.1</padding>
       <zIndex>10</zIndex>
-
       <autoLayout>5 2</autoLayout>
       <autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
       <animateSelection>false</animateSelection>
@@ -538,12 +545,10 @@ originally based on: "simple" by nils bonenberger
       <glowColor>${glowColor}</glowColor>
       <glowSize>3</glowSize>
     </text>
-
     <ninepatch name="gridtile.background:selected">
       <animateColor>EFEF60B0</animateColor>
       <animateColorTime>350</animateColorTime>
     </ninepatch>
-
   </view>
   <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
     <imagegrid name="gamegrid">
@@ -620,7 +625,7 @@ originally based on: "simple" by nils bonenberger
     </text>
     <ninepatch name="gridtile.background:selected">
       <animateColorTime>0</animateColorTime>
-    </ninepatch>    
+    </ninepatch>
   </customView>
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
     <imagegrid name="gamegrid">
@@ -647,7 +652,6 @@ originally based on: "simple" by nils bonenberger
       <backgroundCornerSize>0 0</backgroundCornerSize>
       <backgroundCornerSize>0.06</backgroundCornerSize>
     </gridtile>
-
     <image name="gridtile.image">
       <roundCorners>0.06</roundCorners>
     </image>
@@ -681,32 +685,26 @@ originally based on: "simple" by nils bonenberger
       <color>FFFF00D0</color>
     </image>
   </customView>
-
   <!-- Subset options for help -->
   <subset name="helpsystem" displayName="${helpSubsetName}">
     <include name="colored" displayName="${colored}">./art/systemview/colorhelp.xml</include>
     <include name="standard"/>
   </subset>
-
   <!-- Subset options for screen -->
   <subset name="shader" displayName="${subset.shader}">
     <include name="None" displayName="${none}"/>
     <include name="ScanLines">./art/scanlines.xml</include>
     <include name="Crt">./art/crt.xml</include>
   </subset>
-
   <!-- Specific layout for systems -->
   <include>./art/layouts/${system.theme}.xml</include>
-    
   <!-- Layout when help is disabled -->
   <include ifHelpPrompts="false">./art/layouts/nohelp.xml</include>
-
   <!-- Layout for small screens -->
   <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
     <include name="yes" displayName="${yes}">./art/layouts/gpicase.xml</include>
     <include name="no" displayName="${no}"/>
-  </subset> 
-
+  </subset>
   <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>

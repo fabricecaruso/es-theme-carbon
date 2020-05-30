@@ -22,19 +22,24 @@
     </image>
     <text name="md_name">
       <color>ffffffff</color>
-      <pos>0.68 0.188</pos>
+      <pos>0.68 0.18</pos>
       <size>0.30 0.05</size>
       <color>F0F0F0</color>
-      <fontSize>0.042</fontSize>
+      <fontSize>0.040</fontSize>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <alignment>center</alignment>
       <glowColor>${glowColor}</glowColor>
       <glowSize>2</glowSize>
     </text>
+    <image name="md_flag"> 
+       <origin>0 0.5</origin>
+       <pos>0.68 0.9</pos>
+       <maxSize>0.02 0.05</maxSize>
+    </image>
     <text name="md_developer">
       <color>EFEFFF</color>
-      <pos>0.68 0.875</pos>
-      <size>0.30 0.05</size>
+      <pos>0.705 0.875</pos>
+      <size>0.28 0.05</size>
       <alignment>left</alignment>
       <fontSize>0.025</fontSize>
     </text>
@@ -63,6 +68,26 @@
       <pos>0.9 0.886</pos>
       <size>0.05 0.03</size>
     </text>
+    <rating name="md_rating">
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+    </rating>
+    <image name="md_kidgame">     
+      <path>./art/kid.svg</path>
+      <pos>0.882 0.901</pos>
+      <maxSize>0.02 0.03</maxSize>      
+      <origin>0.5 0.5</origin>
+      <color>A0A0B0</color>
+      <zIndex>150</zIndex>
+    </image>
+    <image name="md_hidden">
+      <path>./art/hidden.svg</path>
+      <pos>0.975 0.205</pos>
+      <maxSize>0.02 0.03</maxSize>      
+      <origin>0.5 0.5</origin>
+      <color>A0A0B0</color>
+      <zIndex>150</zIndex>
+    </image>
   </customView>
   
   <customView name="Carousel">
@@ -85,7 +110,7 @@
     <customView name="Tiles">
     <imagegrid name="gamegrid">
       <pos>0 0.16</pos>
-      <size>0.66 0.774</size>
+      <size>0.66 0.84</size>
       <autoLayout>2 2</autoLayout>
     </imagegrid>
   </customView>

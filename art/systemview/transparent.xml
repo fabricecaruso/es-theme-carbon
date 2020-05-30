@@ -13,6 +13,7 @@
       <origin>0 0</origin>
       <logoPos>-1 0.02</logoPos>
     </carousel>
+
     <image name="logo">
       <!-- if system2 exists, take this version -->
       <path>./art/logos/${system.theme}2.svg</path>

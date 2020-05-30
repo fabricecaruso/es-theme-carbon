@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>4</formatVersion>
+  <formatVersion>7</formatVersion>
   <view name="system">
     <!-- When random box -->
     <image name="box" extra="true">
@@ -35,7 +35,7 @@
       <zIndex>13</zIndex>
     </carousel>
 
-   <image name="darkwheel" extra="static">
+   <image name="darkwheel" extra="static" tinyScreen="false">
       <tile>false</tile>
       <pos>0.22 0.25</pos>        
       <size>0.43 0.36</size>
@@ -53,7 +53,7 @@
       <glowSize>2</glowSize>
       <reflexion>0.20 0.0</reflexion>
     </text>
-    <image name="CenterFade" extra="true">
+    <image name="CenterFade" extra="true"  tinyScreen="false">
       <tile>false</tile>
       <size>0.40 1</size>
       <pos>0.2 1</pos>

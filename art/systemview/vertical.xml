@@ -60,7 +60,7 @@
       <size>0.4 0</size>
     </image>
 
-   <image name="darkwheel" extra="static">
+   <image name="darkwheel" extra="static" tinyScreen="false">
       <tile>false</tile>
       <pos>0.21 0.2175</pos>
       <size>0.36 0.285</size>
