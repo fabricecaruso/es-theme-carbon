@@ -60,6 +60,32 @@ originally based on: "simple" by nils bonenberger
     <subset.colorset>Jeux de couleurs</subset.colorset>
     <subset.shader>Effets TV</subset.shader>
   </variables>
+  <!-- Portuguese -->
+  <variables lang="pt">
+    <tilesViewName>Miniaturas</tilesViewName>
+    <basicGridName>Grade</basicGridName>
+    <carouselViewName>Carrossel</carouselViewName>
+    <blue>Azul</blue>
+    <red>Vermelho</red>
+    <green>Verde</green>
+    <yellow>Amarelo</yellow>
+    <none>Nenhum</none>
+    <roundBorderSubsetName>Bordas arredondadas</roundBorderSubsetName>
+    <blinkBorderSubsetName>Bordas intermitentes</blinkBorderSubsetName>
+    <yes>Sim</yes>
+    <no>Não</no>
+    <systemBackgroundName>Plano de fundo</systemBackgroundName>
+    <systemViewName>Visualização do sistema</systemViewName>
+    <previewBarSubsetName>Painel de visualização</previewBarSubsetName>
+    <videoboxesSubsetName>Mostrar vídeo no modo de caixa</videoboxesSubsetName>
+    <zoomboxesSubsetName>Caixas de zoom</zoomboxesSubsetName>
+    <hideselectionSubsetName>Esconder seleção</hideselectionSubsetName>
+    <optimizesmallscreensSubsetName>Otimizar telas pequenas</optimizesmallscreensSubsetName>
+    <helpSubsetName>Ícones de ajuda</helpSubsetName>
+    <colored>Colorido</colored>
+    <subset.colorset>Esquemas de cores</subset.colorset>
+    <subset.shader>Efeitos de TV</subset.shader>
+  </variables>
   <!-- Subset options for color  -->
   <subset name="colorset" displayName="${subset.colorset}">
     <include name="blue" displayName="${blue}">./art/colors/blue.xml</include>
@@ -164,6 +190,8 @@ originally based on: "simple" by nils bonenberger
 Release Year : ${system.releaseYear}</text>
         <text lang="fr">Constructeur : ${system.manufacturer}
 Année de sortie : ${system.releaseYear}</text>
+	<text lang="pt">Fabricante : ${system.manufacturer}
+Ano de Lançamento : ${system.releaseYear}</text>
         <alignment>left</alignment>
         <fontPath>./art/Cabin-Regular.ttf</fontPath>
         <fontSize>0.024</fontSize>
