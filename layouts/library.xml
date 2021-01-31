@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system" ifSubset="subsetSystemInfoEx:yes">
+    <text name="systemInfoEx" extra="true">
+      <text>Items : {binding:total}</text>
+      <text lang="fr">Nombre d'élements : {binding:total}</text>
+    </text>
+  </view>
+  <customView name="Icons">
+    <imagegrid name="gamegrid">
+      <cellProportion>0.6</cellProportion>
+    </imagegrid>
+  </customView>
+  <customView name="Tiles">
+    <imagegrid name="gamegrid">
+      <cellProportion>0.7</cellProportion>
+    </imagegrid>
+  </customView>
+</theme>

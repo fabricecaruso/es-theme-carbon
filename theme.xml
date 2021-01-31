@@ -41,1391 +41,158 @@ originally based on: "simple" by nils bonenberger
     <xboxbuttons>Xbox buttons</xboxbuttons>
     <psxbuttons>Playstation buttons</psxbuttons>
   </variables>
-  <!-- French -->
-  <variables lang="fr">
-    <tilesViewName>Vignettes</tilesViewName>
-    <iconsViewName>Icônes</iconsViewName>
-    <basicGridName>Boites</basicGridName>
-    <carouselViewName>Carrousel</carouselViewName>
-    <blue>Bleu</blue>
-    <red>Rouge</red>
-    <green>Vert</green>
-    <yellow>Jaune</yellow>
-    <gray>Gris</gray>
-    <none>Aucun</none>
-    <roundBorderSubsetName>Bords arrondis</roundBorderSubsetName>
-    <blinkBorderSubsetName>Bords clignotants</blinkBorderSubsetName>
-    <yes>Oui</yes>
-    <no>Non</no>    
-    <systemBackgroundName>Arrière-plan</systemBackgroundName>
-    <systemViewName>Vue Système</systemViewName>
-    <previewBarSubsetName>Volet aperçu</previewBarSubsetName>
-    <videoboxesSubsetName>Afficher la video en mode boite</videoboxesSubsetName>
-    <zoomboxesSubsetName>Zoomer les boites</zoomboxesSubsetName>
-    <hideselectionSubsetName>Masquer la sélection</hideselectionSubsetName>
-    <optimizesmallscreensSubsetName>Optimiser pour les petits écrans</optimizesmallscreensSubsetName>
-    <animationsSubsetName>Animations de transition</animationsSubsetName>
-    <helpSubsetName>Icônes d'aide</helpSubsetName>
-    <colored>Colorés</colored>
-    <subset.colorset>Jeux de couleurs</subset.colorset>
-    <subset.shader>Effets TV</subset.shader>
-    <glowSubsetName>Sélection en Halo</glowSubsetName>
-    <systemViewExInfos>Informations du système améliorées</systemViewExInfos>
-    <helpbuttons>Position des boutons</helpbuttons>
-  </variables>
- <!-- Portuguese -->
-  <variables lang="pt">
-    <tilesViewName>Miniaturas</tilesViewName>
-    <basicGridName>Grade</basicGridName>
-    <carouselViewName>Carrossel</carouselViewName>
-    <blue>Azul</blue>
-    <red>Vermelho</red>
-    <green>Verde</green>
-    <yellow>Amarelo</yellow>
-    <gray>Cinzento</gray>
-    <none>Nenhum</none>
-    <roundBorderSubsetName>Bordas arredondadas</roundBorderSubsetName>
-    <blinkBorderSubsetName>Bordas intermitentes</blinkBorderSubsetName>
-    <yes>Sim</yes>
-    <no>Não</no>
-    <systemBackgroundName>Plano de fundo</systemBackgroundName>
-    <systemViewName>Visualização do sistema</systemViewName>
-    <previewBarSubsetName>Painel de visualização</previewBarSubsetName>
-    <videoboxesSubsetName>Mostrar vídeo no modo de caixa</videoboxesSubsetName>
-    <zoomboxesSubsetName>Caixas de zoom</zoomboxesSubsetName>
-    <hideselectionSubsetName>Esconder seleção</hideselectionSubsetName>
-    <optimizesmallscreensSubsetName>Otimizar telas pequenas</optimizesmallscreensSubsetName>
-    <animationsSubsetName>Animações de transição</animationsSubsetName>
-    <systemViewExInfos>Informações de sistema aprimoradas</systemViewExInfos>
-    <helpSubsetName>Ícones de ajuda</helpSubsetName>
-    <glowSubsetName>Seleção com Halo</glowSubsetName>
-    <colored>Colorido</colored>
-    <subset.colorset>Esquemas de cores</subset.colorset>
-    <subset.shader>Efeitos de TV</subset.shader>
-  </variables>
-  <!-- Subset options for color  -->
-  <subset name="colorset" displayName="${subset.colorset}">
-    <include name="blue" displayName="${blue}">./art/colors/blue.xml</include>
-    <include name="red" displayName="${red}"/>
-    <include name="green" displayName="${green}">./art/colors/green.xml</include>
-    <include name="cyan">./art/colors/cyan.xml</include>
-    <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
-    <include name="violet">./art/colors/violet.xml</include>
-    <include name="orange">./art/colors/orange.xml</include>   
-    <include name="gray" displayName="${gray}">./art/colors/gray.xml</include>   
-  </subset>
-  <view name="system,basic,detailed,grid,gamecarousel">
-    <helpsystem name="help">
-      <textColor>7d7d7d</textColor>
-      <iconColor>7d7d7d</iconColor>
-      
-      <pos verticalScreen="true">0.5 0.96</pos>
-      <origin verticalScreen="true">0.5 0.5</origin>
-      <fontSize  verticalScreen="true">0.025</fontSize>
-    </helpsystem>
-  </view>
-  <view name="system">
-    <!-- Used by random box need to be declared there -->
-    <image name="box" extra="true">
-      <pos>0.50 0.18</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>0.24 0.24</maxSize>
-      <zIndex>12</zIndex>
-      <visible>false</visible>
-    </image>
-    <video name="videobox" extra="true">
-      <pos>0.50 0.18</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>0.24 0.24</maxSize>
-      <visible>false</visible>
-      <zIndex>12</zIndex>
-    </video>
-    <image name="background" extra="static">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>10</zIndex>
-      <scale>1.10</scale>
-    </image>
 
-    <text name="logoText">
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.06</fontSize>
-      <color>${baseColor}</color>
-      <forceUppercase>true</forceUppercase>    
-    </text>
-    
-    <image name="logo">
-      <!-- try png -->
-      <path>./art/logos/${system.theme}.png</path>
-      <!-- try svg -->
-      <path>./art/logos/${system.theme}.svg</path>
-      <!-- check if lang resources exist -->
-      <path>./art/logos/${system.theme}-${lang}.png</path>
-      <path>./art/logos/${system.theme}-${lang}.svg</path>
-      <linearSmooth>true</linearSmooth>
-    </image>
-    
-    <image name="logo" region="eu"></image>
-		<image name="logo" region="us">
-		  <path>./art/logos/us/${system.theme}.png</path>
-			<path>./art/logos/us/${system.theme}.svg</path>
-		</image>
-		
-		<image name="logo" region="jp">
-		  <path>./art/logos/jp/${system.theme}.png</path>
-			<path>./art/logos/jp/${system.theme}.svg</path>
-		</image>
-		    
-    <image name="BottomBar" extra="static">
-      <tile>false</tile>
-      <size>1 0.065</size>
-      <pos>0 1</pos>
-      <origin>0 1</origin>
-      <path>./art/bottom.png</path>
-      <color>${bottomBarColor}</color>
-      <zIndex>50</zIndex>
-    </image>
-    <image name="ControllerOverlay" extra="true">
-      <tile>false</tile>
-      <pos>0.5 0.19</pos>
-      <origin>0.5 0.5</origin>
-      <size>0.3 0.3</size>
-      <path>./art/splash.svg</path>
-      <path>./art/controllers/${system.theme}.svg</path>
-      <color>${baseColor}</color>
-      <zIndex>19</zIndex>
-      <linearSmooth>true</linearSmooth>
-    </image>
-  </view>
+  <include lang="fr">./lang/fr.xml</include>
+  <include lang="pt">./lang/pt.xml</include>
   
-  <feature supported="manufacturer">
-    <view name="system">
-      <text name="manufacturerName" extra="static">
-        <text>${system.sortedBy}</text>
-        <alignment>left</alignment>
-        <verticalAlignment>top</verticalAlignment>
-        <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.060</fontSize>
-        <pos>0.029 0.037</pos>
-        <size>0.942 0.28</size>
-        <color>C0C0C0</color>      
-        <zIndex>100</zIndex>
-        <color>D0D0D0FF</color>
-        <glowColor>00000040</glowColor>
-        <glowSize>2</glowSize>
+  <!-- Colorsets  -->
+  <subset name="colorset" displayName="${subset.colorset}">
+    <include name="blue" displayName="${blue}">./subsets/colorsets/blue.xml</include>
+    <include name="red" displayName="${red}">./subsets/colorsets/red.xml</include>
+    <include name="green" displayName="${green}">./subsets/colorsets/green.xml</include>
+    <include name="cyan">./subsets/colorsets/cyan.xml</include>
+    <include name="yellow" displayName="${yellow}">./subsets/colorsets/yellow.xml</include>
+    <include name="violet">./subsets/colorsets/violet.xml</include>
+    <include name="orange">./subsets/colorsets/orange.xml</include>
+    <include name="gray" displayName="${gray}">./subsets/colorsets/gray.xml</include>
+  </subset>
 
-        <fontSize tinyScreen="true">0.065</fontSize>
-        <glowSize tinyScreen="true">1</glowSize>
-      </text>
-      <text name="fullName" extra="true">
-        <text>${system.fullName}</text>
-        <alignment>left</alignment>
-        <verticalAlignment>top</verticalAlignment>
-        <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.024</fontSize>
-        <pos>0.03 0.12</pos>
-        <pos verticalScreen="true">0.03 0.10</pos>         
-        <size>0.94 0.28</size>
-        <zIndex>100</zIndex>
-        <color>D0D0D0FF</color>
-        <glowColor>000000A0</glowColor>
-        <glowSize>1</glowSize>
-        
-        <pos tinyScreen="true">0.03 0.13</pos>
-        <glowColor tinyScreen="true">00000040</glowColor>
-        <fontSize tinyScreen="true">0.035</fontSize>
-      </text>
-      <text name="releaseYyear" extra="true">
-        <text>${system.releaseYearOrNull}</text>
-        <alignment>left</alignment>
-        <verticalAlignment>top</verticalAlignment>
-        <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.024</fontSize>
-        <pos>0.03 0.157</pos>
-        <pos verticalScreen="true">0.03 0.127</pos>         
-        <size>0.94 0.28</size>        
-        <zIndex>100</zIndex>
-        <color>D0D0D0FF</color>
-        <glowColor>000000A0</glowColor>
-        <glowSize>1</glowSize>
-                
-        <pos tinyScreen="true">0.03 0.19</pos>
-        <glowColor tinyScreen="true">00000040</glowColor>
-        <fontSize tinyScreen="true">0.035</fontSize>
-      </text> 
-    </view>
-  </feature>
-
-
+  <!-- Common views  -->
+  <include>./views/menu.xml</include>
+  <include>./views/screen.xml</include>
+  <include>./views/system.xml</include>
+  
   <!-- Subset option for System extended informations -->
   <subset name="subsetSystemInfoEx" displayName="${systemViewExInfos}" tinyScreen="false">
-    <include name="yes" displayName="${yes}">./art/systemview/extendedInfo.xml</include>
+    <include name="yes" displayName="${yes}">./subsets/extendedinfo.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
-  
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
-    <include name="darkened">./art/systemview/horizontaldark.xml</include>
-    <include name="horizontal">./art/systemview/horizontal.xml</include>
-    <include name="legacy" tinyScreen="false">./art/systemview/legacy.xml</include>
-    <include name="transparent" tinyScreen="false">./art/systemview/transparent.xml</include>
-    <include name="simple">./art/systemview/verticalone.xml</include>
-    <include name="vertical">./art/systemview/vertical.xml</include>
-    <include name="wheel">./art/systemview/wheel.xml</include>
+    <include name="darkened">./subsets/systemview/horizontaldark.xml</include>
+    <include name="horizontal">./subsets/systemview/horizontal.xml</include>
+    <include name="legacy" tinyScreen="false">./subsets/systemview/legacy.xml</include>
+    <include name="transparent" tinyScreen="false">./subsets/systemview/transparent.xml</include>
+    <include name="simple">./subsets/systemview/verticalone.xml</include>
+    <include name="vertical">./subsets/systemview/vertical.xml</include>
+    <include name="wheel">./subsets/systemview/wheel.xml</include>
   </subset>
-
-
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
-    <include tinyScreen="false" name="mini-consoles">./art/systemsbk/consoles.xml</include>
+    <include tinyScreen="false" name="mini-consoles">./subsets/systembackground/consoles.xml</include>
     <!-- change default for small screens -->
-    <include name="consoles">./art/systemsbk/batomachines.xml</include>
-    <include tinyScreen="true" name="mini-consoles">./art/systemsbk/consoles.xml</include>
-    <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
-    <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
-    <include name="simple">./art/systemsbk/simple.xml</include>
-    <include name="random video">./art/systemsbk/video.xml</include>
-    <include name="random fanart">./art/systemsbk/fanart.xml</include>
-    <include name="random image">./art/systemsbk/image.xml</include>
-    <include name="random box">./art/systemsbk/box.xml</include>
-    <include name="mini random image">./art/systemsbk/smallscreen.xml</include>
-    <include name="mini random box">./art/systemsbk/smallbox.xml</include>
-    <include name="mini random video">./art/systemsbk/smallvideo.xml</include>
+    <include name="consoles">./subsets/systembackground/batomachines.xml</include>
+    <include tinyScreen="true" name="mini-consoles">./subsets/systembackground/consoles.xml</include>
+    <include name="carbon controllers">./subsets/systembackground/animatedbackgroundsubset.xml</include>
+    <include name="carbon legacy">./subsets/systembackground/carbon.xml</include>
+    <include name="simple">./subsets/systembackground/simple.xml</include>
+    <include name="random video">./subsets/systembackground/video.xml</include>
+    <include name="random fanart">./subsets/systembackground/fanart.xml</include>
+    <include name="random image">./subsets/systembackground/image.xml</include>
+    <include name="random box">./subsets/systembackground/box.xml</include>
+    <include name="mini random image">./subsets/systembackground/smallscreen.xml</include>
+    <include name="mini random box">./subsets/systembackground/smallbox.xml</include>
+    <include name="mini random video">./subsets/systembackground/smallvideo.xml</include>
   </subset>
-
   <!-- Fix for controller image size -->
-  <include subset="systemview" name="simple">./art/systemview/controllersizefix.xml</include>
-  <include subset="systemview" name="vertical">./art/systemview/controllersizefix.xml</include>
-  <include subset="systemview" name="wheel">./art/systemview/controllersizefix.xml</include>
-  
+  <include subset="systemview" name="simple">./subsets/systemview/controllersizefix.xml</include>
+  <include subset="systemview" name="vertical">./subsets/systemview/controllersizefix.xml</include>
+  <include subset="systemview" name="wheel">./subsets/systemview/controllersizefix.xml</include>
   <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
-  <include subset="systemview" name="legacy">./art/systemview/legacyfix.xml</include>
-  <view name="screen">
-    <text name="clock">
-      <color>777777FF</color>
-      <fontSize>0.035</fontSize>
-      <pos>0.90 0.94</pos>
-      <size>0.09 0.058</size>
+  <include subset="systemview" name="legacy">./subsets/systemview/legacyfix.xml</include>
 
-      <fontSize verticalScreen="true">0.028</fontSize>
-      <pos verticalScreen="true">0.90 0.012</pos>
-      <size verticalScreen="true">0.09 0.0275</size>
-      <color verticalScreen="true">FFFFFFA0</color>
+  <!-- Common views  -->
+  <include>./views/common.xml</include>
+  <include>./views/basic.xml</include>
+  <include>./views/detailed.xml</include>
+  <include>./views/gamecarousel.xml</include>
+  <include>./views/grid.xml</include>
+  <!-- Custom views  -->
+  <include>./views/boxes.xml</include>
+  <include>./views/carousel.xml</include>
+  <include>./views/tiles.xml</include>
+  <include>./views/icons.xml</include>  
 
-      <alignment>right</alignment>
-      <verticalAlignment>center</verticalAlignment>
-    </text>
-    
-    <controllerActivity name="controllerActivity">
-      <pos>0.01 0.012</pos>
-      <size>0.185 0.023</size>
-      <itemSpacing>0.003</itemSpacing>
-      <color>FFFFFF90</color>
-      
-      <!-- controllers -->
-      <imagePath>./art/gamepad.svg</imagePath>      
-      <activityColor>A0A0FFC0</activityColor>
-      <hotkeyColor>FFA0A0C0</hotkeyColor>
-
-      <!-- wifi 
-      <networkIcon>./art/icons/Network.png</networkIcon>
-      -->
-      <!-- battery 
-      <incharge>./art/battery/incharge.svg</incharge>
-      <full>./art/battery/full.svg</full>
-      <at75>./art/battery/75.svg</at75>
-      <at50>./art/battery/50.svg</at50>
-      <at25>./art/battery/25.svg</at25>
-      <empty>./art/battery/empty.svg</empty>-->
-    </controllerActivity>
-
-    <batteryIndicator name="batteryIndicator">
-      <pos>0.955 0.012</pos>
-  <pos verticalScreen="true">0.9 0.013</pos>
-      <size>0.033 0.0275</size>
-<horizontalAlignment>right</horizontalAlignment>
-      <incharge>./art/battery/incharge.svg</incharge>
-      <full>./art/battery/full.svg</full>
-      <at75>./art/battery/75.svg</at75>
-      <at50>./art/battery/50.svg</at50>
-      <at25>./art/battery/25.svg</at25>
-      <empty>./art/battery/empty.svg</empty>
-
-<!-- wifi -->
-  <!--    <networkIcon>./art/icons/Network.png</networkIcon>-->
-<!--<networkIcon>none</networkIcon>-->
-
-      <color>FFFFFFA0</color>
-    </batteryIndicator>
-
-    <batteryIndicator name="batteryIndicator" tinyScreen="true">
-      <pos>0.915 0.013</pos>
-      <size>0.07 0.07</size>
-    </batteryIndicator>
-  </view>
-  <view name="menu">
-    <menuText name="menutitle">
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.044</fontSize>
-      <color>FAFAFA</color>
-    </menuText>
-    <menuText name="menufooter">
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.02</fontSize>
-      <color>777777FF</color>
-    </menuText>
-    <menuText name="menutext">
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.0325</fontSize>
-      <fontSize tinyScreen="true">0.034</fontSize>
-      <color>969696</color>
-      <separatorColor>282828</separatorColor>
-      <selectorColor>${baseColor}</selectorColor>
-      <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
-      <selectedColor>FFFFFF</selectedColor>
-      <selectorGradientType>horizontal</selectorGradientType>
-    </menuText>
-    <menuTextSmall name="menutextsmall">
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.02</fontSize>
-      <color>${groupColor}</color>
-    </menuTextSmall>
-    <menuGroup name="menugroup">
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.025</fontSize>
-      <color>${groupColor}</color>
-      <separatorColor>${groupSeparatorColor}</separatorColor>
-      <backgroundColor>00000000</backgroundColor>
-      <lineSpacing>2.5</lineSpacing>
-    </menuGroup>
-    <menuBackground name="menubg">
-      <color>242424</color>
-      <cornerSize>32 32</cornerSize>
-      <path>./art/frame.png</path>
-      <scrollbarColor>96969620</scrollbarColor>
-      <scrollbarCorner>0.49</scrollbarCorner>
-      <scrollbarSize>0.003</scrollbarSize>
-      <scrollbarAlignment>innerright</scrollbarAlignment>
-    </menuBackground>
-    <menuIcons name="menuicons">
-      <iconKodi>./art/icons/Kodi.png</iconKodi>
-      <iconSystem>./art/icons/System.png</iconSystem>
-      <iconUpdates>./art/icons/Updates.png</iconUpdates>
-      <iconGames>./art/icons/Games.png</iconGames>
-      <iconControllers>./art/icons/Controllers.png</iconControllers>
-      <iconUI>./art/icons/UI.png</iconUI>
-      <iconSound>./art/icons/Sound.png</iconSound>
-      <iconNetwork>./art/icons/Network.png</iconNetwork>
-      <iconScraper>./art/icons/Scraper.png</iconScraper>
-      <iconAdvanced>./art/icons/Advanced.png</iconAdvanced>
-      <iconQuit>./art/icons/Quit.png</iconQuit>
-      <iconRestart>./art/icons/Restart.png</iconRestart>
-      <iconShutdown>./art/icons/Shutdown.png</iconShutdown>
-      <iconFastShutdown>./art/icons/Fastshutdown.png</iconFastShutdown>
-      <iconRetroachievements>./art/icons/Contest.png</iconRetroachievements>
-      <iconManual>./art/icons/Manual.png</iconManual>
-    </menuIcons>
-    <menuTextEdit name="menutextedit">
-      <inactive>./art/textinput_ninepatch.png</inactive>
-      <active>./art/textinput_ninepatch_active.png</active>
-    </menuTextEdit>
-    <menuButton name="menubutton">
-      <path>./art/button.png</path>
-      <filledPath>./art/button_filled.png</filledPath>
-      <cornerSize>8 8</cornerSize>
-    </menuButton>
-  </view>
-  <view name="basic">
-    <image name="background">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>10</zIndex>      
-    </image>
-    
-    <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
-      <path>./art/background/${system.theme}.jpg</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <minSize>1 1</minSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF12</color>
-      <zIndex>11</zIndex>
-    </image>
-    
-    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
-      <path>./art/consoles/default.png</path>
-      <path>./art/consoles/${system.theme}.png</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <maxSize>0.5 0.5</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF09</color>
-      <zIndex>11</zIndex>
-    </image>
-
-    <textlist name="gamelist">    
-      <selectorColor>1c1c1c</selectorColor>
-       <selectorColor>96969620</selectorColor>
-      <selectedColor>${basecolor}</selectedColor>
-      <primaryColor>C0C0C0</primaryColor>
-      <secondaryColor>808080</secondaryColor>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.030</fontSize>
-      <pos>0.025 0.18</pos>
-      <size>0.950 0.73</size>
-      <alignment>center</alignment>
-      <horizontalMargin>0.01</horizontalMargin>
-      <forceUppercase>1</forceUppercase>
-      <scrollSound>./art/scroll.wav</scrollSound>
-      
-      <selectorColor>${centerFadeColor}</selectorColor>      
-      <selectedColor>FFFFFFFF</selectedColor>
-
-      <scrollbarColor>96969620</scrollbarColor>
-      <scrollbarCorner>0.49</scrollbarCorner>
-      <scrollbarSize>0.0065</scrollbarSize>            
-      <scrollbarAlignment>outerright</scrollbarAlignment> <!-- innerleft -->
-
-      <lines>17</lines>
-      <horizontalMargin>0.005</horizontalMargin>  
-    </textlist>
-  </view>
-  <view name="detailed">
-    <video name="md_video">
-      <pos>0.76 0.408</pos>
-      <maxSize>0.46 0.436</maxSize>
-      <origin>0.5 0.5</origin>
-      <delay>0.8</delay>
-      <showSnapshotNoVideo>true</showSnapshotNoVideo>
-      <showSnapshotDelay>true</showSnapshotDelay>
-      <loops>1</loops>
-      <roundCorners>0.02</roundCorners>
-<!--
-      <storyboard>
-        <animation property="opacity" from="0" to="1" duration="800" mode="easeIn"/>
-      </storyboard>
-
-      <storyboard event="snapshot">
-        <animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>        
-      </storyboard>
-    -->
-    </video>
-
-    <image name="background">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>10</zIndex>      
-    </image>
-    
-    <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
-      <path>./art/background/${system.theme}.jpg</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <minSize>1 1</minSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF12</color>
-      <zIndex>11</zIndex>
-    </image>
-    
-    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
-      <path>./art/consoles/default.png</path>
-      <path>./art/consoles/${system.theme}.png</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.25 0.52</pos>
-      <maxSize>0.4 0.4</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF09</color>
-      <zIndex>11</zIndex>
-    </image>
-    
-    <image name="detailsBk" extra="true">
-      <path>./art/filter.png</path>
-      <color>00000040</color>
-      <colorEnd>00000000</colorEnd>
-      <gradientType>horizontal</gradientType>
-      <origin>0 0</origin>
-      <pos>0.53 0.16</pos>      
-      <size>0.4 0.774</size>
-      <zIndex>12</zIndex>
-    </image>
-
-    <image name="detailsBkR" extra="true">
-      <path>./art/filter.png</path>
-      <color>00000000</color>
-      <colorEnd>00000010</colorEnd>
-      <gradientType>horizontal</gradientType>
-      <origin>0 0</origin>
-      <pos>0.525 0.16</pos>
-      <size>0.005 0.774</size>
-      <zIndex>12</zIndex>
-    </image>
-    
-    <image name="detailsBkLine" extra="true">
-      <path>./art/white.png</path>
-      <color>${glowColor}</color>
-      <origin>0 0</origin>
-      <pos>0.526 0.16</pos>
-      <size>0.003 0.775</size>
-      <zIndex>14</zIndex>
-    </image>    
-
-    <textlist name="gamelist">
-      <primaryColor>C0C0C0</primaryColor>
-      <secondaryColor>808080</secondaryColor>
-      <selectorColor>${centerFadeColor}</selectorColor>
-      <selectedColor>FFFFFFFF</selectedColor>
-      <forceUppercase>1</forceUppercase>
-      <pos>0.021 0.18</pos>
-      <size>0.489 0.73</size>
-      <alignment>left</alignment>
-      <horizontalMargin>0.00</horizontalMargin> 
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.028</fontSize>       
-      <scrollSound>./art/scroll.wav</scrollSound>      
-      <scrollbarColor>96969620</scrollbarColor>
-      <scrollbarCorner>0.49</scrollbarCorner>
-      <scrollbarSize>0.0065</scrollbarSize>            
-      <scrollbarAlignment>outerright</scrollbarAlignment>      
-      <lines>17</lines>
-      <horizontalMargin>0.005</horizontalMargin>
-    </textlist>
-    
-    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
-      <storyboard>
-        <animation property="opacity" from="0" duration="350" mode="easeOut"/>
-      </storyboard>
-    </text>
-      
-    <text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
-      <color>969696</color>
-      <forceUppercase>0</forceUppercase>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.023</fontSize>
-    </text>
-    
-    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players">
-      <color>969696</color>
-      <forceUppercase>0</forceUppercase>
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.023</fontSize>
-    </text>
-
-    <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
-      <pos>1 1</pos>
-    </text>
-
-    <datetime name="md_lastplayed">
-      <pos>1 1</pos>
-    </datetime>
-    
-    <image name="md_flag">
-      <origin>0 0.5</origin>
-      <pos>0.55 0.9</pos>
-      <maxSize>0.02 0.05</maxSize>
-      <linearSmooth>true</linearSmooth>
-    </image>
-    <text name="md_developer">
-      <color>EFEFFF</color>
-      <pos>0.578 0.875</pos>
-      <size>0.30 0.05</size>
-      <alignment>left</alignment>
-      <fontSize>0.025</fontSize>
-    </text>
-    <rating name="md_rating">
-      <pos>0.94 0.886</pos>
-      <size>0.05 0.03</size>
-      <size verticalScreen="true">0.05 0.02</size>
-      <horizontalAlignment>right</horizontalAlignment>      
-      <color>FFFF00</color>
-      <unfilledColor>808080</unfilledColor>
-  <unfilledPath>:/star_filled.svg</unfilledPath>
-    </rating>
-    <text name="md_lbl_players">
-      <pos>0.9 0.645</pos>
-      <pos verticalScreen="true">0.85 0.645</pos>
-      <size>0.09 0</size>
-    </text>
-    <text name="md_players">
-      <color>EFEFFF</color>
-      <pos>0.965 0.645</pos>
-      <size>0.02 0</size>
-    </text>
-    <text name="md_lbl_releasedate">
-      <color>969696</color>
-      <pos>0.55 0.645</pos>
-      <size>0.2 0</size>
-    </text>
-    <datetime name="md_releasedate">
-      <color>EFEFFF</color>
-      <pos>0.645 0.645</pos>
-      <pos verticalScreen="true">0.7 0.645</pos>
-      <size>0 0.033</size>
-    </datetime>
-    <text name="md_description">
-      <pos>0.55 0.7</pos>
-      <size>0.43 0.16</size>
-      <color>C0C0C0</color>
-      <forceUppercase>0</forceUppercase>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.023</fontSize>
-    </text>
-
-    <image name="md_hidden">
-      <path>./art/hidden.svg</path>
-      <pos>0.975 0.21</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>150</zIndex>
-    </image>
-
-    <image name="md_kidgame">     
-      <path>./art/kid.svg</path>
-      <pos>0.86 0.9</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>150</zIndex>
-    </image>
-
-    <image name="md_manual">
-      <path>./art/manual.svg</path>
-      <pos>0.882 0.9</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>150</zIndex>
-    </image>
-
-<!--
-    <image name="md_favorite">
-      <pos>0.975 0.21</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <path>./art/favorite.svg</path>
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>60</zIndex>
-    </image>-->
-  </view>
-  <view name="gamecarousel">
-    <gamecarousel name="gamecarousel">
-      <type>vertical_wheel</type>
-      <pos>0 0.162</pos>
-      <size>0.52 0.775</size>
-      <logoScale>4.5</logoScale>
-      <logoSize>0.15 0.12</logoSize>
-      <maxLogoCount>15</maxLogoCount>
-      <imageSource>marquee</imageSource> <!-- text, image, thumbnail, marquee -->
-      <zIndex>10</zIndex>
-    </gamecarousel>    
-    <text name="gamecarouselLogoText">
-      <color>FFFFFFFF</color>
-      <glowColor>000000FF</glowColor>
-      <glowSize>4</glowSize>
-      <lineSpacing>1.0</lineSpacing>
-    </text>
-    <video name="md_video">
-      <pos>0.76 0.408</pos>
-      <maxSize>0.46 0.436</maxSize>
-      <origin>0.5 0.5</origin>
-      <delay>0.8</delay>
-      <showSnapshotNoVideo>true</showSnapshotNoVideo>
-      <showSnapshotDelay>true</showSnapshotDelay>
-      <loops>1</loops>
-      <roundCorners>0.02</roundCorners>
-    </video>
-
-    <image name="background">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>10</zIndex>      
-    </image>
-    
-    <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
-      <path>./art/background/${system.theme}.jpg</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <minSize>1 1</minSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF12</color>
-      <zIndex>11</zIndex>
-    </image>
-    
-    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
-      <path>./art/consoles/default.png</path>
-      <path>./art/consoles/${system.theme}.png</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.25 0.52</pos>
-      <maxSize>0.4 0.4</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF09</color>
-      <zIndex>11</zIndex>
-    </image>
-    
-    <image name="detailsBk" extra="true">
-      <path>./art/filter.png</path>
-      <color>00000040</color>
-      <colorEnd>00000000</colorEnd>
-      <gradientType>horizontal</gradientType>
-      <origin>0 0</origin>
-      <pos>0.53 0.16</pos>      
-      <size>0.4 0.774</size>
-      <zIndex>12</zIndex>
-    </image>
-
-    <image name="detailsBkR" extra="true">
-      <path>./art/filter.png</path>
-      <color>00000000</color>
-      <colorEnd>00000010</colorEnd>
-      <gradientType>horizontal</gradientType>
-      <origin>0 0</origin>
-      <pos>0.525 0.16</pos>
-      <size>0.005 0.774</size>
-      <zIndex>12</zIndex>
-    </image>
-    <image name="detailsBkLine" extra="true">
-      <path>./art/white.png</path>
-      <color>${glowColor}</color>
-      <origin>0 0</origin>
-      <pos>0.526 0.16</pos>
-      <size>0.003 0.775</size>
-      <zIndex>14</zIndex>
-    </image>    
-    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
-      <storyboard>
-        <animation property="opacity" from="0" duration="350" mode="easeOut"/>
-      </storyboard>
-    </text>    
-    <text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
-      <color>969696</color>
-      <forceUppercase>0</forceUppercase>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.023</fontSize>
-    </text>
-    
-    <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players">
-      <color>969696</color>
-      <forceUppercase>0</forceUppercase>
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.023</fontSize>
-    </text>
-
-    <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
-      <pos>1 1</pos>
-    </text>
-
-    <datetime name="md_lastplayed">
-      <pos>1 1</pos>
-    </datetime>
-    
-    <image name="md_flag">
-      <origin>0 0.5</origin>
-      <pos>0.55 0.9</pos>
-      <maxSize>0.02 0.05</maxSize>
-      <linearSmooth>true</linearSmooth>
-    </image>
-    <text name="md_developer">
-      <color>EFEFFF</color>
-      <pos>0.578 0.875</pos>
-      <size>0.30 0.05</size>
-      <alignment>left</alignment>
-      <fontSize>0.025</fontSize>
-    </text>
-    <rating name="md_rating">
-      <pos>0.94 0.886</pos>
-      <size>0.05 0.03</size>
-      <size verticalScreen="true">0.05 0.02</size>
-      <horizontalAlignment>right</horizontalAlignment>      
-      <color>FFFF00</color>
-      <unfilledColor>808080</unfilledColor>
-  <unfilledPath>:/star_filled.svg</unfilledPath>
-    </rating>
-    <text name="md_lbl_players">
-      <pos>0.9 0.645</pos>
-      <pos verticalScreen="true">0.85 0.645</pos>
-      <size>0.09 0</size>
-    </text>
-    <text name="md_players">
-      <color>EFEFFF</color>
-      <pos>0.965 0.645</pos>
-      <size>0.02 0</size>
-    </text>
-    <text name="md_lbl_releasedate">
-      <color>969696</color>
-      <pos>0.55 0.645</pos>
-      <size>0.2 0</size>
-    </text>
-    <datetime name="md_releasedate">
-      <color>EFEFFF</color>
-      <pos>0.645 0.645</pos>
-      <pos verticalScreen="true">0.7 0.645</pos>
-      <size>0 0.033</size>
-    </datetime>
-    <text name="md_description">
-      <pos>0.55 0.7</pos>
-      <size>0.43 0.16</size>
-      <color>C0C0C0</color>
-      <forceUppercase>0</forceUppercase>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.023</fontSize>
-    </text>
-
-    <image name="md_hidden">
-      <path>./art/hidden.svg</path>
-      <pos>0.975 0.21</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>150</zIndex>
-    </image>
-
-    <image name="md_kidgame">     
-      <path>./art/kid.svg</path>
-      <pos>0.86 0.9</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>150</zIndex>
-    </image>
-
-    <image name="md_manual">
-      <path>./art/manual.svg</path>
-      <pos>0.882 0.9</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>150</zIndex>
-    </image>
-
-<!--
-    <image name="md_favorite">
-      <pos>0.975 0.21</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <path>./art/favorite.svg</path>
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>60</zIndex>
-    </image>-->
-  </view>  
-  <view name="basic, detailed, grid, gamecarousel">
-    <image name="bottom" extra="true">
-      <pos>0 1</pos>
-      <origin>0 1</origin>
-      <size>1 0.065</size>
-      <path>./art/bottom.png</path>
-      <color>${bottomBarColor}</color>
-      <zIndex>13</zIndex>
-    </image>
-    <image name="top-shadow" extra="true">
-      <path>./art/shadow.png</path>
-      <color>FFFFFF90</color>
-      <pos>0 0.16</pos>
-      <origin>0 0</origin>
-      <size>1 0.04</size>
-      <zIndex>14</zIndex>
-    </image>
-    <image name="top" extra="true">
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <size>1 0.155</size>
-      <path>./art/white.png</path>
-      <color>00000090</color>
-    </image>
-    <image name="topLine" extra="true">
-      <pos>0 0.155</pos>
-      <origin>0 0</origin>
-      <size>1 0.005</size>
-      <path>./art/white.png</path>
-      <color>${baseColor}</color>
-      <zIndex>15</zIndex>
-    </image>
-    <text name="logoText">
-      <pos>0.02 0.02</pos>
-      <size>0.98 0.126</size>
-      <alignment>center</alignment>
-      <fontSize>0.055</fontSize>
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <color>${baseColor}</color>
-      <color>FAFAFA</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>3</glowSize>
-      <glowOffset>1 1</glowOffset>
-    </text>
-    <image name="logo">
-      <!-- try png -->
-      <path>./art/logos/${system.theme}.png</path>
-      <path>./art/logos/${system.theme}.svg</path>
-      <path>./art/logos/${system.theme}-${lang}.png</path>
-      <path>./art/logos/${system.theme}-${lang}.svg</path>
-      <!-- if system2 exists, take this version -->
-      <path>./art/logos/${system.theme}-w.svg</path>
-      <pos>0.5 0.074</pos>
-      <maxSize>0.45 0.120</maxSize>
-      <origin>0.5 0.5</origin>
-      <linearSmooth>true</linearSmooth>
-      <zIndex>30</zIndex>
-    </image>
-
-    <image name="logo" region="eu"/>
-		<image name="logo" region="us">
-		  <path>./art/logos/us/${system.theme}.png</path>
-			<path>./art/logos/us/${system.theme}.svg</path>
-		</image>
-		
-		<image name="logo" region="jp">
-		  <path>./art/logos/jp/${system.theme}.png</path>
-			<path>./art/logos/jp/${system.theme}.svg</path>
-		</image>
-		    
-    <text name="folderpath">
-      <pos>0.05 0.132</pos>
-      <size>0.90 0.02</size>  
-      <color>B0B0B0</color>  
-      <alignment>center</alignment>
-      <fontSize>0.016</fontSize>
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
-      <forceUppercase>true</forceUppercase>
-      <zIndex>200</zIndex>
-    </text>  
-  </view>
-  <view name="grid">
-    <image name="background">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>8</zIndex>      
-    </image>
-    <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
-      <path>./art/background/${system.theme}.jpg</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <minSize>1 1</minSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF10</color>
-      <zIndex>9</zIndex>
-    </image>            
-    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
-      <path>./art/consoles/default.png</path>
-      <path>./art/consoles/${system.theme}.png</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <maxSize>0.5 0.5</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF09</color>
-      <zIndex>9</zIndex>
-    </image>
-    <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
-      <color>A0A0B000</color>
-    </text>
-    <text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
-      <color>ffffff00</color>
-    </text>
-    <datetime name="md_releasedate, md_lastplayed">
-      <color>ffffff00</color>
-    </datetime>
-    <rating name="md_rating">
-      <pos>0.96 0.89</pos>
-      <size>0.03 0.02</size>
-      <color>FFFF00</color>
-      <horizontalAlignment>right</horizontalAlignment>
-      <unfilledColor>606060</unfilledColor>
-      <unfilledPath>:/star_filled.svg</unfilledPath>
-    </rating>
-    
-<!--
-    <image name="md_fanart">
-      <pos>0.5 0.08</pos>
-      <minSize>1 0.16</minSize>      
-      <origin>0.5 0.5</origin>
-      <color>808080</color>
-      <zIndex>1</zIndex>
-      <linearSmooth>true</linearSmooth>
-    </image>
--->
-		<text name="md_players">
-			<fontPath>./art/players.ttf</fontPath>
-      <text>1</text>
-      <size>0.025 0.035</size>
-
-      <pos>0.9675 0.84</pos>
-      <pos>0.01 0.88</pos>
-      <pos>0.01 0.837</pos>
-
-			<alignment>center</alignment>
-			<fontSize>0.03</fontSize>
-			<color>D0D0D0D0</color>
-			<zIndex>55</zIndex>
-		</text>
-
-    <image name="md_flag"> 
-       <origin>0.5 0.5</origin>
-       <pos>0.0225 0.812</pos>
-       <pos>0.0225 0.90</pos>
-       <maxSize>0.025 0.018</maxSize>
-    </image>
-
-
-    <image name="md_cheevos">
-      <path>./art/icons/Contest.png</path>
-      <pos>0.0225 0.766</pos>
-      <maxSize>0.02 0.03</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>D0D0D0D0</color>
-      <zIndex>150</zIndex>
-    </image>
-    
-    <image name="md_notcheevos">
-      <path>./art/icons/Contest.png</path>
-      <pos>0.0225 0.766</pos>
-      <maxSize>0.02 0.03</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>80808030</color>
-      <zIndex>150</zIndex>
-    </image>
-
-
-    <image name="md_manual">
-      <path>./art/book.png</path>
-      <pos>0.98 0.812</pos>
-      <pos>0.0225 0.856</pos>
-      <pos>0.0225 0.812</pos>
-      <maxSize>0.02 0.028</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>D0D0D0D0</color>
-      <zIndex>150</zIndex>
-      <linearSmooth>true</linearSmooth>
-    </image>
-
-    <image name="md_nomanual">
-      <path>./art/book.png</path>
-      <pos>0.98 0.812</pos>
-      <pos>0.0225 0.856</pos>
-      <pos>0.0225 0.812</pos>
-      <maxSize>0.02 0.028</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>80808025</color>
-      <zIndex>150</zIndex>
-      <linearSmooth>true</linearSmooth>
-    </image>
-    <imagegrid name="gamegrid">
-      <margin>0.005 0.010</margin>
-      <pos>0.025 0.16</pos>
-      <size>0.950 0.84</size>
-      <padding>0.03 0.04 0.03 0.1</padding>
-      <zIndex>13</zIndex>
-      <autoLayout>5 2</autoLayout>
-      <autoLayout verticalScreen="true">2 2</autoLayout>
-      <animateSelection>false</animateSelection>
-      <centerSelection>false</centerSelection>
-      <scrollbarColor>96969620</scrollbarColor>
-      <scrollbarCorner>0.49</scrollbarCorner>
-      <scrollbarSize>0.005</scrollbarSize>
-    </imagegrid>
-    <gridtile name="default">
-      <backgroundColor>FFFFFF00</backgroundColor>
-      <backgroundCornerSize>9 9</backgroundCornerSize>
-      <selectionMode>image</selectionMode>
-      <padding>5 5</padding>
-      <imageColor>FFFFFFB0</imageColor>
-    </gridtile>
-    <gridtile name="selected">
-      <backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
-      <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
-      <imageColor>FFFFFFFF</imageColor>
-    </gridtile>
-    <text name="gridtile">
-      <color>FFFFFF80</color>
-      <backgroundColor>00000000</backgroundColor>
-      <fontSize>0.022</fontSize>
-      <alignment>center</alignment>
-      <size>1 0.24</size>
-    </text>
-    <text name="gridtile:selected">
-      <color>FFFFFF</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
-    </text>
-    <ninepatch name="gridtile.background:selected">
-      <animateColor>EFEF60B0</animateColor>
-      <animateColorTime>350</animateColorTime>
-    </ninepatch>
-  </view>
-  <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
-    <imagegrid name="gamegrid">
-      <autoLayout>6 2</autoLayout>
-      <autoLayout verticalScreen="true">2 2</autoLayout>
-      <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
-    </imagegrid>
-    <text name="gridtile">
-      <visible>false</visible>
-    </text>
-    <text name="gridtile:selected">
-      <visible>false</visible>
-    </text>
-    <image name="gridtile.favorite">
-      <path>./art/favorite.png</path>
-      <pos>0.91 0.09</pos>
-      <maxSize>0.14 0.14</maxSize>
-      <origin>0.5 0.5</origin>
-      <horizontalAlignment>right</horizontalAlignment>
-      <color>FFFF00B0</color>
-    </image>
-  </customView>
-  <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
-    <text name="md_name">
-      <color>ffffffff</color>
-      <pos>0.04 0.76</pos>
-      <size>0.92 0.10</size>
-      <alignment>center</alignment>
-      <glowColor>00000016</glowColor>
-      <glowSize>4</glowSize>
-    </text>
-    <text name="md_developer">
-      <color>808080ff</color>
-      <pos>0.04 0.80</pos>
-      <size>0.92 0.10</size>
-      <alignment>center</alignment>
-      <fontSize>0.020</fontSize>
-      <glowColor>00000016</glowColor>
-      <glowSize>3</glowSize>
-    </text>
-    <imagegrid name="gamegrid">
-      <pos>0 0.16</pos>
-      <size>1 0.774</size>
-      <padding>0.05 0.14 0.05 0.30</padding>
-      <scrollDirection>horizontal</scrollDirection>
-      <autoLayout>5 1</autoLayout>
-      <autoLayout verticalScreen="true">3 1</autoLayout>
-      <autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
-      <margin>0.005 0.010</margin>
-      <centerSelection>true</centerSelection>
-      <scrollLoop>true</scrollLoop>
-    </imagegrid>
-    <gridtile name="default">
-      <padding>64 16</padding>
-      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
-      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
-      <imageSizeMode>maxSize</imageSizeMode>
-      <imageColor>FFFFFFAA</imageColor>
-      <reflexion>0.24 0.0</reflexion>
-    </gridtile>
-    <gridtile name="selected">
-      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
-      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
-      <padding>64 16</padding>
-    </gridtile>
-    <text name="gridtile">
-      <visible>false</visible>
-      <color>80808080</color>
-      <fontSize>0.016</fontSize>
-      <size>1 0</size>
-    </text>
-    <text name="gridtile:selected">
-      <color>FFFFFF00</color>
-      <fontSize>0.035</fontSize>
-      <size>1 0</size>
-    </text>
-    <ninepatch name="gridtile.background:selected">
-      <animateColorTime>0</animateColorTime>
-    </ninepatch>
-  </customView>
-  <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
-    <imagegrid name="gamegrid">
-      <autoLayout>3 2</autoLayout>
-      <autoLayout verticalScreen="true">2 3</autoLayout>
-
-      <cellProportion>1.25</cellProportion>
-      <autoLayout>0 2</autoLayout>
-      
-      <cellProportion verticalScreen="true">0.77</cellProportion>
-      <autoLayout verticalScreen="true">2 0</autoLayout>
-      
-      <autoLayoutSelectedZoom>1.02</autoLayoutSelectedZoom>
-      <imageSource>image</imageSource>
-      <margin>0.002 0.004</margin>
-      <showVideoAtDelay>800</showVideoAtDelay>
-      <zIndex>13</zIndex>
-      <gameImage>./art/defgame.png</gameImage>
-      <folderImage>./art/deffolder.png</folderImage>
-      <logoBackgroundImage>./art/deflogobk.png</logoBackgroundImage>
-    </imagegrid>
-
-    <ninepatch name="gridtile.background">
-      <path>./art/framew.png</path>
-      <cornerSize>20 20</cornerSize>
-      <padding>-2 -2</padding>
-      <edgeColor>000000B0</edgeColor>
-      <centerColor>000000A0</centerColor>
-    </ninepatch>
-    
-    <ninepatch name="gridtile.background:selected">
-      <path>./art/framewsel.png</path>
-      <cornerSize>36 36</cornerSize>
-      <padding>-18 -18</padding>
-      <color>${baseColor}</color>
-    </ninepatch>
-    
-    <gridtile name="default">
-      <backgroundImage/>
-      <backgroundCenterColor>40404080</backgroundCenterColor>
-      <backgroundEdgeColor>40404080</backgroundEdgeColor>
-      <padding>5 5</padding>
-      <imageSizeMode>minSize</imageSizeMode>
-      <imageColor>A0A0A0FF</imageColor>
-      <backgroundCornerSize>0.021</backgroundCornerSize>
-    </gridtile>
-    <gridtile name="selected">
-      <padding>5 5</padding>
-      <imageColor>FFFFFFFF</imageColor>
-      <backgroundCornerSize>0.021</backgroundCornerSize>
-    </gridtile>
- <!--
-    <image name="gridtile.overlay">
-      <roundCorners>0.020</roundCorners>
-      <path>./art/overlay.png</path>
-      <color>FFFFFF70</color>
-    </image>
-
-     <image name="gridtile.overlay:selected">
-      <color>FFFFFF20</color>
-    </image>
-    -->
-    <image name="gridtile.image">
-      <roundCorners>0.020</roundCorners>
-    </image>
-    <text name="gridtile">
-      <color>D0D0D0D0</color>
-      <backgroundColor>00000000</backgroundColor>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.026</fontSize>
-      <alignment>center</alignment>
-      <singleLineScroll>false</singleLineScroll>      
-      <padding>0.08 0.02</padding>
-      <size>0 0.22</size>
-      <glowColor>00000060</glowColor>
-      <glowSize>1</glowSize>
-    </text>
-    <text name="gridtile:selected">
-      <singleLineScroll>false</singleLineScroll>
-      <color>FFFFFF</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
-    </text>
-    <image name="gridtile.favorite">      
-      <path>./art/favorite.png</path>
-      <pos>0.93 0.07</pos>
-      <maxSize>0.10 0.10</maxSize>
-      <origin>0.5 0.5</origin>
-      <horizontalAlignment>right</horizontalAlignment>
-      <color>FFFF00A0</color>
-    </image>
-    <image name="gridtile.favorite:selected">
-      <color>FFFFFFE0</color>
-    </image>
-  </customView>
-  
-  <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
-   <imagegrid name="gamegrid">
-      
-      <autoLayout>0 2</autoLayout>
-      <cellProportion>1</cellProportion>
-      <cellProportion verticalScreen="true">0.77</cellProportion>
-      <autoLayout verticalScreen="true">2 0</autoLayout>
-      <margin>0.008 0.010</margin>
-    </imagegrid>
-    <text name="gridtile">
-      <fontSize>0.020</fontSize>
-      <size>1 0.18</size>
-      <padding>0 0.01 0 0.1</padding>
-    </text>
-  </customView>  
-  
   <!-- Subset options for help -->
   <subset name="helpsystem" displayName="${helpSubsetName}">
-    <include name="buttons" displayName="${helpbuttons}">./art/help/buttons.xml</include>
-    <include name="xboxbuttons" displayName="${xboxbuttons}">./art/help/xboxbuttons.xml</include>
-    <include name="psxbuttons" displayName="${psxbuttons}">./art/help/psxbuttons.xml</include>    
-    <include name="colored" displayName="${colored}">./art/help/colorhelp.xml</include>
-    <include name="standard" displayName="${gray}"/>
+    <include name="buttons" displayName="${helpbuttons}">./subsets/help/buttons.xml</include>
+    <include name="xboxbuttons" displayName="${xboxbuttons}">./subsets/help/xboxbuttons.xml</include>
+    <include name="psxbuttons" displayName="${psxbuttons}">./subsets/help/psxbuttons.xml</include>
+    <include name="colored" displayName="${colored}">./subsets/help/colorhelp.xml</include>
+    <include name="standard" displayName="${gray}">./subsets/help/default.xml</include>
   </subset>
   <!-- Subset options for screen -->
   <subset name="shader" displayName="${subset.shader}">
     <include name="None" displayName="${none}"/>
-    <include name="ScanLines">./art/scanlines.xml</include>
-    <include name="Crt">./art/crt.xml</include>
+    <include name="ScanLines">./subsets/shader/scanlines.xml</include>
+    <include name="Crt">./subsets/shader/crt.xml</include>
   </subset>
   <!-- Specific layout for systems -->
-  <include>./art/layouts/${system.theme}.xml</include>
+  <include>./layouts/${system.theme}.xml</include>
   <!-- Layout when help is disabled -->
-  <include ifHelpPrompts="false">./art/layouts/nohelp.xml</include>
+  <include ifHelpPrompts="false">./layouts/nohelp.xml</include>
   <!-- Layout for small screens -->
   <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
-    <include name="yes" displayName="${yes}">./art/layouts/gpicase.xml</include>
+    <include name="yes" displayName="${yes}">./layouts/gpicase.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
+
+  <!-- add game info bar -->
+  <subset name="gameBar" displayName="${gameBar}" appliesTo="detailed,grid,Tiles,Icons,Carousel,Boxes">
+    <include name="yes" displayName="${yes}">./subsets/gameinfobar.xml</include>
+    <include name="no" displayName="${no}"/>
+	</subset>
+
   <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/videoboxes.xml</include>
+    <include name="yes" displayName="${yes}">./subsets/grid/videoboxes.xml</include>
   </subset>
   <subset name="zoomboxes" displayName="${zoomboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/zoomboxes.xml</include>
+    <include name="yes" displayName="${yes}">./subsets/grid/zoomboxes.xml</include>
   </subset>
   <subset name="scrolldirection" displayName="Orientation" appliesTo="Tiles,Icons,Boxes,grid">
     <include name="vertical"/>
-    <include name="horizontal">./art/grid/scrollhorz.xml</include>
+    <include name="horizontal">./subsets/grid/scrollhorz.xml</include>
   </subset>
   <subset name="hideselection" displayName="${hideselectionSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/hidesel.xml</include>
+    <include name="yes" displayName="${yes}">./subsets/grid/hidesel.xml</include>
   </subset>
   <subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/previewbar.xml</include>
+    <include name="yes" displayName="${yes}">./subsets/grid/previewbar.xml</include>
   </subset>
   <!-- Subset options for Tiles view -->
   <subset tinyScreen="false" name="glowsel" displayName="${glowSubsetName}" appliesTo="Tiles, Icons">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/tiles/noglow.xml</include>
+    <include name="no" displayName="${no}">./subsets/tiles/noglow.xml</include>
   </subset>
   <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles, Icons">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/tiles/squareborders.xml</include>
-  </subset>  
+    <include name="no" displayName="${no}">./subsets/tiles/squareborders.xml</include>
+  </subset>
   <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/grid/blinkbordersoff.xml</include>
+    <include name="no" displayName="${no}">./subsets/grid/blinkbordersoff.xml</include>
   </subset>
   <subset name="videotiles" displayName="Videos" appliesTo="Icons,Tiles">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/tiles/novideo.xml</include>
+    <include name="no" displayName="${no}">./subsets/tiles/novideo.xml</include>
   </subset>
   <subset name="marqueetiles" displayName="Logos" appliesTo="Tiles">
-    <include name="yes" displayName="${yes}">./art/tiles/marquee.xml</include>
+    <include name="yes" displayName="${yes}">./subsets/tiles/marquee.xml</include>
     <include name="no" displayName="${no}"/>
-  </subset>
+  </subset>  
+ 	<subset name="carouselimagesource" displayName="${gamecarouseltype}" appliesTo="gamecarousel">
+		<include name="marquee">./subsets/carouselimagesource/marquee.xml</include>
+		<include name="image">./subsets/carouselimagesource/image.xml</include>
+		<include name="text" >./subsets/carouselimagesource/text.xml</include>
+		<include name="thumbnail">./subsets/carouselimagesource/thumbnail.xml</include>
+	</subset>
   <subset name="storyboards" displayName="${animationsSubsetName}">
-    <include name="yes" displayName="${yes}">./storyboards.xml</include>
+    <include name="yes" displayName="${yes}">./subsets/storyboards.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
 </theme>
