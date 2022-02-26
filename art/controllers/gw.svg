@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg7916"
+   width="622.56018"
+   height="357.06393"
+   viewBox="0 0 747.07222 428.47672"
+   sodipodi:docname="gw.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7920" />
+  <sodipodi:namedview
+     id="namedview7918"
+     pagecolor="#000000"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="13.194444"
+     inkscape:cx="457.3137"
+     inkscape:cy="279.39791"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer4"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <sodipodi:guide
+       position="451.3839,270.09037"
+       orientation="1,0"
+       id="guide7983" />
+    <sodipodi:guide
+       position="-55.544298,473.04553"
+       orientation="-0.70710678,-0.70710678"
+       id="guide8897" />
+    <sodipodi:guide
+       position="-106.47742,-82.074086"
+       orientation="1,0"
+       id="guide9185" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Body"
+     transform="translate(-12.328313,-67.20575)">
+    <rect
+       style="fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect9081"
+       width="745.0722"
+       height="426.47672"
+       x="13.328313"
+       y="68.20575"
+       rx="6.5130105"
+       ry="6.513011"
+       inkscape:label="Body Outer Edge" />
+    <rect
+       style="fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8774"
+       width="717.12952"
+       height="398.35419"
+       x="27.532898"
+       y="81.762627"
+       rx="6.5130105"
+       ry="6.51301"
+       inkscape:label="Body Inner Edge" />
+    <rect
+       style="fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8007"
+       width="380.76865"
+       height="255.92447"
+       x="195.99631"
+       y="150.01816"
+       rx="13.928"
+       ry="13.807204"
+       inkscape:label="Screen" />
+    <rect
+       style="fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect9763"
+       width="430.17401"
+       height="322.05316"
+       x="170.1545"
+       y="118.69106"
+       rx="6.51301"
+       ry="6.5130105"
+       inkscape:label="Screen ridge" />
+    <path
+       id="rect9895"
+       style="fill:none;stroke:#f4f4f4;stroke-width:1.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 315.03596,422.52681 H 195.86901 c -7.21086,0 -13.01599,-4.77287 -13.01599,-10.7015 V 147.38932 c 0,-5.92863 5.80513,-10.7015 13.01599,-10.7015 h 130.88576 m 118.78762,0 H 575.9988 c 7.21087,0 13.016,4.77287 13.016,10.7015 v 264.43599 c 0,5.92863 -5.80513,10.7015 -13.016,10.7015 H 457.53194"
+       sodipodi:nodetypes="cssssccssssc"
+       inkscape:label="Screen Decoration" />
+    <rect
+       style="fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect9739"
+       width="88.803947"
+       height="74.486839"
+       x="46.171185"
+       y="128.39211"
+       rx="6.51301"
+       ry="6.51301"
+       inkscape:label="Logo Indent" />
+  </g>
+  <g
+     id="layer4"
+     inkscape:label="Buttons"
+     inkscape:groupmode="layer"
+     transform="translate(-12.328313,-67.20575)">
+    <rect
+       style="display:inline;fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8256"
+       width="32.213367"
+       height="18.705021"
+       x="645.56104"
+       y="110.11829"
+       ry="6.5130119"
+       inkscape:label="Game A"
+       rx="6.5130119" />
+    <rect
+       style="display:inline;fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8360"
+       width="32.213367"
+       height="18.705021"
+       x="645.56104"
+       y="160.11829"
+       ry="6.5130119"
+       inkscape:label="Game B"
+       rx="6.5130119" />
+    <rect
+       style="display:inline;fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8442"
+       width="32.213367"
+       height="18.705021"
+       x="645.56104"
+       y="212.11829"
+       ry="6.5130119"
+       inkscape:label="Time"
+       rx="6.5130119" />
+    <ellipse
+       style="fill:none;stroke:#f4f4f4;stroke-width:1.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path8546"
+       cx="710.88806"
+       cy="145.57681"
+       rx="7.75"
+       ry="6.8499999"
+       inkscape:label="Alarm" />
+    <ellipse
+       style="fill:none;stroke:#f4f4f4;stroke-width:1.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="ellipse8628"
+       cx="710.78253"
+       cy="196.54434"
+       rx="7.75"
+       ry="6.8499999"
+       inkscape:label="ACL" />
+    <circle
+       style="fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path8652"
+       cx="673.03503"
+       cy="374.70261"
+       r="26"
+       inkscape:label="Right" />
+    <circle
+       style="fill:none;stroke:#f4f4f4;stroke-width:2.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle8734"
+       cx="99.035027"
+       cy="374.70261"
+       r="26"
+       inkscape:label="Left" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.2px;line-height:1.25;font-family:TrasksHand;-inkscape-font-specification:TrasksHand;fill:#f4f4f4;fill-opacity:0.5;stroke-width:1.2"
+       x="540.5025"
+       y="404.08655"
+       id="text37280"
+       inkscape:label="Signature"><tspan
+         sodipodi:role="line"
+         style="fill:#f4f4f4;fill-opacity:0.5;stroke-width:1.2"
+         x="540.5025"
+         y="404.08655"
+         id="tspan45325">John Loreth 2022</tspan></text>
+  </g>
+</svg>

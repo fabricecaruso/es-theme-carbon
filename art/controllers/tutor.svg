@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg73571"
+   width="193.06004"
+   height="361.44577"
+   viewBox="0 0 328.20207 614.45781"
+   sodipodi:docname="tutor.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:export-filename="/home/john/Batocera Theme/controllers/Finished/tutor.png"
+   inkscape:export-xdpi="123.8"
+   inkscape:export-ydpi="123.8"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs73575" />
+  <sodipodi:namedview
+     id="namedview73573"
+     pagecolor="#000000"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="8.4821429"
+     inkscape:cx="180.49684"
+     inkscape:cy="345.13684"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer8"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     scale-x="1.7">
+    <sodipodi:guide
+       position="68.921221,989.86571"
+       orientation="1,0"
+       id="guide841" />
+    <sodipodi:guide
+       position="68.921221,-17.610805"
+       orientation="0,-1"
+       id="guide856" />
+    <sodipodi:guide
+       position="-210.51448,272.62985"
+       orientation="1,0"
+       id="guide891" />
+    <sodipodi:guide
+       position="343.89057,66.286887"
+       orientation="1,0"
+       id="guide893" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Body"
+     transform="translate(111.33861,203.84766)">
+    <circle
+       style="fill:none;stroke:#f4f4f4;stroke-width:3.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="circle73948"
+       cx="53.92907"
+       cy="146.72784"
+       r="123.14381"
+       inkscape:label="Joystick Circle" />
+    <path
+       id="path928"
+       style="fill:none;stroke:#f4f4f4;stroke-width:3.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -84.517418,-202.84766 -25.778212,612.45783 h 326.12062 l -23.13734,-612.45783 m -276.871095,0 H 192.35369 c 0.18502,0 0.33397,0.14896 0.33397,0.33398 v 585.72231 c 0,0.18502 -0.14895,0.33397 -0.33397,0.33397 H -84.183445 c -0.185021,0 -0.333973,-0.14895 -0.333973,-0.33397 v -585.72231 c 0,-0.18502 0.148952,-0.33398 0.333973,-0.33398 z"
+       inkscape:label="Body Outline" />
+    <path
+       style="fill:none;stroke:#f4f4f4;stroke-width:0.9996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 192.30169,383.35699 23.52329,26.25318"
+       id="path1968" />
+    <path
+       style="fill:none;stroke:#f4f4f4;stroke-width:0.9996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -84.451061,383.66765 -25.844579,25.94252"
+       id="path1621" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Buttons"
+     transform="translate(111.33861,203.84766)">
+    <rect
+       style="fill:none;stroke:#f4f4f4;stroke-width:3.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect73973"
+       width="103.85003"
+       height="58.862919"
+       x="62.656433"
+       y="-84.445938"
+       ry="0.27243182"
+       inkscape:label="Right Button" />
+    <rect
+       style="fill:none;stroke:#f4f4f4;stroke-width:3.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect74056"
+       width="103.85003"
+       height="58.862919"
+       x="-57.343567"
+       y="-84.445938"
+       ry="0.27243182"
+       inkscape:label="Left Button" />
+    <circle
+       style="fill:none;stroke:#f4f4f4;stroke-width:3.4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path73782"
+       cx="53.837978"
+       cy="146.72784"
+       r="111.94891"
+       inkscape:label="Circle Button" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.53334px;line-height:1.25;font-family:TrasksHand;-inkscape-font-specification:TrasksHand;fill:#f4f4f4;fill-opacity:0.5;stroke-width:1.7"
+       x="171.34041"
+       y="405.42529"
+       id="text18826"><tspan
+         sodipodi:role="line"
+         id="tspan18824"
+         style="fill:#f4f4f4;fill-opacity:0.5;stroke-width:1.7"
+         x="171.34041"
+         y="405.42529">John Loreth 2022</tspan></text>
+  </g>
+</svg>
