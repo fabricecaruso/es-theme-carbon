@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg870"
+   width="279.83279"
+   height="152.11555"
+   viewBox="0 0 475.71575 258.59644"
+   sodipodi:docname="tutor.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs874">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter48090"
+       x="-0.037060117"
+       y="-0.13649323"
+       width="1.0990501"
+       height="1.3648037">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood48080" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite48082" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="5.88436"
+         result="blur"
+         id="feGaussianBlur48084" />
+      <feOffset
+         dx="9.5"
+         dy="9.5"
+         result="offset"
+         id="feOffset48086" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite48088" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter48102"
+       x="-0.030980078"
+       y="-0.13697504"
+       width="1.0828001"
+       height="1.3660914">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood48092" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite48094" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="5.88436"
+         result="blur"
+         id="feGaussianBlur48096" />
+      <feOffset
+         dx="9.5"
+         dy="9.5"
+         result="offset"
+         id="feOffset48098" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite48100" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview872"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="1.052175"
+     inkscape:cx="253.76007"
+     inkscape:cy="120.22715"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g876"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     scale-x="1.7" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Tomy Tutor Logo"
+     id="g876"
+     transform="translate(-431.09844,-252.41808)">
+    <text
+       xml:space="preserve"
+       style="font-size:133.333px;line-height:1.25;font-family:RockoFLF;-inkscape-font-specification:RockoFLF;letter-spacing:-1.91px;display:inline;fill:#dc1c27;fill-opacity:1;filter:url(#filter48090)"
+       x="470.3056"
+       y="368.27362"
+       id="text2436"
+       inkscape:label="Tomy"><tspan
+         sodipodi:role="line"
+         id="tspan2434"
+         x="470.3056"
+         y="368.27362"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:133.333px;font-family:RockoUltraFLF;-inkscape-font-specification:'RockoUltraFLF Bold';fill:#dc1c27;fill-opacity:1">TOMY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:132.864px;line-height:1.25;font-family:RockoFLF;-inkscape-font-specification:RockoFLF;fill:#dc1c27;fill-opacity:1;stroke-width:0.999999;filter:url(#filter48102)"
+       x="459.70172"
+       y="467.14835"
+       id="text16817"
+       transform="scale(0.96376522,1.0375971)"
+       inkscape:label="Tutor"><tspan
+         sodipodi:role="line"
+         id="tspan16815"
+         x="459.70172"
+         y="467.14835"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:132.864px;font-family:RockoUltraFLF;-inkscape-font-specification:'RockoUltraFLF Bold';fill:#dc1c27;fill-opacity:1;stroke-width:0.999999">TUTOR</tspan></text>
+  </g>
+</svg>

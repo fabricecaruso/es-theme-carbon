@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg824"
+   width="566.9295"
+   height="183.47061"
+   viewBox="0 0 566.9295 183.47061"
+   sodipodi:docname="n64dd.png"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs828" />
+  <sodipodi:namedview
+     id="namedview826"
+     pagecolor="#000000"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     scale-x="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.5548589"
+     inkscape:cx="348.58468"
+     inkscape:cy="34.408266"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g830" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Nintendo64DD"
+     id="g830"
+     transform="translate(-33.488207,-16.007093)">
+    <g
+       id="g1064"
+       inkscape:label="N64 Logo"
+       transform="matrix(1.842197,0,0,1.7840047,33.488207,16.007093)"
+       style="stroke-width:0.551612">
+      <polygon
+         id="polygon3542"
+         fill="#1747ce"
+         points="51.491,27.772 62.829,32.113 65.865,28.707 65.865,5.553 51.491,11.127 39.613,32.324 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3558"
+         fill="#1747ce"
+         points="88.391,87.288 66.938,59.29 66.938,96.307 51.491,102.842 51.491,39.606 66.938,33.69 88.391,64.354 88.391,25.369 102.98,19.742 102.98,81.161 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3560"
+         fill="#1747ce"
+         points="14.589,54.652 14.589,87.288 28.277,81.227 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3538"
+         fill="#069330"
+         points="29.178,19.742 36.044,33.689 39.613,32.324 51.491,11.127 37.117,5.535 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3540"
+         fill="#069330"
+         points="62.829,32.113 73.807,19.742 88.391,25.369 88.391,64.354 66.938,33.69 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3552"
+         fill="#069330"
+         points="14.589,25.369 0,19.742 0,81.161 14.589,87.288 14.589,54.652 36.044,96.307 51.491,102.842 51.491,39.606 36.044,33.689 36.044,65.792 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3554"
+         fill="#cc130e"
+         points="14.589,25.369 29.178,19.742 36.044,33.689 36.044,65.792 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3556"
+         fill="#cc130e"
+         points="66.938,74.586 71.321,80.73 88.391,87.288 66.938,59.29 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3544"
+         fill="#ffc001"
+         points="36.044,33.689 51.491,27.772 66.938,33.689 51.491,39.606 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3546"
+         fill="#ffc001"
+         points="102.98,19.742 88.391,25.369 73.802,19.742 88.391,14.129 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3548"
+         fill="#ffc001"
+         points="29.178,19.742 14.589,25.369 0,19.742 14.589,14.129 "
+         style="stroke-width:0.306452" />
+      <polygon
+         id="polygon3550"
+         fill="#ffc001"
+         points="37.117,5.535 51.491,11.127 65.865,5.553 51.491,0 "
+         style="stroke-width:0.306452" />
+    </g>
+    <g
+       id="g1257"
+       inkscape:label="Nintendo 64"
+       transform="matrix(0.37779196,0,0,0.36594239,197.15361,9.5213948)"
+       style="stroke-width:2.68947">
+      <polygon
+         id="polygon3518"
+         fill="#1747ce"
+         points="144.403,81.252 144.403,53.834 144.533,53.834 154.07,81.252 175.447,81.252 175.447,33.752 160.984,33.752 160.984,60.989 160.859,60.989 151.323,33.752 129.948,33.752 129.948,81.252 "
+         style="display:inline;stroke-width:5.37894" />
+      <polygon
+         id="polygon3520"
+         fill="#1747ce"
+         points="225.056,81.252 225.056,53.834 225.181,53.834 234.714,81.252 256.089,81.252 256.089,33.752 241.636,33.752 241.636,60.989 241.505,60.989 231.968,33.752 210.595,33.752 210.595,81.252 "
+         style="display:inline;stroke-width:5.37894" />
+      <polygon
+         id="polygon3522"
+         fill="#1747ce"
+         points="363.914,81.252 363.914,53.834 364.041,53.834 373.578,81.252 394.957,81.252 394.957,33.752 380.498,33.752 380.498,60.989 380.369,60.989 370.833,33.752 349.457,33.752 349.457,81.252 "
+         style="display:inline;stroke-width:5.37894" />
+      <polygon
+         id="polygon3524"
+         fill="#1747ce"
+         points="202.009,33.752 202.009,81.252 184.179,81.252 184.179,33.752 "
+         style="display:inline;stroke-width:5.37894" />
+      <polygon
+         id="polygon3526"
+         fill="#1747ce"
+         points="290.416,46.655 290.416,81.252 272.591,81.252 272.591,46.655 261.261,46.655 261.261,33.752 301.785,33.752 301.785,46.655 "
+         style="display:inline;stroke-width:5.37894" />
+      <polygon
+         id="polygon3536"
+         fill="#1747ce"
+         points="340.906,51.27 340.906,63.448 324.597,63.448 324.597,68.777 342.875,68.777 342.875,81.236 307.05,81.236 307.05,33.739 342.31,33.739 342.31,46.303 324.597,46.303 324.597,51.27 "
+         style="stroke-width:5.37894" />
+      <path
+         id="path3528"
+         fill="#1747ce"
+         d="m 402.63,33.752 h 21.123 c 18.016,0 23.75,10.197 23.75,24.275 0,14.343 -8.848,23.226 -22.684,23.226 H 402.63 Z m 17.453,36.707 h 1.738 c 2.867,0 4.789,-0.879 5.912,-2.787 1.184,-1.975 1.316,-5.572 1.316,-10.172 0,-4.604 -0.135,-8.194 -1.316,-10.172 -1.123,-1.91 -3.045,-2.789 -5.912,-2.789 h -1.738 z"
+         style="stroke-width:5.37894" />
+      <path
+         id="path3530"
+         fill="#1747ce"
+         d="m 475.451,32.506 c 15.521,0 23.244,10.193 23.244,24.995 0,14.806 -7.725,25.002 -23.244,25.002 -15.523,0 -23.246,-10.196 -23.246,-25.002 0,-14.802 7.72,-24.995 23.246,-24.995 z m 0,37.959 c 2.738,0 4.801,-1.346 4.801,-12.965 0,-11.357 -1.939,-12.961 -4.801,-12.961 -2.865,0 -4.801,1.604 -4.801,12.961 0,11.62 2.058,12.965 4.801,12.965 z"
+         style="stroke-width:5.37894" />
+      <polygon
+         id="polygon3566"
+         fill="#1747ce"
+         points="160.859,60.989 151.323,33.752 129.948,33.752 129.948,81.252 144.403,81.252 144.403,53.834 144.533,53.834 154.07,81.252 175.447,81.252 175.447,33.752 160.984,33.752 160.984,60.989 "
+         style="stroke-width:5.37894" />
+      <polygon
+         id="polygon3568"
+         fill="#1747ce"
+         points="241.505,60.989 231.968,33.752 210.595,33.752 210.595,81.252 225.056,81.252 225.056,53.834 225.181,53.834 234.714,81.252 256.089,81.252 256.089,33.752 241.636,33.752 241.636,60.989 "
+         style="stroke-width:5.37894" />
+      <polygon
+         id="polygon3570"
+         fill="#1747ce"
+         points="380.369,60.989 370.833,33.752 349.457,33.752 349.457,81.252 363.914,81.252 363.914,53.834 364.041,53.834 373.578,81.252 394.957,81.252 394.957,33.752 380.498,33.752 380.498,60.989 "
+         style="stroke-width:5.37894" />
+      <polygon
+         id="polygon3572"
+         fill="#1747ce"
+         points="202.009,33.752 202.009,81.252 184.179,81.252 184.179,33.752 "
+         style="stroke-width:5.37894" />
+      <polygon
+         id="polygon3574"
+         fill="#1747ce"
+         points="261.261,46.655 261.261,33.752 301.785,33.752 301.785,46.655 290.416,46.655 290.416,81.252 272.591,81.252 272.591,46.655 "
+         style="stroke-width:5.37894" />
+      <polygon
+         id="polygon3576"
+         fill="#1747ce"
+         points="340.906,51.27 340.906,63.448 324.597,63.448 324.597,68.777 342.875,68.777 342.875,81.236 307.05,81.236 307.05,33.739 342.31,33.739 342.31,46.303 324.597,46.303 324.597,51.27 "
+         style="stroke-width:5.37894" />
+      <path
+         id="path3532"
+         fill="#cc130e"
+         d="m 530.583,27.436 c -0.949,-0.083 -1.871,-0.044 -3.158,0.014 -7.521,0.348 -10.563,3.553 -11.594,7.174 h 0.182 c 1.873,-1.637 4.188,-2.401 7.289,-2.401 5.965,0 11.414,4.338 11.414,12.476 0,7.787 -5.986,13.852 -14.02,13.852 -10.584,0 -15.188,-8.083 -15.188,-16.75 0,-7.041 2.498,-13.004 6.598,-16.85 3.902,-3.615 8.934,-5.441 15.092,-5.582 1.631,-0.094 2.6,0 3.385,0.071 z m -10.021,23.456 c 2.439,0 3.918,-2.491 3.918,-5.673 -0.02,-2.686 -1.25,-5.613 -4.52,-5.613 -1.998,0 -3.555,1.266 -4.143,2.795 -0.229,0.469 -0.314,1.137 -0.314,2.27 0.209,3.035 1.672,6.222 4.998,6.222 z"
+         style="stroke-width:5.37894" />
+      <path
+         id="path3534"
+         fill="#cc130e"
+         d="m 553.365,57.911 v -8.524 h -15.846 v -6.811 l 12.723,-22.671 h 12.66 v 21.673 h 4.027 v 7.809 h -4.027 v 8.524 z m 0,-16.333 v -6.531 c 0,-2.414 0.145,-4.922 0.268,-7.565 h -0.207 c -1.178,2.565 -2.203,5.007 -3.543,7.657 l -3.113,6.326 -0.033,0.115 z"
+         style="stroke-width:5.37894" />
+    </g>
+    <g
+       id="g37400"
+       inkscape:label="64DD"
+       style="fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:166.838px;line-height:1.25;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Heavy';fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="236.67172"
+         y="160.88766"
+         id="text4022"
+         transform="scale(1.0087415,0.99133429)"><tspan
+           sodipodi:role="line"
+           id="tspan4020"
+           x="236.67172"
+           y="160.88766"
+           style="fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">6</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:167.237px;line-height:1.25;font-family:'Myriad Pro';-inkscape-font-specification:'Myriad Pro Heavy';fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="313.71243"
+         y="159.86403"
+         id="text8086"
+         transform="scale(1.0063339,0.99370599)"><tspan
+           sodipodi:role="line"
+           id="tspan8084"
+           x="313.71243"
+           y="159.86403"
+           style="fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:147.696px;line-height:1.25;font-family:'Zurich Extra Black';-inkscape-font-specification:'Zurich Extra Black,  Bold';fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="513.14624"
+         y="153.85445"
+         id="text37306"
+         transform="scale(0.95487464,1.0472579)"><tspan
+           sodipodi:role="line"
+           id="tspan37304"
+           x="513.14624"
+           y="153.85445"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Zurich Extra Black';-inkscape-font-specification:'Zurich Extra Black,  Bold';fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">D</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:147.696px;line-height:1.25;font-family:'Zurich Extra Black';-inkscape-font-specification:'Zurich Extra Black,  Bold';fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="416.79865"
+         y="153.85445"
+         id="text37390"
+         transform="scale(0.95487464,1.0472579)"><tspan
+           sodipodi:role="line"
+           id="tspan37388"
+           x="416.79865"
+           y="153.85445"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Zurich Extra Black';-inkscape-font-specification:'Zurich Extra Black,  Bold';fill:#fdfffb;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">D</tspan></text>
+    </g>
+  </g>
+</svg>
