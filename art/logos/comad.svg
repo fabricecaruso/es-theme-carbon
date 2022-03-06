@@ -235,7 +235,7 @@
   </defs>
   <sodipodi:namedview
      id="namedview4"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#111111"
      borderopacity="1"
      inkscape:pageshadow="0"
@@ -244,9 +244,9 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="2.0600378"
-     inkscape:cx="158.73495"
-     inkscape:cy="91.017749"
+     inkscape:zoom="0.72833335"
+     inkscape:cx="241.64759"
+     inkscape:cy="107.78032"
      inkscape:window-width="1366"
      inkscape:window-height="703"
      inkscape:window-x="0"
@@ -279,6 +279,18 @@
      id="g8"
      style="display:inline"
      transform="translate(-0.82695851,-36.252083)">
+    <text
+       xml:space="preserve"
+       style="font-size:2.8px;line-height:1.25;font-family:TrasksHand;-inkscape-font-specification:TrasksHand;display:inline;fill:#ffffff;fill-opacity:0.5;stroke-width:1.4"
+       x="424.86157"
+       y="188.18108"
+       id="text3191"
+       inkscape:label="Signature"><tspan
+         sodipodi:role="line"
+         id="tspan3189"
+         style="fill:#ffffff;fill-opacity:0.5;stroke-width:1.4"
+         x="424.86157"
+         y="188.18108">John Loreth 2022</tspan></text>
     <path
        id="path1062"
        style="display:inline;opacity:0.98;fill:none;fill-opacity:0.996078;stroke:#14a83b;stroke-width:22;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -287,7 +299,7 @@
     <g
        id="g918"
        inkscape:label="O"
-       style="fill:#14a83b;fill-opacity:0.996078">
+       style="display:inline;fill:#14a83b;fill-opacity:0.996078">
       <path
          style="opacity:0.98;fill:none;fill-opacity:0.996078;stroke:#14a53a;stroke-width:22;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path1337"
@@ -309,7 +321,7 @@
     <g
        id="g923"
        inkscape:label="M"
-       style="fill:none;fill-opacity:0.996078;stroke:#14a53a;stroke-opacity:1">
+       style="display:inline;fill:none;fill-opacity:0.996078;stroke:#14a53a;stroke-opacity:1">
       <path
          id="rect1589"
          style="display:inline;opacity:0.98;fill:none;fill-opacity:0.996078;stroke:#14a53a;stroke-width:22;stroke-linecap:butt;stroke-opacity:1"
@@ -328,7 +340,7 @@
     <g
        id="g927"
        inkscape:label="A"
-       style="fill:#14a83b;fill-opacity:0.996078">
+       style="display:inline;fill:#14a83b;fill-opacity:0.996078">
       <path
          id="path10782"
          style="display:inline;opacity:0.98;fill:none;fill-opacity:0.996078;stroke:#14a53a;stroke-width:22;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -345,7 +357,7 @@
     <g
        id="g931"
        inkscape:label="D"
-       style="fill:#14a83b;fill-opacity:0.996078">
+       style="display:inline;fill:#14a83b;fill-opacity:0.996078">
       <path
          id="rect6450"
          style="display:inline;opacity:0.98;fill:none;fill-opacity:0.996078;stroke:#14a239;stroke-width:22;stroke-linecap:round;stroke-opacity:1"
@@ -359,7 +371,8 @@
     </g>
     <g
        id="g936"
-       inkscape:label="Hat">
+       inkscape:label="Hat"
+       style="display:inline">
       <path
          style="display:inline;opacity:0.98;fill:none;fill-opacity:1;stroke:#149f38;stroke-width:7;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="M 205.3427,116.12848 C 218.05963,84.597443 244.40429,56.876476 293.7741,55.484385 269.46268,67.472414 245.9395,86.667075 234.89474,124.2144 Z"
@@ -379,7 +392,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.3959px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.401671px;fill:#14a239;fill-opacity:1;stroke-width:1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.3959px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.401671px;display:inline;fill:#14a239;fill-opacity:1;stroke-width:1"
        x="-0.85209304"
        y="250.8885"
        id="text46133"
@@ -392,7 +405,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.3959px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';fill:#14a239;fill-opacity:1;stroke-width:1">COMAD</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.121px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.418411px;fill:#14a239;fill-opacity:1;stroke-width:1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.121px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.418411px;display:inline;fill:#14a239;fill-opacity:1;stroke-width:1"
        x="163.90639"
        y="261.34409"
        id="text72116"
@@ -405,7 +418,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.121px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';fill:#14a239;fill-opacity:1;stroke-width:1">INDUSTRY</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.121px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.418411px;fill:#14a239;fill-opacity:1;stroke-width:1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.121px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.418411px;display:inline;fill:#14a239;fill-opacity:1;stroke-width:1"
        x="397.27155"
        y="261.34409"
        id="text74214"
@@ -418,7 +431,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.121px;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';fill:#14a239;fill-opacity:1;stroke-width:1">CO.,</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:44.9601px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.436254px;fill:#14a239;fill-opacity:1;stroke-width:1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:44.9601px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';letter-spacing:-0.436254px;display:inline;fill:#14a239;fill-opacity:1;stroke-width:1"
        x="474.95084"
        y="272.48941"
        id="text76744"
