@@ -2,13 +2,6 @@
 <!--Generator: Xara Xtreme (www.xara.com), SVG filter version: 1.0.0.13-->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    stroke-width="0.501"
    stroke-linejoin="bevel"
    fill-rule="evenodd"
@@ -18,8 +11,15 @@
    height="86.4pt"
    viewBox="0 0 417.6 86.4"
    id="svg98"
-   sodipodi:docname="naomi2.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   sodipodi:docname="naomi-w.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata102">
     <rdf:RDF>
@@ -40,14 +40,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
+     inkscape:window-width="1106"
+     inkscape:window-height="482"
      id="namedview100"
      showgrid="false"
      inkscape:zoom="1.813485"
-     inkscape:cx="299.44222"
-     inkscape:cy="48.915612"
-     inkscape:current-layer="Layer 1" />
+     inkscape:cx="566.31293"
+     inkscape:cy="49.076778"
+     inkscape:current-layer="Layer 1"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="pt"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0" />
   <defs
      id="defs79">
     <marker
@@ -314,16 +319,6 @@
         <path
            d="m 370.488,5.711 0.208,78.34 h 12.642 L 383.13,5.711 h -12.642"
            id="path87"
-           inkscape:connector-curvature="0"
-           style="fill:#ffffff;stroke:none" />
-        <path
-           d="m 394.943,71.201 v 10.983 h -3.524 v 2.073 h 9.743 V 82.184 H 397.43 V 71.201 h -2.487"
-           id="path89"
-           inkscape:connector-curvature="0"
-           style="fill:#ffffff;stroke:none" />
-        <path
-           d="m 401.782,71.407 v 12.85 h 3.524 l 3.729,-8.084 3.524,8.084 h 2.695 V 71.201 h -2.487 v 8.495 l -3.523,-8.495 -4.975,8.495 v -8.495 l -2.487,0.206"
-           id="path91"
            inkscape:connector-curvature="0"
            style="fill:#ffffff;stroke:none" />
         <path
