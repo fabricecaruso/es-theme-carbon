@@ -50,7 +50,7 @@
 		<image name="md_manual,md_nomanual">
 			<origin>0.5 0.5</origin>
 			<pos>0.976 0.42</pos>
-			<path>./../art/book.png</path>
+			<path>./../art/icons/book.svg</path>
 			<maxSize>0.02 0.03</maxSize>
 			<color>dddddd</color>
 		</image>
