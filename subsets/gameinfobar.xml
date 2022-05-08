@@ -61,7 +61,7 @@
 		
 		<image name="md_cheevos,md_notcheevos">
 			<origin>0.5 0.5</origin>
-			<path>./../art/icons/Contest.png</path>
+			<path>./../art/icons/Contest.svg</path>
 			<pos>0.976 0.47</pos>
 			<maxSize>0.02 0.03</maxSize>     
 			<color>dddddd</color>
@@ -74,7 +74,7 @@
 
     <image name="md_savestate,md_nosavestate">
       <origin>0.5 0.5</origin>
-      <path>./../art/icons/SaveState.png</path>
+      <path>./../art/icons/SaveState.svg</path>
       <pos>0.976 0.52</pos>
       <y ifCheevos="false">0.47</y>
       <maxSize>0.02 0.03</maxSize>
@@ -161,7 +161,7 @@
 		<image name="genreImage" extra="true">
 			<origin>1 0.5</origin>
 			<pos>0.57 0.91</pos>
-			<path>./../art/icons/Games.png</path>
+			<path>./../art/icons/Games.svg</path>
 			<maxSize>0.025 0.04</maxSize>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>100</zIndex>

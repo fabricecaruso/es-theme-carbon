@@ -82,7 +82,7 @@ originally based on: "simple" by nils bonenberger
     </image>
     
     <image name="md_cheevos, md_notcheevos">
-      <path>./art/icons/Contest.png</path>
+      <path>./art/icons/Contest.svg</path>
       <pos>0.0225 0.766</pos>
       <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
@@ -95,7 +95,7 @@ originally based on: "simple" by nils bonenberger
     </image>
 
     <image name="md_savestate, md_nosavestate">
-      <path>./art/icons/SaveState.png</path>
+      <path>./art/icons/SaveState.svg</path>
       <pos>0.0225 0.720</pos>
       <maxSize>0.02 0.03</maxSize>
       <pos ifCheevos="false">0.0225 0.766</pos>
@@ -109,7 +109,7 @@ originally based on: "simple" by nils bonenberger
     </image>
 
     <image name="md_manual, md_nomanual">
-      <path>./art/book.png</path>
+      <path>./art/icons/book.svg</path>
       <pos>0.98 0.812</pos>
       <pos>0.0225 0.812</pos>
       <maxSize>0.02 0.028</maxSize>
