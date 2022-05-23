@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="50"
+   height="50"
+   viewBox="0 0 50 50"
+   sodipodi:docname="Shutdown.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect824"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ff1bff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="69.920003"
+     inkscape:cx="17.548626"
+     inkscape:cy="9.689645"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8">
+    <sodipodi:guide
+       position="25.080446,41.019582"
+       orientation="1,0"
+       id="guide2529" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="ShutdownIcon"
+     id="g8">
+    <path
+       id="path849"
+       style="color:#000000;display:inline;fill:#ffffff;fill-opacity:1;stroke-linecap:square;-inkscape-stroke:none"
+       d="m 33.26115,8.531207 -1.637534,3.076258 c -0.129756,0.243758 -0.03221,0.536471 0.213089,0.663267 4.549895,2.351897 7.688335,7.023965 7.869828,12.473521 0.0092,0.275966 0.0092,0.723819 0,0.999796 -0.256116,7.690736 -6.400742,13.837155 -14.091403,14.093341 -0.27597,0.0092 -0.723827,0.0092 -0.999804,0 -7.690736,-0.256193 -13.837155,-6.402616 -14.093341,-14.093353 -0.0092,-0.27597 -0.0092,-0.723827 0,-0.999804 0.180797,-5.42772 3.29527,-10.08517 7.816094,-12.446232 0.244749,-0.127824 0.341884,-0.421384 0.212122,-0.665139 L 16.914643,8.560498 C 16.784881,8.316743 16.478731,8.2178784 16.23456,8.3468404 10.30504,11.478601 6.2043597,17.636098 6.0201436,24.744205 c -0.00715,0.276037 -0.00715,0.723838 -3.1e-6,0.99988 0.2623006,10.126315 8.4688475,18.332858 18.5951655,18.59515 0.276033,0.0071 0.72383,0.0071 0.999872,-1e-6 10.126258,-0.2623 18.330966,-8.468847 18.593199,-18.595165 0.0071,-0.276033 0.0071,-0.72383 -10e-7,-0.999872 C 44.023692,17.614055 39.900483,11.438828 33.941947,8.3161088 33.697367,8.1879309 33.390906,8.2874488 33.26115,8.531207 Z"
+       inkscape:path-effect="#path-effect824"
+       inkscape:original-d="m 33.496094,8.0898438 -2.107422,3.9589842 c 4.932081,2.337906 8.326172,7.353919 8.326172,13.195313 0,8.09 -6.50961,14.601563 -14.59961,14.601562 -8.089999,0 -14.601562,-6.511563 -14.601562,-14.601562 0,-5.819351 3.369038,-10.820718 8.271484,-13.169922 L 16.679688,8.1191406 C 10.370454,11.243002 6.0136716,17.74798 6.0136719,25.244141 c 0,10.521977 8.5795851,19.101562 19.1015621,19.101562 10.521979,10e-7 19.09961,-8.579584 19.09961,-19.101562 0,-7.518232 -4.379988,-14.041253 -10.71875,-17.1542972 z" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.567951"
+       id="rect2221"
+       width="4.2128506"
+       height="21.108276"
+       x="22.909664"
+       y="4.0369797"
+       ry="0.63040799"
+       rx="0.63040799" />
+  </g>
+</svg>

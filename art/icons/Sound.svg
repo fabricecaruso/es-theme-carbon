@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="50"
+   height="50"
+   viewBox="0 0 50 50"
+   sodipodi:docname="Sound.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect905"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0.5"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect903"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 | F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1 @ F,0,0,1,0,0.5,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0.5"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ff3dff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="8.74"
+     inkscape:cx="24.942792"
+     inkscape:cy="25"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="SoundIcon"
+     id="g8">
+    <path
+       d="m 29.356267,6.4055868 0,4.4520992 c 0,0.276142 0.219641,0.543777 0.487824,0.609525 5.813072,1.425132 10.183265,6.821447 10.407343,13.020832 0.01,0.275946 0.01,0.723833 0,0.99978 -0.224079,6.199384 -4.594272,11.595698 -10.407345,13.020832 -0.268182,0.06575 -0.487822,0.333383 -0.487822,0.609525 v 4.4521 c 0,0.276142 0.221717,0.46876 0.493861,0.421988 8.830055,-1.517597 15.617977,-9.300085 15.855976,-18.504398 0.0071,-0.276039 0.0071,-0.72384 0,-0.999882 C 45.468102,15.283674 38.680178,7.5011924 29.850122,5.983598 29.577982,5.936826 29.356267,6.1294444 29.356267,6.4055868 Z m 0,10.9041962 v 15.356296 c 0,0.276142 0.216746,0.442208 0.475819,0.346856 2.709329,-0.997163 4.786182,-3.939256 4.963929,-7.525207 0.01367,-0.275775 0.0137,-0.723819 -5.3e-5,-0.99959 -0.1783,-3.574539 -2.259443,-6.352845 -4.972934,-7.49944 -0.254303,-0.107457 -0.466761,0.04494 -0.466761,0.321085 z"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1"
+       id="path981"
+       inkscape:label="Waves"
+       inkscape:path-effect="#path-effect903"
+       inkscape:original-d="m 29.356267,5.9055868 v 5.4520992 c 6.212665,1.267609 10.904197,7.049563 10.904197,13.630246 0,6.580682 -4.691532,12.362635 -10.904197,13.630248 v 5.4521 c 9.230404,-1.330313 16.356296,-9.489381 16.356296,-19.082348 0,-9.592969 -7.125892,-17.7520313 -16.356296,-19.0823452 z m 0,10.9041962 v 16.356296 c 3.066803,-0.8478 5.452098,-4.157222 5.452098,-8.178147 0,-4.020924 -2.385295,-7.120444 -5.452098,-8.178149 z" />
+    <path
+       d="M 24.212267,6.976776 12.630646,18.558397 A 1.2071068,1.2071068 157.5 0 1 11.777093,18.91195 H 4.5846074 a 0.5,0.5 135 0 0 -0.5,0.5 v 11.288727 a 0.5,0.5 45 0 0 0.5,0.5 h 7.1924856 a 1.2071066,1.2071066 22.500003 0 1 0.853553,0.353553 l 11.581621,11.581624 a 0.20710675,0.20710675 157.5 0 0 0.353553,-0.146447 l 0,-35.8661844 A 0.20710678,0.20710678 22.5 0 0 24.212267,6.976776 Z"
+       id="path867"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:1"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:label="Horn"
+       inkscape:path-effect="#path-effect905"
+       inkscape:original-d="M 24.56582,6.6232226 12.277093,18.91195 H 4.0846074 v 12.288727 h 8.1924856 l 12.288727,12.28873 z" />
+  </g>
+</svg>

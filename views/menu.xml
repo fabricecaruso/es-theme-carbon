@@ -53,22 +53,22 @@ originally based on: "simple" by nils bonenberger
       <scrollbarAlignment>innerright</scrollbarAlignment>
     </menuBackground>
     <menuIcons name="menuicons">
-      <iconKodi>./../art/icons/Kodi.png</iconKodi>
-      <iconSystem>./../art/icons/System.png</iconSystem>
-      <iconUpdates>./../art/icons/Updates.png</iconUpdates>
-      <iconGames>./../art/icons/Games.png</iconGames>
-      <iconControllers>./../art/icons/Controllers.png</iconControllers>
-      <iconUI>./../art/icons/UI.png</iconUI>
-      <iconSound>./../art/icons/Sound.png</iconSound>
-      <iconNetwork>./../art/icons/Network.png</iconNetwork>
-      <iconScraper>./../art/icons/Scraper.png</iconScraper>
-      <iconAdvanced>./../art/icons/Advanced.png</iconAdvanced>
-      <iconQuit>./../art/icons/Quit.png</iconQuit>
-      <iconRestart>./../art/icons/Restart.png</iconRestart>
-      <iconShutdown>./../art/icons/Shutdown.png</iconShutdown>
-      <iconFastShutdown>./../art/icons/Fastshutdown.png</iconFastShutdown>
-      <iconRetroachievements>./../art/icons/Contest.png</iconRetroachievements>
-      <iconManual>./../art/icons/Manual.png</iconManual>
+      <iconKodi>./../art/icons/Kodi.svg</iconKodi>
+      <iconSystem>./../art/icons/System.svg</iconSystem>
+      <iconUpdates>./../art/icons/Updates.svg</iconUpdates>
+      <iconGames>./../art/icons/Games.svg</iconGames>
+      <iconControllers>./../art/icons/Controllers.svg</iconControllers>
+      <iconUI>./../art/icons/UI.svg</iconUI>
+      <iconSound>./../art/icons/Sound.svg</iconSound>
+      <iconNetwork>./../art/icons/Network.svg</iconNetwork>
+      <iconScraper>./../art/icons/Scraper.svg</iconScraper>
+      <iconAdvanced>./../art/icons/Advanced.svg</iconAdvanced>
+      <iconQuit>./../art/icons/Quit.svg</iconQuit>
+      <iconRestart>./../art/icons/Restart.svg</iconRestart>
+      <iconShutdown>./../art/icons/Shutdown.svg</iconShutdown>
+      <iconFastShutdown>./../art/icons/Fastshutdown.svg</iconFastShutdown>
+      <iconRetroachievements>./../art/icons/Contest.svg</iconRetroachievements>
+      <iconManual>./../art/icons/Manual.svg</iconManual>
     </menuIcons>
     <menuTextEdit name="menutextedit">
       <inactive>./../art/textinput_ninepatch.png</inactive>
