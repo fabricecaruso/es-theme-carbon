@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-carbon
+author: Fabrice CARUSO
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+<theme>
+  <variables>
+    <corners>7</corners>
+  </variables>
+  <customView name="Icons">
+    <control name="md_players, md_manual,md_nomanual, md_rating, iconsBk, iconsLine,md_cheevos,md_notcheevos, md_savestate,md_nosavestate, md_kidgame, md_notkidgame, md_hidden, md_releasedate, md_flag">
+      <visible>false</visible>
+    </control>
+    <imagegrid name="gamegrid">
+      <autoLayout>3 5</autoLayout>
+      <itemTemplate>
+        <container>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <padding>0 0 0 3</padding>
+          <storyboard event="activate">
+            <animation property="padding" to="-2" duration="400" mode="easeOut"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="padding" to="0" duration="400" mode="easeOut"/>
+          </storyboard>
+          <image>
+            <path>./../art/white.png</path>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <color>141416</color>
+            <color ifSubset="colorset:blue">121824</color>
+            <color ifSubset="colorset:red">241212</color>
+            <color ifSubset="colorset:green">182816</color>
+            <color ifSubset="colorset:cyan">142626</color>
+            <color ifSubset="colorset:yellow">303016</color>
+            <color ifSubset="colorset:violet">301630</color>
+            <color ifSubset="colorset:orange">302416</color>
+            <zIndex>2</zIndex>
+            <roundCorners>${corners}</roundCorners>
+            <image name="shade">
+              <path>./../art/bg.png</path>
+              <pos>0 0</pos>
+              <origin>0 0</origin>
+              <size>1 1</size>
+              <color>FFFFFF16</color>
+              <roundCorners>${corners}</roundCorners>
+            </image>
+          </image>
+          <container padding="-8" zIndex="1">
+            <ninepatch>
+              <pos>0 0</pos>
+              <size>1 1</size>
+              <path>./../art/framew.png</path>
+              <cornerSize>20 20</cornerSize>
+              <padding>-2 -2</padding>
+              <color>000000B0</color>
+              <zIndex>3</zIndex>
+              <storyboard event="activate" repeat="forever">
+                <animation property="path" to="./../art/framewsel.png"/>
+                <animation property="padding" to="-15 -15"/>
+                <animation property="cornerSize" to="36 36"/>
+                <animation property="color" from="${baseColor}" to="FFFF80FF" duration="1500" mode="easeOut"/>
+                <animation property="color" from="FFFF80FF" to="${baseColor}" begin="1500" duration="1500" mode="easeOut"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="path" to="./../art/framew.png"/>
+                <animation property="color" to="000000B0"/>
+                <animation property="padding" to="-2 -2"/>
+                <animation property="cornerSize" to="20 20"/>
+              </storyboard>
+            </ninepatch>
+          </container>
+          <stackpanel>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <container name="spacer" w="0.01"/>
+            <container>
+              <w>{grid:h}</w>
+              <!--
+              <image>
+                <path>./../art/white.png</path>
+                <pos>0 0</pos>
+                <origin>0 0</origin>
+                <size>1 1</size>
+                <color>FF0000C0</color>
+              </image>
+              -->
+              <image name="imageMarquee">
+                <path>{game:marquee}</path>
+                <origin>0.5</origin>
+                <pos>0.5</pos>
+                <maxSize>0.95 0.75</maxSize>
+                <linearSmooth>true</linearSmooth>
+                <zIndex>40</zIndex>
+                <color>white</color>
+                <!--
+                <shader path=":/shaders/pixelate.glsl">
+                  <pixelSize>4</pixelSize>
+                </shader>
+                <storyboard event="activate">
+                  <animation property="shader.pixelSize" to="0" duration="400" mode="easeOut"/>
+                </storyboard>
+                <storyboard event="deactivate">
+                  <animation property="shader.pixelSize" to="4" duration="400" mode="easeOut"/>
+                </storyboard>-->
+              </image>
+            </container>
+            <container name="atright">
+              <padding>10 10 15 10</padding>
+              <container>
+                <stackpanel reverse="true">
+                  <stackpanel name="panelFav" orientation="vertical" w="{grid:h} * 0.25" separator="4">
+                    <image name="favoriteIcon">
+                      <!--<visible>{game:favorite}</visible>-->
+                      <path>./../resources/fontoverrides/F006.png</path>
+                      <pos>0 0</pos>
+                      <origin>0 0</origin>
+                      <maxSize>1 1</maxSize>
+                      <horizontalAlignment>right</horizontalAlignment>
+                      <saturation>{game:favorite} ? 1 : 0</saturation>
+                      <opacity>{game:favorite} ? 1 : 0.2</opacity>
+                      <color>FFFFFFFF</color>
+                    </image>
+                    <image>
+                      <visible>{game:folder}</visible>
+                      <path>./../resources/fontoverrides/F07C.png</path>
+                      <pos>0 0</pos>
+                      <origin>0 0</origin>
+                      <maxSize>1 1</maxSize>
+                      <horizontalAlignment>right</horizontalAlignment>
+                      <color>FFFFFFFF</color>
+                    </image>
+                    <image>
+                      <path>./../resources/fontoverrides/F091.png</path>
+                      <pos>0 0</pos>
+                      <origin>0 0</origin>
+                      <maxSize>1 1</maxSize>
+                      <horizontalAlignment>right</horizontalAlignment>
+                      <saturation>{game:cheevos} ? 1 : 0</saturation>
+                      <opacity>{game:cheevos} ? 1 : 0.2</opacity>
+                      <color>FFFFFFFF</color>
+                    </image>
+                    <image>
+                      <path>./../resources/fontoverrides/F0C7.png</path>
+                      <pos>0 0</pos>
+                      <origin>0 0</origin>
+                      <maxSize>1 1</maxSize>
+                      <horizontalAlignment>right</horizontalAlignment>
+                      <saturation>{game:savestate} ? 1 : 0</saturation>
+                      <opacity>{game:savestate} ? 1 : 0.2</opacity>
+                      <color>FFFFFFFF</color>
+                    </image>
+                  </stackpanel>
+                  <container>
+                    <size>1 1</size>
+                    <image>
+                      <path>./../art/white.png</path>
+                      <pos>0 0</pos>
+                      <origin>0 0</origin>
+                      <size>1 1</size>
+                      <color>FF000000</color>
+                    </image>
+                    <text>
+                      <pos>0 0</pos>
+                      <size>1 0.36</size>
+                      <!--<text>{game:favorite} ? {game:path} : {grid:label}</text>-->
+                      <text>{game:name}</text>
+                      <color>FFFFFFFF</color>
+                      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+                      <fontSize>0.028</fontSize>
+                      <glowColor>00000020</glowColor>
+                      <glowSize>1</glowSize>
+                      <multiLine>false</multiLine>
+                    </text>
+                    <text>
+                      <pos>0 0.43</pos>
+                      <size>1 0.51</size>
+                      <origin>0</origin>
+                      <verticalAlignment>top</verticalAlignment>
+                      <text>{game:desc}</text>
+                      <color>FFFFFFA0</color>
+                      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+                      <fontSize>0.018</fontSize>
+                      <autoScroll>vertical</autoScroll>
+                      <multiLine>true</multiLine>
+                    </text>
+                  </container>
+                </stackpanel>
+              </container>
+            </container>
+          </stackpanel>
+        </container>
+      </itemTemplate>
+    </imagegrid>
+  </customView>
+</theme>

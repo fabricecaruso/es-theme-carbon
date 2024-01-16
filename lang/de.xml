@@ -4,11 +4,17 @@
   <!-- Deutsch -->
   <variables lang="de">
     <dateFormat>%d.%m.%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>Region</subset.region>
-    <!-- Farbsätze -->
-    <subset.colorset>Farbschema</subset.colorset>
+    <!-- Gemeinsame Ansichten -->
+    <gameCarouselViewName>Nachtclub-Karussell</gameCarouselViewName>
+    <basicGridName>Raster</basicGridName>
+    <tilesViewName>Miniaturansichten</tilesViewName>
+    <carouselViewName>Karussell</carouselViewName>
     <iconsViewName>Symbole</iconsViewName>
+    <contentViewName>Inhalt</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
+    <!-- Farbsätze -->
+    <subset.colorset>Farbschema</subset.colorset> 
     <blue>Blau</blue>
     <red>Rot</red>
     <green>Grün</green>
@@ -17,13 +23,8 @@
     <violet>Violett</violet>
     <orange>Orange</orange>
     <gray>Grau</gray>
-    <!-- Gemeinsame Ansichten -->
-    <tilesViewName>Miniaturansichten</tilesViewName>
-    <basicGridName>Raster</basicGridName>
-    <gameCarouselViewName>Nachtclub-Karussell</gameCarouselViewName>
-    <carouselViewName>Karussell</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
+    <!-- Region -->
+    <subset.region>Region</subset.region>
     <!-- Subset-Option für erweiterte Systeminformationen -->
     <systemViewExInfos>Verbesserte Systeminformationen</systemViewExInfos>
     <yes>Ja</yes>
@@ -31,17 +32,16 @@
     <!-- Subset-Optionen für Bildschirm -->
     <systemViewName>Systemansicht</systemViewName>
     <systemview.darkened>Verdunkelt</systemview.darkened>
+    <systemview.gridName>Bildraster</systemview.gridName>
     <systemview.horizontal>Horizontal</systemview.horizontal>
     <systemview.legacy>Legacy</systemview.legacy>
     <systemview.transparent>Transparent</systemview.transparent>
     <systemview.simple>Einfach</systemview.simple>
     <systemview.vertical>Vertikal</systemview.vertical>
     <systemview.wheel>Karussell</systemview.wheel>
+    <systemview.textlist>Textliste</systemview.textlist>
     <!-- Subset-Option für den Hintergrund der Systemansicht -->
     <systemBackgroundName>Hintergrund</systemBackgroundName>
-    <systembackground.miniconsoles>Minivideo</systembackground.miniconsoles>
-    <animatedBackground>Hintergrundanimationen</animatedBackground>
-    <animatedCovers>Zufällige Spielbox</animatedCovers>
     <!-- Standardeinstellung für kleine Bildschirme ändern -->
     <systembackground.consoles>Videospiele</systembackground.consoles>
     <systembackground.miniconsoles>Mini-Videospiele</systembackground.miniconsoles>
@@ -55,12 +55,16 @@
     <systembackground.minirandomimage>Zufälliges Minibild</systembackground.minirandomimage>
     <systembackground.minirandombox>Mini-Zufallsspielbox</systembackground.minirandombox>
     <systembackground.minirandomvideo>Mini-Zufallsvideo</systembackground.minirandomvideo>
+    <animatedBackground>Hintergrundanimationen</animatedBackground>
+    <animatedCovers>Zufällige Spielbox</animatedCovers>
     <!-- Fix für Controller-Bildgröße -->
     <systemview.simple>einfach</systemview.simple>
     <systemview.vertical>vertikal</systemview.vertical>
     <systemview.wheel>Karussell</systemview.wheel>
     <!-- Fix für Legacy-Option im Systemview-Subset: SystemInfo-Farben müssen nach Anwendung des Systembackground-Subsets wiederhergestellt werden -->
     <systemview.legacy>Legacy</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Unschärfe-Effekte</subset.blurfx>
     <!-- Subset-Optionen für die Hilfe -->
     <helpSubsetName>Hilfesymbole</helpSubsetName>
     <helpbuttons>Position der Tasten</helpbuttons>
@@ -81,6 +85,7 @@
     <!-- Subset-Optionen für Rasteransichten -->
     <videoboxesSubsetName>Video im Boxmodus anzeigen</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoomboxen</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>Orientierung</orientationSubsetName>
     <vertical>Vertikal</vertical>
     <horizontal>Horizontal</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>Blinkende Rahmen</blinkBorderSubsetName>
     <videosSubsetName>Videos</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Miniaturansichten</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Karussell-Bildquelle</gamecarouseltype>
     <marquee>Marquise</marquee>
     <image>Bild</image>
     <text>Text</text>
     <thumbnail>Miniaturbild</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>Content Background</contentBackground>
+    <fanart>Fanart</fanart>
     <animationsSubsetName>Übergangsanimationen</animationsSubsetName>
   </variables>  
 </theme>

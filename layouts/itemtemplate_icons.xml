@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-carbon
+author: Fabrice CARUSO
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+<theme>
+  <variables>
+    <corners>7</corners>
+  </variables>
+  <customView name="Icons,Tiles">
+    <control name="md_players, md_manual,md_nomanual, md_rating, iconsBk, iconsLine,md_cheevos,md_notcheevos, md_savestate,md_nosavestate, md_kidgame, md_notkidgame, md_hidden, md_releasedate, md_flag">
+      <visible>false</visible>
+    </control>
+  </customView>
+  <customView name="Tiles">
+    <imagegrid name="gamegrid">
+      <autoLayout>5 3</autoLayout>
+    </imagegrid>
+    <text name="gridtile" visible="false"/>
+    <image name="gridtile.marquee" visible="false"/>
+    <image name="gridtile.image">
+      <origin>0.5 0.5</origin>
+      <maxSize>0.9 0.8</maxSize>
+      <roundCorners>0</roundCorners>
+      <zIndex>4</zIndex>
+    </image>
+    <image name="gridtile.overlay">
+      <path>./../art/white.png</path>
+      <tile>true</tile>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <size>1 1</size>
+      <color>141416</color>
+      <color ifSubset="colorset:blue">121824</color>
+      <color ifSubset="colorset:red">241212</color>
+      <color ifSubset="colorset:green">182816</color>
+      <color ifSubset="colorset:cyan">142626</color>
+      <color ifSubset="colorset:yellow">303016</color>
+      <color ifSubset="colorset:violet">301630</color>
+      <color ifSubset="colorset:orange">302416</color>
+      <zIndex>2</zIndex>
+      <roundCorners>${corners}</roundCorners>
+      <image name="shade">
+        <path>./../art/bg.png</path>
+        <pos>0 0</pos>
+        <origin>0 0</origin>
+        <size>1 1</size>
+        <color>FFFFFF16</color>
+        <roundCorners>${corners}</roundCorners>
+      </image>
+    </image>
+  </customView>
+  <customView name="Icons">
+    <imagegrid name="gamegrid">
+      <autoLayout>5 3</autoLayout>
+      <itemTemplate>
+        <container>
+          <pos>0 0</pos>
+          <size>1 0.82</size>
+          <storyboard event="activate">
+            <animation property="scale" to="1.05" duration="400" mode="easeOut"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="scale" from="1.05" to="1" duration="400" mode="easeOut"/>
+          </storyboard>
+          <ninepatch name="background">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./../art/framew.png</path>
+            <cornerSize>20 20</cornerSize>
+            <padding>-2 -2</padding>
+            <edgeColor>000000B0</edgeColor>
+            <centerColor>000000A0</centerColor>
+            <zIndex>1</zIndex>
+            <storyboard event="activate" repeat="forever">
+              <animation property="path" to="./../art/framewsel.png"/>
+              <animation property="padding" to="-15 -15"/>
+              <animation property="cornerSize" to="36 36"/>
+              <animation property="color" from="${baseColor}" to="FFFF80FF" duration="1500" mode="easeOut"/>
+              <animation property="color" from="FFFF80FF" to="${baseColor}" begin="1500" duration="1500" mode="easeOut"/>              
+            </storyboard>
+            <storyboard event="deactivate">
+              <animation property="path" to="./../art/framew.png"/>
+              <animation property="color" to="000000B0"/>
+              <animation property="padding" to="-2 -2"/>
+              <animation property="cornerSize" to="20 20"/>
+            </storyboard>
+          </ninepatch>
+        </container>
+        <container>
+          <pos>0 0</pos>
+          <size>1 0.82</size>
+          <padding>8 8 8 8</padding>
+          <storyboard event="activate">
+            <animation property="scale" to="1.05" duration="400" mode="easeOut"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="scale" from="1.05" to="1" duration="400" mode="easeOut"/>
+          </storyboard>
+          <image>
+            <visible>exists({game:image})</visible>
+            <path>{game:image}</path>
+            <default>:/cartridge.svg</default>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <minSize>1 1</minSize>
+            <roundCorners>${corners}</roundCorners>
+            <linearSmooth>true</linearSmooth>
+            <zIndex>4</zIndex>
+            <color>A0A0A0</color>
+            <storyboard event="activate">
+              <animation property="color" to="white" duration="400" mode="easeOut"/>
+            </storyboard>
+            <storyboard event="deactivate">
+              <animation property="color" to="A0A0A0" duration="400" mode="easeOut"/>
+            </storyboard>
+          </image>
+          <container name="no_image">
+            <visible>!exists({game:image})</visible>
+            <image name="overlay">
+              <path>./../art/white.png</path>
+              <pos>0 0</pos>
+              <origin>0 0</origin>
+              <size>1 1</size>
+              <color>141416</color>
+              <color ifSubset="colorset:blue">121824</color>
+              <color ifSubset="colorset:red">241212</color>
+              <color ifSubset="colorset:green">182816</color>
+              <color ifSubset="colorset:cyan">142626</color>
+              <color ifSubset="colorset:yellow">303016</color>
+              <color ifSubset="colorset:violet">301630</color>
+              <color ifSubset="colorset:orange">302416</color>
+              <zIndex>2</zIndex>
+              <roundCorners>${corners}</roundCorners>
+            </image>
+            <image name="shade">
+              <path>./../art/bg.png</path>
+              <pos>0 0</pos>
+              <origin>0 0</origin>
+              <size>1 1</size>
+              <color>FFFFFF18</color>
+              <roundCorners>${corners}</roundCorners>
+              <zIndex>3</zIndex>
+              <storyboard event="activate" repeat="forever">
+                <animation property="color" from="FFFFFF18" to="FFFF0032" begin="0" duration="400" mode="easeOut"/>
+                <animation property="color" from="FFFF0032" to="FFFFFF18" begin="400" duration="400" mode="easeOut"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="color" to="FFFFFF18" duration="400" mode="easeOut"/>
+              </storyboard>
+            </image>
+            <image>
+              <visible>exists({game:marquee})</visible>
+              <path>{game:marquee}</path>
+              <origin>0.5 0.5</origin>
+              <pos>0.5 0.5</pos>
+              <maxSize>0.85 0.7</maxSize>
+              <linearSmooth>true</linearSmooth>
+              <zIndex>4</zIndex>
+              <color>FFFFFFA0</color>
+            </image>
+            <image>
+              <visible>exists({game:wheel}) &amp;&amp; !exists({game:marquee})</visible>
+              <path>{game:wheel}</path>
+              <origin>0.5 0.5</origin>
+              <pos>0.5 0.5</pos>
+              <maxSize>0.85 0.7</maxSize>
+              <linearSmooth>true</linearSmooth>
+              <zIndex>4</zIndex>
+              <color>FFFFFFA0</color>
+            </image>
+            <image>
+              <visible>!exists({game:marquee}) &amp;&amp; !exists({game:wheel})</visible>
+              <path>:/cartridge.svg</path>
+              <origin>0.5 0.5</origin>
+              <pos>0.5 0.5</pos>
+              <maxSize>0.85 0.7</maxSize>
+              <linearSmooth>true</linearSmooth>
+              <zIndex>4</zIndex>
+              <color>FFFFFFA0</color>
+            </image>
+          </container>
+          <container >
+            <!--<clipChildren>true</clipChildren>-->
+            <video>
+              <visible>exists({game:video})</visible>
+              <path>{game:video}</path>
+              <pos>0.5 0.5</pos>
+              <origin>0.5 0.5</origin>
+              <minSize>1 1</minSize>
+              <roundCorners>${corners}</roundCorners>
+              <linearSmooth>true</linearSmooth>
+              <zIndex>8</zIndex>
+              <enabled>false</enabled>
+              <storyboard event="activate">
+                <animation property="opacity" to="0"/>
+                <animation property="scale" to="0"/>
+                <animation property="enabled" begin="1300" to="true"/>
+                <animation property="opacity" begin="1500" from="0" to="1" duration="250"/>
+                <animation property="scale" begin="1500" from="0.5" to="1" duration="250" mode="easeOut"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="enabled" to="false" begin="150"/>
+                <animation property="opacity" from="1" to="0" duration="150"/>
+                <animation property="scale" from="1" to="0.5" duration="150"/>
+              </storyboard>
+            </video>
+          </container>
+          <stackpanel name="stack" extra="true">
+            <pos>0.2 0.05</pos>
+            <size>0.77 0.12</size>
+            <orientation>horizontal</orientation>
+            <reverse>true</reverse>
+            <image name="favoriteIcon">
+              <visible>{game:favorite}</visible>
+              <path>./../resources/fontoverrides/F006.png</path>
+              <pos>0 0</pos>
+              <origin>0 0</origin>
+              <maxSize>1 1</maxSize>
+              <horizontalAlignment>right</horizontalAlignment>
+              <color>FFFFFFFF</color>
+            </image>
+            <!--
+            <image>
+              <visible>{game:kidGame}</visible>
+              <path>./../art/kid.svg</path>
+              <linearSmooth>true</linearSmooth>
+              <pos>0 0</pos>
+              <maxSize>1 1</maxSize>
+              <padding>3 3</padding>
+              <horizontalAlignment>right</horizontalAlignment>
+              <color>E0E0E0E0</color>
+            </image>-->
+          </stackpanel>
+        </container>
+        <text>
+          <pos>0.05 0.82</pos>
+          <size>0.88 0.18</size>
+          <!--<text>{grid:label}</text>-->
+          <text>{game:name}</text>
+          <color>FFFFFFA0</color>
+          <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+          <fontSize>0.020</fontSize>
+          <alignment>center</alignment>
+          <glowColor>${glowColor}</glowColor>
+          <glowSize>0</glowSize>
+          <storyboard event="activate">
+            <animation property="color" to="FFFFFFFF"/>
+            <animation property="glowSize" to="2"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" to="FFFFFFA0"/>
+            <animation property="glowSize" to="0"/>
+          </storyboard>
+        </text>
+      </itemTemplate>
+    </imagegrid>
+  </customView>
+</theme>

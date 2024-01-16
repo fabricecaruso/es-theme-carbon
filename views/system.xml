@@ -38,7 +38,14 @@ originally based on: "simple" by nils bonenberger
       <path>./../art/logos/${system.theme}-${lang}.png</path>
       <path>./../art/logos/${system.theme}-${lang}.svg</path>
       <linearSmooth>true</linearSmooth>
-    </image>    
+    </image>
+    <!-- custom collections logos -->
+    <image name="logo" if="{system.collection}">
+      <path>./../art/logos/collections/${system.theme}.png</path>
+      <path>./../art/logos/collections/${system.theme}.svg</path>
+      <path>./../art/logos/collections/${system.theme}-w.png</path>
+      <path>./../art/logos/collections/${system.theme}-w.svg</path>
+    </image>
     <!-- ui items listed into region theme settings -->
     <image name="logo" region="eu"/>
     <image name="logo" region="br">
@@ -53,6 +60,7 @@ originally based on: "simple" by nils bonenberger
       <path>./../art/logos/jp/${system.theme}.png</path>
       <path>./../art/logos/jp/${system.theme}.svg</path>
     </image>
+
     <image name="BottomBar" extra="static">
       <tile>false</tile>
       <size>1 0.065</size>
@@ -72,6 +80,9 @@ originally based on: "simple" by nils bonenberger
       <color>${baseColor}</color>
       <zIndex>19</zIndex>
       <linearSmooth>true</linearSmooth>
+
+  <pos ifSubset="systemview:imagegrid">0.5 0.11</pos>
+      <maxSize ifSubset="systemview:imagegrid">0.33 0.19</maxSize>
     </image>
   </view>
     

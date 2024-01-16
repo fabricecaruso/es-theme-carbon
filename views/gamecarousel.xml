@@ -1,30 +1,70 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--
-Theme: es-theme-carbon
-author: Fabrice CARUSO
-license: creative commons CC-BY-NC-SA
-originally based on: "Carbon" by Eric Hettervik (Rookervik)
-originally based on: "simple" by nils bonenberger
--->
-<theme defaultView="Icons">
+<theme>
+  <!--
+  Theme: es-theme-carbon
+  author: Fabrice CARUSO
+  license: creative commons CC-BY-NC-SA
+  originally based on: "Carbon" by Eric Hettervik (Rookervik)
+  originally based on: "simple" by nils bonenberger
+  -->
   <formatVersion>7</formatVersion>
   <view name="gamecarousel" displayName="${gameCarouselViewName}">
+    <image name="backgroundOpaque" extra="true">
+      <pos>0 0</pos>
+      <size>1 0.160</size>
+      <origin>0 0</origin>
+      <path>./../art/white.png</path>
+      <color>000000FF</color>
+      <zIndex>11</zIndex>
+    </image>
+    <image name="backgroundHeader" extra="true">
+      <tile>false</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <path>./art/bg.png</path>
+      <color>${backgroundColor}</color>
+      <zIndex>12</zIndex>
+      <clipRect>0 0 1 0.160</clipRect>
+    </image>
     <gamecarousel name="gamecarousel">
       <type>vertical_wheel</type>
-      <pos>0 0.162</pos>
-      <size>0.52 0.775</size>
-      <logoScale>4.6</logoScale>
-      <logoSize>0.15 0.12</logoSize>
+      <pos>0 0.1</pos>
+      <size>0.52 0.9</size>
+      <logoScale>3.5</logoScale>
+      <logoSize>0.15 0.15</logoSize>
+      <logoAlignment>top</logoAlignment>
       <maxLogoCount>15</maxLogoCount>
-      <imageSource>marquee</imageSource> <!-- text, image, thumbnail, marquee -->
+      <imageSource>marquee</imageSource>
+      <!-- text, image, thumbnail, marquee -->
       <zIndex>10</zIndex>
-    </gamecarousel>    
+    </gamecarousel>
+    <image name="gamecarouselLogo">
+      <linearSmooth>true</linearSmooth>
+      <shader>:/shaders/shadow.glsl</shader>
+    </image>
     <text name="gamecarouselLogoText">
       <color>FFFFFFFF</color>
       <glowColor>000000FF</glowColor>
       <glowSize>4</glowSize>
       <lineSpacing>1.0</lineSpacing>
     </text>
+    <control name="gamecarouselLogo,gamecarouselLogoText">
+      <storyboard event="activate">
+        <animation property="opacity" to="1" duration="150" mode="EaseOut"/>
+        <animation property="offsetY" to="-0.19" begin="1400" duration="450" mode="bump"/>
+      </storyboard>
+      <storyboard event="scroll">
+        <animation property="opacity" to="0.5" duration="150" mode="EaseOut"/>
+        <animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+        <animation property="offsetY" to="0" duration="100" mode="EaseOut"/>
+      </storyboard>
+      <storyboard event="deactivate">
+        <animation property="opacity" to="0.5" duration="150" mode="EaseOut"/>
+        <animation property="opacity" to="0" begin="1400" duration="600" mode="EaseOut"/>
+        <animation property="offsetY" to="0" duration="100" mode="EaseOut"/>
+      </storyboard>
+    </control>
     <video name="md_video">
       <pos>0.76 0.408</pos>
       <maxSize>0.46 0.436</maxSize>
@@ -32,113 +72,88 @@ originally based on: "simple" by nils bonenberger
       <delay>1.4</delay>
       <showSnapshotNoVideo>true</showSnapshotNoVideo>
       <showSnapshotDelay>true</showSnapshotDelay>
-      <loops>1</loops>
-      <roundCorners>0.02</roundCorners>
+      <loops>0</loops>
+      <!--<roundCorners>0.02</roundCorners>-->
+      <effect>size</effect>
+      <shader>
+        <path>:/shaders/border.glsl</path>
+        <cornerRadius>0.03</cornerRadius>
+        <borderSize>0.012</borderSize>
+        <borderColor>${gradientEndColor}</borderColor>
+        <innerShadowSize>0.01</innerShadowSize>
+        <innerShadowColor>00000030</innerShadowColor>
+        <outerShadowSize>0.020</outerShadowSize>
+        <outerShadowColor>00000050</outerShadowColor>
+      </shader>
     </video>
-
+    <image name="md_thumbnail">
+      <pos>0.25 0.72</pos>
+      <maxSize>0.40 0.35</maxSize>
+      <origin>0.5 0.5</origin>
+      <color>FFFFFFFF</color>
+      <gradientType>horizontal</gradientType>
+      <linearSmooth>true</linearSmooth>
+      <zIndex>30</zIndex>
+      <opacity>0</opacity>
+      <scale>0</scale>
+      <shader>
+        <path>:/shaders/border.glsl</path>
+        <cornerRadius>0.03</cornerRadius>
+        <borderSize>1</borderSize>
+        <borderColor>00000090</borderColor>
+        <innerShadowSize>0</innerShadowSize>
+        <outerShadowSize>0.022</outerShadowSize>
+        <outerShadowColor>00000050</outerShadowColor>
+      </shader>
+      <storyboard>
+        <animation property="opacity" begin="1400" from="0" to="1" duration="400" mode="EaseOut"/>
+        <animation property="scale" begin="1400" from="0" to="1" duration="400" mode="bump"/>
+      </storyboard>
+    </image>
     <image name="md_fanart">
-      <minSize>1 0.775</minSize>
       <pos>0.5 0.55</pos>
+      <minSize>1 0.9</minSize>
       <origin>0.5 0.5</origin>
       <color>FFFFFF80</color>
-<colorEnd>FFFFFF30</colorEnd>
-<gradientType>horizontal</gradientType>
+      <colorEnd>FFFFFF30</colorEnd>
+      <gradientType>horizontal</gradientType>
       <linearSmooth>true</linearSmooth>
+      <autoFade>false</autoFade>
       <zIndex>9</zIndex>
     </image>
-    
-<!--
-    <image name="background">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>10</zIndex>      
-    </image>
-    
-    <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
-      <path>./art/background/${system.theme}.jpg</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <minSize>1 1</minSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF12</color>
-      <zIndex>11</zIndex>
-    </image>
-  
-    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
-      <path>./art/consoles/default.png</path>
-      <path>./art/consoles/${system.theme}.png</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.25 0.52</pos>
-      <maxSize>0.4 0.4</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF09</color>
-      <zIndex>11</zIndex>
-    </image>
-    -->
     <image name="detailsBk" extra="true">
       <path>./../art/white.png</path>
-      <color>000000A0</color>
-      <colorEnd>00000000</colorEnd>
+      <color>00000000</color>
+      <colorEnd>00000090</colorEnd>
       <gradientType>horizontal</gradientType>
       <origin>0 0</origin>
       <pos>0.53 0.16</pos>
-      <size>0.4 0.774</size>
+      <size>0.47 0.774</size>
       <zIndex>12</zIndex>
     </image>
-
-    <image name="detailsBkR" extra="true">
-      <path>./../art/filter.png</path>
-      <color>00000000</color>
-      <colorEnd>00000010</colorEnd>
-      <gradientType>horizontal</gradientType>
-      <origin>0 0</origin>
-      <pos>0.525 0.16</pos>
-      <size>0.005 0.774</size>
-      <zIndex>12</zIndex>
-    </image>
-      
-   <!--
-    <image name="detailsBkLine" extra="true">
-      <path>./art/white.png</path>
-      <color>${glowColor}</color>
-      <origin>0 0</origin>
-      <pos>0.526 0.16</pos>
-      <size>0.003 0.775</size>
-      <size ifHelpPrompts="false">0.003 0.84</size>
-      <zIndex>14</zIndex>
-    </image>
- -->
     <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
       <storyboard>
         <animation property="opacity" from="0" duration="350" mode="easeOut"/>
       </storyboard>
-    </text>    
+    </text>
     <text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
       <color>969696</color>
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.023</fontSize>
     </text>
-    
     <text name="md_genre, md_developer, md_publisher, md_lastplayed, md_releasedate, md_players">
       <color>969696</color>
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.023</fontSize>
     </text>
-
     <text name="md_lbl_rating, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_lbl_developer">
       <pos>1 1</pos>
     </text>
-
     <datetime name="md_lastplayed">
       <pos>1 1</pos>
     </datetime>
-    
     <image name="md_flag">
       <origin>0 0.5</origin>
       <pos>0.55 0.9</pos>
@@ -156,10 +171,10 @@ originally based on: "simple" by nils bonenberger
       <pos>0.94 0.886</pos>
       <size>0.05 0.03</size>
       <size verticalScreen="true">0.05 0.02</size>
-      <horizontalAlignment>right</horizontalAlignment>      
+      <horizontalAlignment>right</horizontalAlignment>
       <color>FFFF00</color>
       <unfilledColor>808080</unfilledColor>
-  <unfilledPath>:/star_filled.svg</unfilledPath>
+      <unfilledPath>:/star_filled.svg</unfilledPath>
     </rating>
     <text name="md_lbl_players">
       <pos>0.9 0.645</pos>
@@ -190,43 +205,32 @@ originally based on: "simple" by nils bonenberger
       <forceUppercase>0</forceUppercase>
       <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.023</fontSize>
+      <glowColor>000000A0</glowColor>
+      <glowSize>1</glowSize>
     </text>
-
     <image name="md_hidden">
       <path>./art/hidden.svg</path>
       <pos>0.975 0.21</pos>
-      <maxSize>0.02 0.03</maxSize>      
+      <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
       <color>969696</color>
       <zIndex>150</zIndex>
     </image>
-
-    <image name="md_kidgame">     
+    <image name="md_kidgame">
       <path>./art/kid.svg</path>
       <pos>0.86 0.9</pos>
-      <maxSize>0.02 0.03</maxSize>      
+      <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
       <color>969696</color>
       <zIndex>150</zIndex>
     </image>
-
     <image name="md_manual">
       <path>./art/manual.svg</path>
       <pos>0.882 0.9</pos>
-      <maxSize>0.02 0.03</maxSize>      
+      <maxSize>0.02 0.03</maxSize>
       <origin>0.5 0.5</origin>
       <color>969696</color>
       <zIndex>150</zIndex>
     </image>
-
-<!--
-    <image name="md_favorite">
-      <pos>0.975 0.21</pos>
-      <maxSize>0.02 0.03</maxSize>      
-      <path>./art/favorite.svg</path>
-      <origin>0.5 0.5</origin>
-      <color>969696</color>
-      <zIndex>60</zIndex>
-    </image>-->
   </view>
 </theme>

@@ -11,7 +11,7 @@ originally based on: "simple" by nils bonenberger
   <view name="menu">
     <menuText name="menutitle">
       <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
-      <fontSize>0.038</fontSize>
+      <fontSize>0.034</fontSize>
       <color>FAFAFA</color>
     </menuText>
     <menuText name="menufooter">
@@ -21,10 +21,10 @@ originally based on: "simple" by nils bonenberger
     </menuText>
     <menuText name="menutext">
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.028</fontSize>
+      <fontSize>0.026</fontSize>
       <fontSize tinyScreen="true">0.034</fontSize>
       <color>969696</color>
-      <separatorColor>202020</separatorColor>
+      <separatorColor>00000000</separatorColor>
       <selectorColor>${baseColor}</selectorColor>
       <selectorColorEnd>${gradientEndColor}</selectorColorEnd>
       <selectedColor>FFFFFF</selectedColor>
@@ -39,7 +39,7 @@ originally based on: "simple" by nils bonenberger
       <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.018</fontSize>
       <color>${groupColor}</color>
-     <!-- <separatorColor>${groupSeparatorColor}</separatorColor>-->
+  <!-- <separatorColor>${groupSeparatorColor}</separatorColor>-->
       <backgroundColor>00000000</backgroundColor>
       <lineSpacing>2.5</lineSpacing>
     </menuGroup>

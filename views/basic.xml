@@ -16,9 +16,8 @@ originally based on: "simple" by nils bonenberger
       <origin>0 0</origin>
       <path>./../art/bg.png</path>
       <color>${backgroundColor}</color>
-      <zIndex>10</zIndex>      
+      <zIndex>10</zIndex>
     </image>
-    
     <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
       <path>./../art/background/${system.theme}.jpg</path>
       <linearSmooth>true</linearSmooth>
@@ -28,7 +27,6 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF12</color>
       <zIndex>11</zIndex>
     </image>
-    
     <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
       <path>./../art/consoles/default.png</path>
       <path>./../art/consoles/${system.theme}.png</path>
@@ -39,37 +37,121 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF09</color>
       <zIndex>11</zIndex>
     </image>
-
-    <textlist name="gamelist">    
+    <textlist name="gamelist">
+      <pos>0.025 0.18</pos>
+      <size>0.950 0.73</size>
+      <size ifHelpPrompts="false">0.950 0.76</size>
+      <lines>17</lines>
+      <horizontalMargin>0.005</horizontalMargin>
+      <!--
       <selectorColor>1c1c1c</selectorColor>
       <selectorColor>96969620</selectorColor>
       <selectedColor>${basecolor}</selectedColor>
       <primaryColor>C0C0C0</primaryColor>
       <secondaryColor>F0F0F0</secondaryColor>
-      <extraTextColor>555555</extraTextColor> <!-- extraText color is for texts located between [] or () -->
+      <extraTextColor>555555</extraTextColor>    
       <extraTextSelectedColor>A0A0A0</extraTextSelectedColor>
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.030</fontSize>
-      <pos>0.025 0.18</pos>
-      <size>0.950 0.73</size>
-      <size ifHelpPrompts="false">0.950 0.76</size>
       <alignment>center</alignment>
       <horizontalMargin>0.01</horizontalMargin>
       <forceUppercase>0</forceUppercase>
       <scrollSound>./../art/sounds/scroll.wav</scrollSound>
-      
-      <selectorColor>${centerFadeColor}</selectorColor>      
+      <selectorColor>${centerFadeColor}</selectorColor>
       <selectedColor>FFFFFFFF</selectedColor>
-
-      <scrollbarColor>96969620</scrollbarColor>
-      <scrollbarCorner>0.49</scrollbarCorner>
-      <scrollbarSize>0.0065</scrollbarSize>            
-      <scrollbarAlignment>outerright</scrollbarAlignment> <!-- innerleft -->
-
-      <lines>17</lines>
-      <horizontalMargin>0.005</horizontalMargin>
       <glowColor>000000A0</glowColor>
       <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
+      -->
+      <scrollbarColor>96969620</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.0065</scrollbarSize>
+      <scrollbarAlignment>outerright</scrollbarAlignment>
+      <itemTemplate>
+        <image name="selectionBackground">
+          <path>./../art/white.png</path>
+          <color>transparent</color>
+          <roundCorners>8</roundCorners>
+          <storyboard event="activate">
+            <animation property="color" to="${centerFadeColor}"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="color" to="transparent"/>
+          </storyboard>
+          <container>
+            <padding>6 0</padding>
+            <text name="nameId" pos="0 0" size="1 1">
+              <text>{grid:label}</text>
+              <!--
+              <glowColor>000000A0</glowColor>
+              <glowSize ifArch="windows,x86,x86_64,odroidc4,odroidxu4">1</glowSize>
+              -->
+              <extraTextColor>606060</extraTextColor>
+              <verticalAlignment>center</verticalAlignment>
+              <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
+              <multiLine>false</multiLine>
+              <autoScrollDelay>250</autoScrollDelay>
+              <fontSize>0.026</fontSize>
+              <color>C0C0C0</color>
+              <storyboard event="activate">
+                <animation property="color" to="FFFFFFFF"/>
+                <animation property="singleLineScroll" to="true"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="color" to="C0C0C0"/>
+                <animation property="singleLineScroll" to="false"/>
+              </storyboard>
+            </text>
+            <text name="genreId" pos="0.5 0" size="0.2 1">
+              <text>{game:genre}</text>
+              <verticalAlignment>center</verticalAlignment>
+              <alignment>left</alignment>
+              <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
+              <fontSize>0.016</fontSize>
+              <color>A0A0A0</color>
+              <multiLine>false</multiLine>
+              <autoScrollDelay>250</autoScrollDelay>
+              <storyboard event="activate">
+                <animation property="singleLineScroll" to="true"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="singleLineScroll" to="false"/>
+              </storyboard>
+            </text>
+            <text name="publisherId" pos="0.7 0" size="0.2 1">
+              <text>{game:publisher}</text>
+              <verticalAlignment>center</verticalAlignment>
+              <alignment>left</alignment>
+              <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
+              <fontSize>0.016</fontSize>
+              <color>A0A0A0</color>
+              <multiLine>false</multiLine>
+              <autoScrollDelay>250</autoScrollDelay>
+              <storyboard event="activate">
+                <animation property="singleLineScroll" to="true"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="singleLineScroll" to="false"/>
+              </storyboard>
+            </text>
+            <text name="releasedateId" pos="0.9 0" size="0.1 1">
+              <text>{game:stars}</text>
+              <verticalAlignment>center</verticalAlignment>
+              <alignment>left</alignment>
+              <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
+              <fontSize>0.016</fontSize>
+              <color>FFCC00D0</color>
+              <multiLine>false</multiLine>
+              <autoScrollDelay>250</autoScrollDelay>
+              <storyboard event="activate">
+                <animation property="singleLineScroll" to="true"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="singleLineScroll" to="false"/>
+              </storyboard>
+            </text>
+          </container>
+        </image>
+      </itemTemplate>
     </textlist>
   </view>
 </theme>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-carbon
+author: Fabrice CARUSO
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+<theme>
+  <customView name="Content,Tiles,Icons">
+    <control name="md_players, md_manual,md_nomanual, md_rating, iconsBk, iconsLine,md_cheevos,md_notcheevos, md_savestate,md_nosavestate, md_kidgame, md_notkidgame, md_hidden, md_releasedate, md_flag">
+      <visible>false</visible>
+    </control>
+  </customView>
+  <customView name="Tiles,Icons,Content">
+    <imagegrid name="gamegrid">
+      <size>0.98 0.84</size>
+    </imagegrid>
+  </customView>
+</theme>

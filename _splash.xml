@@ -12,9 +12,9 @@
     <include name="red" displayName="${red}"/>
     <include name="green" displayName="${green}">./art/colors/green.xml</include>
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
-    <include name="violet">./art/colors/violet.xml</include>
-    <include name="cyan">./art/colors/cyan.xml</include>
-    <include name="orange">./art/colors/orange.xml</include>
+    <include name="violetw" displayName="${violet}">./art/colors/violet.xml</include>
+    <include name="cyan" displayName="${cyan}>">./art/colors/cyan.xml</include>
+    <include name="orange" displayName="${orange}>">./art/colors/orange.xml</include>
   </subset>
   <view name="splash">
     <splash name="splash">

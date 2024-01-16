@@ -13,7 +13,8 @@
       <tile>false</tile>
       <linearSmooth>true</linearSmooth>
       <path>{random:fanart}</path>
-      <path>./../../art/background/${system.theme}.jpg</path>
+      <path>${themePath}/art/background/collections/${system.theme}.jpg</path>
+      <path>${themePath}/art/background/${system.theme}.jpg</path>
       <color>FFFFFFFF</color>
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
@@ -23,7 +24,7 @@
     <image name="backgroundFade" extra="static">
       <tile>false</tile>
       <linearSmooth>true</linearSmooth>
-      <path>./../../art/backfade.png</path>
+      <path>${themePath}/art/backfade.png</path>
       <color>FFFFFFFF</color>
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
@@ -31,16 +32,17 @@
       <zIndex>12</zIndex>
     </image>
     <image name="backgroundMachines" extra="true" region="br">
-      <path>./../../art/background/br/${system.theme}.jpg</path>
+      <path>${themePath}/art/background/br/${system.theme}.jpg</path>
     </image>    
     <image name="backgroundMachines" extra="true" region="jp">
-      <path>./../../art/background/jp/${system.theme}.jpg</path>
+      <path>${themePath}/art/background/jp/${system.theme}.jpg</path>
     </image>
     <image name="backgroundMachines" extra="true" region="us">
-      <path>./../../art/background/us/${system.theme}.jpg</path>
+      <path>${themePath}/art/background/us/${system.theme}.jpg</path>
     </image>
     <image name="ControllerOverlay" extra="true">
       <visible>false</visible>
+      <path>none</path>
     </image>
     <text name="systemInfo">
       <glowColor>00000022</glowColor>

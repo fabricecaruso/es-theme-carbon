@@ -18,15 +18,16 @@ originally based on: "simple" by nils bonenberger
       <color>${backgroundColor}</color>
       <zIndex>8</zIndex>      
     </image>
+    <!--
     <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
       <path>./art/background/${system.theme}.jpg</path>
       <linearSmooth>true</linearSmooth>
       <pos>0.5 0.5</pos>
       <minSize>1 1</minSize>
       <origin>0.5 0.5</origin>
-      <color>FFFFFF10</color>
+      <color>FFFFFF04</color>
       <zIndex>9</zIndex>
-    </image>
+    </image>-->
     <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles" ifArch="windows,x86,x86_64,odroidc4,odroidxu4" >
       <path>./art/consoles/default.png</path>
       <path>./art/consoles/${system.theme}.png</path>

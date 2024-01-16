@@ -18,15 +18,14 @@
     </view>
   </feature>
   <view name="system">
-
     <image name="logo">
       <!-- if system2 exists, take this version -->
-      <path verticalScreen="true">./../../art/logos/${system.theme}-w.svg</path>
+      <path>./../../art/logos/${system.theme}-w.svg</path>
     </image>
     <carousel name="systemcarousel">
       <type>vertical_wheel</type>
-      <pos>0 -0.5</pos>
-      <size>0.44 1.5</size>      
+      <pos>0 -0.55</pos>
+      <size>0.44 1.55</size>
       <origin>0 0</origin>
       <color>00000000</color>
       <logoScale>2</logoScale>
@@ -37,6 +36,43 @@
       <maxLogoCount>5</maxLogoCount>
       <systemInfoDelay>0.1</systemInfoDelay>
       <zIndex>13</zIndex>
+      <itemTemplate>
+        <container>
+          <!-- Redefines how the carousel logo is rendered. Here we add a drop shadow to the logo -->
+          <image name="logoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+            <path>{system:logo}</path>
+            <padding>4 4 -4 -4</padding>
+            <color>00000050</color>
+            <!-- <shader path=":/shaders/blur.glsl" blur="3"/> -->
+            <zIndex>1</zIndex>
+          </image>
+          <image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
+            <path>{system:logo}</path>
+            <zIndex>2</zIndex>
+          </image>
+          <text name="substitutionText" color="white" alignment="center" multiLine="true">
+            <visible>!exists({system:logo})</visible>
+            <text>{system:fullName}</text>
+            <fontSize>0.06</fontSize>
+            <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
+            <forceUppercase>false</forceUppercase>
+            <color>white</color>
+            <glowColor>00000010</glowColor>
+            <glowSize>3</glowSize>
+          </text>
+          <storyboard event="activate">
+            <animation property="opacity" to="1" duration="150" mode="Linear"/>
+          </storyboard>
+          <storyboard event="scroll">
+            <animation property="opacity" to="0.6" duration="150" mode="Linear"/>
+            <animation property="opacity" to="0" begin="1000" duration="250" mode="Linear"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="opacity" to="0.6" duration="150" mode="Linear"/>
+            <animation property="opacity" to="0" begin="1000" duration="250" mode="Linear"/>
+          </storyboard>
+        </container>
+      </itemTemplate>
     </carousel>
     <image name="darkwheel" extra="static" tinyScreen="false">
       <tile>false</tile>

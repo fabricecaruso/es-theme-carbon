@@ -32,20 +32,10 @@ originally based on: "simple" by nils bonenberger
       <wheelPath>./art/wheel.svg</wheelPath>
       <activityColor>A0A0FFC0</activityColor>
       <hotkeyColor>FFA0A0C0</hotkeyColor>
-      <!-- wifi 
-      <networkIcon>./art/icons/Network.png</networkIcon>
-      -->
-      <!-- battery 
-      <incharge>./art/battery/incharge.svg</incharge>
-      <full>./art/battery/full.svg</full>
-      <at75>./art/battery/75.svg</at75>
-      <at50>./art/battery/50.svg</at50>
-      <at25>./art/battery/25.svg</at25>
-      <empty>./art/battery/empty.svg</empty>-->
     </controllerActivity>
     <batteryIndicator name="batteryIndicator">
       <pos>0.955 0.012</pos>
-      <pos verticalScreen="true">0.9 0.013</pos>
+      <pos verticalScreen="true">0.9 0.013</pos>      
       <size>0.033 0.0275</size>
       <horizontalAlignment>right</horizontalAlignment>
       <incharge>./art/battery/incharge.svg</incharge>
@@ -55,24 +45,86 @@ originally based on: "simple" by nils bonenberger
       <at25>./art/battery/25.svg</at25>
       <empty>./art/battery/empty.svg</empty>
       <planemodeIcon>./art/icons/Planemode.png</planemodeIcon>
-      <!-- wifi -->
-      <!--    <networkIcon>./art/icons/Network.png</networkIcon>-->
-      <!--<networkIcon>none</networkIcon>-->
       <color>FFFFFFA0</color>
     </batteryIndicator>
     <batteryIndicator name="batteryIndicator" tinyScreen="true">
       <pos>0.915 0.013</pos>
       <size>0.07 0.07</size>
     </batteryIndicator>
+    <!-- Hide batteryIndicator and replace it with a stackpanel -->
     <!--
-    <text name="cheevosUser" extra="true">
-      <text>${cheevos.username}</text>
-      <pos>0.8 0.04</pos>
-      <size>0.187 0.0275</size>
-      <origin>0 0</origin>
-      <alignment>right</alignment>
-      <color>FFFFFF90</color>
-      <fontSize>0.02</fontSize>
-    </text>-->
+    <batteryIndicator name="batteryIndicator">
+      <visible>false</visible>
+    </batteryIndicator>
+    <stackpanel name="batteryIndicatorReplacement" extra="true">
+      <pos>0.70 0.012</pos>
+      <size>0.28 0.0275</size>
+      <pos verticalScreen="true">0.7 0.04</pos>
+      <size verticalScreen="true">0.28 0.023</size>
+      <orientation>horizontal</orientation>
+      <separator>2</separator>
+      <reverse>true</reverse>
+      <batteryText name="ss.batterytext">
+        <fontSize>0.019</fontSize>
+        <fontSize tinyScreen="true">0.025</fontSize>
+        <color>FFFFFFA0</color>
+        <padding>4 0</padding>
+      </batteryText>
+      <batteryIcon name="ss.battery">
+        <incharge>./art/battery/incharge.svg</incharge>
+        <full>./art/battery/full.svg</full>
+        <at75>./art/battery/75.svg</at75>
+        <at50>./art/battery/50.svg</at50>
+        <at25>./art/battery/25.svg</at25>
+        <empty>./art/battery/empty.svg</empty>
+        <planemodeIcon>./art/icons/Planemode.png</planemodeIcon>
+        <maxSize>1 1</maxSize>
+        <linearSmooth>true</linearSmooth>
+        <padding>1 1</padding>
+        <color>FFFFFFA0</color>
+      </batteryIcon>
+      <text name="ss.separator1">
+        <text>-</text>
+        <fontSize>0.01</fontSize>
+        <color>00000000</color>
+      </text>
+      <networkIcon name="ss.network">
+        <networkIcon>./../art/icons/Network.png</networkIcon>
+        <planemodeIcon>./../art/icons/Planemode.png</planemodeIcon>
+        <maxSize>1 1</maxSize>
+        <linearSmooth>true</linearSmooth>
+        <padding>1 1</padding>
+        <color>FFFFFFA0</color>
+      </networkIcon>
+      <text name="ss.separator2">
+        <text>AAAA</text>
+        <fontSize>0.01</fontSize>
+        <color>00000000</color>
+      </text>
+      <text name="ss.cheevosUser" if="${global.cheevos}" tinyScreen="false">
+        <text>${global.cheevos.username}</text>
+        <alignment>center</alignment>
+        <fontSize>0.022</fontSize>
+        <fontSize tinyScreen="true">0.025</fontSize>
+        <color>FFFFFFA0</color>
+      </text>
+      <text name="ss.separator2">
+        <text>AA</text>
+        <fontSize>0.01</fontSize>
+        <color>00000000</color>
+      </text>
+      <webImage name="ss.cheevosUserPic" if="${global.cheevos}" tinyScreen="false">
+        <visible>{global:cheevos}</visible>
+        <linearSmooth>true</linearSmooth>
+        <path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+        <maxSize>1 1</maxSize>
+        <color>FFFFFFFF</color>
+      </webImage>
+    </stackpanel>
+    <stackpanel name="batteryIndicatorReplacement" extra="true" tinyScreen="true">
+      <pos>0.708 0.015</pos>
+      <size>0.28 0.06</size>
+    </stackpanel>
+    -->
   </view>
 </theme>

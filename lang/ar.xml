@@ -8,7 +8,6 @@
     <subset.region>منطقة</subset.region>
     <!-- Colorsets  -->
     <subset.colorset>نظام الألوان</subset.colorset>
-    <iconsViewName>أيقونات</iconsViewName>
     <blue>أزرق</blue>
     <red>أحمر</red>
     <green>أخضر</green>
@@ -17,18 +16,21 @@
     <violet>فيوليتا</violet><!-- I do not know -->
     <orange>برتقالي</orange>
     <gray>رمادي</gray>
-    <!-- Common views  -->
-    <tilesViewName>الصورة المصغرة</tilesViewName>
+    <!-- Common views / Gamelist view -->
+    <gridName>Grid</gridName>
     <basicGridName>شبكة</basicGridName>
-    <gameCarouselViewName>استدارة الإطار</gameCarouselViewName>
     <carouselViewName>مستدير</carouselViewName>
+    <gameCarouselViewName>استدارة الإطار</gameCarouselViewName>
+    <tilesViewName>الصورة المصغرة</tilesViewName>
+    <iconsViewName>أيقونات</iconsViewName>
+    <contentViewName>Content</contentViewName>
     <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
     <subset.carouselViewName>كارروسيل الفرعية</subset.carouselViewName>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>استورد معلومات النظام</systemViewExInfos>
     <yes>نعم</yes>
     <no>لا</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>نظام العرض</systemViewName>
     <systemview.darkened>مظلمة</systemview.darkened> <!-- don't sure --> 
     <systemview.horizontal>أفقي</systemview.horizontal>
@@ -61,13 +63,15 @@
     <systemview.wheel>مستدير</systemview.wheel> <!-- don't sure -->
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>إرث</systemview.legacy> <!-- don't sure -->
+     <!-- Subset options for blur effects -->
+     <subset.blurfx>Blur Effects</subset.blurfx>
       <!-- Subset options for help -->
     <helpSubsetName>أيقونات المساعدة</helpSubsetName>
     <helpbuttons> موقع الزر</helpbuttons>
     <xboxbuttons>أزرار Xbox</xboxbuttons>
     <psxbuttons>أزرار PlayStation</psxbuttons>
     <colored>زاهى الألوان</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen-->
     <subset.shader>المرشحات</subset.shader>
     <none>بدون</none>
     <scanlines>فحص السطر</scanlines>
@@ -98,6 +102,8 @@
     <image>صورة</image>
     <text>نص</text>
     <thumbnail>مينياتورا</thumbnail>
+    <contentBackground>Theme Contentback</contentBackground>
+    <fanart>Fanart</fanart>
     <animationsSubsetName>الانتقالات</animationsSubsetName>
   </variables>  
 </theme>

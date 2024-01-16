@@ -15,6 +15,9 @@
       <maxSize verticalScreen="true">0.33 0.33</maxSize>
       <color>FFFFFFF0</color>
       <zIndex>21</zIndex>
+      
+      <pos ifSubset="systemview:imagegrid">0.5 0.11</pos>
+      <maxSize ifSubset="systemview:imagegrid">0.33 0.19</maxSize>
     </image>
     <image name="ControllerOverlay" extra="true" region="br">
       <path>./../../art/consoles/br/${system.theme}.png</path>
@@ -25,5 +28,7 @@
     <image name="ControllerOverlay" extra="true" region="us">
       <path>./../../art/consoles/us/${system.theme}.png</path>
     </image>
+
+
   </view>
 </theme>

@@ -1,77 +1,228 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-
-	<view name="grid,detailed,gamecarousel">
-
-		<image name="iconsBk" extra="true" ifHelpPrompts="true" onclick="gameoptions">
-			<path>./../art/filter.png</path>
-			<color>00000080</color>
-			<colorEnd>000000ff</colorEnd>
-			<gradientType>horizontal</gradientType>
-			<origin>0 0</origin>
-			<pos>0.953 0.16</pos>
-			<size>0.047 0.774</size>
-			<zIndex>12</zIndex>
-		</image>
-
-		<image name="iconsLine" extra="true" ifHelpPrompts="true">
-			<path>./../art/white.png</path>
-			<color>${glowColor}</color>
-			<origin>0 0</origin>
-			<pos>0.95 0.16</pos>
-			<size>0.003 0.775</size>
-			<zIndex>14</zIndex>
-		</image>  
-			    
-		<rating name="md_rating">
-			<origin>0.5 0</origin>
-			<pos>0.976 0.21</pos>
-			<size>0.05 0.03</size>
-			<rotation>-90</rotation> 
-			<color>FFFF00</color>
-			<unfilledColor>808080</unfilledColor>
-			<unfilledPath>:/star_filled.svg</unfilledPath>
-			<horizontalAlignment>right</horizontalAlignment>  
-			<zIndex>15</zIndex>
-		</rating>
-
-		<text name="md_players">
-			<origin>0.5 0.5</origin>
-			<fontPath>./../art/fonts/players.ttf</fontPath>
-			<text>1</text>
-			<size>0.03 0.03</size>
-			<pos>0.976 0.37</pos>
-			<alignment>center</alignment>
-			<fontSize>0.034</fontSize>
-			<color>dddddd</color>
-		</text>
-
-		<image name="md_manual,md_nomanual">
-			<origin>0.5 0.5</origin>
-			<pos>0.976 0.42</pos>
-			<path>./../art/book.png</path>
-			<maxSize>0.02 0.03</maxSize>
-			<color>dddddd</color>
-		</image>
-	
-		<image name="md_nomanual">
-			<color>80808040</color>
-		</image>
-		
-		<image name="md_cheevos,md_notcheevos">
-			<origin>0.5 0.5</origin>
-			<path>./../art/icons/Contest.png</path>
-			<pos>0.976 0.47</pos>
-			<maxSize>0.02 0.03</maxSize>     
-			<color>dddddd</color>
-			<zIndex>100</zIndex>
-		</image>
+  <view name="grid,detailed,gamecarousel">
+    <image name="iconsBk" extra="true" ifHelpPrompts="true" onclick="gameoptions">
+      <path>./../art/filter.png</path>
+      <color>00000060</color>
+      <colorEnd>000000A0</colorEnd>
+      <gradientType>horizontal</gradientType>
+      <origin>0 0</origin>
+      <pos>0.953 0.16</pos>
+      <size>0.047 0.774</size>
+      <zIndex>12</zIndex>
+    </image>
+    <image name="iconsLine" extra="true" ifHelpPrompts="true">
+      <path>./../art/white.png</path>
+      <color>${glowColor}</color>
+      <colorEnd>00000000</colorEnd>
+      <gradientType>horizontal</gradientType>
+      <origin>0 0</origin>
+      <pos>0.95 0.16</pos>
+      <size>0.003 0.80</size>
+      <zIndex>14</zIndex>
+    </image>
+    <rating name="md_rating">
+      <origin>0.5 0</origin>
+      <pos>0.976 0.21</pos>
+      <size>0.05 0.03</size>
+      <rotation>-90</rotation>
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+      <unfilledPath>:/star_filled.svg</unfilledPath>
+      <horizontalAlignment>right</horizontalAlignment>
+      <zIndex>15</zIndex>
+    </rating>
+    <!--
+    <image name="testimgbinding" extra="true">
+      <pos>0 0</pos>
+      <size>0.2 0.2</size>
+      <origin>0 0</origin>
+      <path>{game:image}</path>
+    </image>
     
-		<image name="md_notcheevos">
-			<color>80808040</color>
-		</image> 
+    <video name="testvidbinding" extra="true">
+      <pos>0.2 0</pos>
+      <size>0.2 0.2</size>
+      <origin>0 0</origin>
+      <path>{game:video}</path>
+    </video>
 
+    <text name="testtextbinding" extra="true">
+      <pos>0 0</pos>
+      <size>1 0.2</size>
+      <text>{game:video}</text>
+      <color>FFFFFFFF</color>
+    </text>
+-->
+<!--
+    <stackpanel name="stack" extra="true">
+      <pos>0.67 0.05</pos>
+      <size>0.30 0.035</size>
+      <orientation>horizontal</orientation>
+      <reverse>true</reverse>
+      <clock name="stack.clock">
+        <fontSize>0.032</fontSize>
+        <color>FFFFFFFF</color>
+        <padding>6 0</padding>
+      </clock>
+      <batteryText name="stack.batterytext">
+        <fontSize>0.024</fontSize>
+        <color>FFFFFFFF</color>
+        <padding>4 0</padding>
+      </batteryText>
+      <batteryIcon name="stack.battery">
+        <incharge>./art/battery/incharge.svg</incharge>
+        <full>./art/battery/full.svg</full>
+        <at75>./art/battery/75.svg</at75>
+        <at50>./art/battery/50.svg</at50>
+        <at25>./art/battery/25.svg</at25>
+        <empty>./art/battery/empty.svg</empty>
+        <planemodeIcon>./art/icons/Planemode.png</planemodeIcon>
+        <maxSize>1 1</maxSize>
+        <linearSmooth>true</linearSmooth>
+        <padding>2 1</padding>
+      </batteryIcon>
+
+      <networkIcon name="stack.network">
+        <networkIcon>./../art/icons/Network.png</networkIcon>
+        <planemodeIcon>./../art/icons/Planemode.png</planemodeIcon>
+        <maxSize>1 1</maxSize>
+        <linearSmooth>true</linearSmooth>
+        <padding>1 1</padding>
+      </networkIcon>
+
+      <text name="stack.separator2">
+        <text>-</text>
+        <alignment>center</alignment>
+        <fontSize>0.022</fontSize>
+        <color>FF000000</color>
+      </text>
+
+
+      <text name="stack.czecez">
+        <visible>{global:cheevos}</visible>
+        <text>{global:cheevosUser}</text>
+        <alignment>center</alignment>
+        <fontSize>0.022</fontSize>
+        <color>FFFFFFFF</color>
+      </text>
+
+      <webImage name="stack.cheevosimg">
+        <visible>{global:cheevos}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>2 2</padding>
+        <path>https://media.retroachievements.org/UserPic/{global:cheevosUser}.png</path>
+        <maxSize>1 1</maxSize>
+        <color>FFFFFFFF</color>
+      </webImage>
+
+      <text name="stack.separator1">
+        <text>-</text>
+        <alignment>center</alignment>
+        <fontSize>0.022</fontSize>
+        <color>FF000000</color>
+      </text>
+
+     
+      <text name="stack.players">
+        <fontPath>./../art/fonts/players.ttf</fontPath>
+        <text>{game:playerCount}</text>
+        <alignment>center</alignment>
+        <fontSize>0.032</fontSize>
+        <color>dddddd</color>
+        <padding>10 0</padding>
+      </text>
+      <image name="stack.manual">
+        <visible>{game:hasManual}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>4 4</padding>
+        <path>./../art/book.png</path>
+        <maxSize>1 1</maxSize>
+        <color>dddddd</color>
+      </image>
+      <image name="stack.nomanual">
+        <visible>!{game:hasManual}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>4 4</padding>
+        <path>./../art/book.png</path>
+        <maxSize>1 1</maxSize>
+        <color>80808040</color>
+      </image>
+      <image name="stack.cheevos">
+        <visible>{game:cheevos}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>4 4</padding>
+        <path>./../art/icons/Contest.png</path>
+        <maxSize>1 1</maxSize>
+        <color>dddddd</color>
+      </image>
+      <image name="stack.nocheevos">
+        <visible>!{game:cheevos}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>4 4</padding>
+        <path>./../art/icons/Contest.png</path>
+        <maxSize>1 1</maxSize>
+        <color>80808040</color>
+      </image>
+      <image name="stack.savestate">
+        <visible>{game:hasSaveState}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>4 4</padding>
+        <path>./../art/icons/SaveState.png</path>
+        <maxSize>1 1</maxSize>
+        <color>dddddd</color>
+      </image>
+      <image name="stack.kidgame">
+        <visible>{game:kidGame}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>4 4</padding>
+        <path>./../art/kid.svg</path>
+        <color>dddddd</color>
+        <maxSize>1 1</maxSize>
+        <linearSmooth>true</linearSmooth>
+      </image>
+      <image name="stack.hidden">
+        <visible>{game:hidden}</visible>
+        <linearSmooth>true</linearSmooth>
+        <padding>4 4</padding>
+        <path>./../art/hidden.svg</path>
+        <maxSize>1 1</maxSize>
+        <color>ff0000</color>
+      </image>
+    </stackpanel>
+-->    
+    <text name="md_players">
+      <origin>0.5 0.5</origin>
+      <fontPath>./../art/fonts/players.ttf</fontPath>
+      <text>1</text>
+      <size>0.03 0.03</size>
+      <pos>0.976 0.37</pos>
+      <alignment>center</alignment>
+      <fontSize>0.034</fontSize>
+      <color>dddddd</color>
+    </text>
+    <image name="md_manual,md_nomanual">
+      <origin>0.5 0.5</origin>
+      <pos>0.976 0.42</pos>
+      <path>./../art/book.png</path>
+      <maxSize>0.02 0.03</maxSize>
+      <color>dddddd</color>
+    </image>
+    <image name="md_nomanual">
+      <color>80808040</color>
+    </image>
+    <image name="md_cheevos,md_notcheevos">
+      <origin>0.5 0.5</origin>
+      <path>./../art/icons/Contest.png</path>
+      <pos>0.976 0.47</pos>
+      <maxSize>0.02 0.03</maxSize>
+      <color>dddddd</color>
+      <zIndex>100</zIndex>
+    </image>
+    <image name="md_notcheevos">
+      <color>80808040</color>
+    </image>
     <image name="md_savestate,md_nosavestate">
       <origin>0.5 0.5</origin>
       <path>./../art/icons/SaveState.png</path>
@@ -81,69 +232,63 @@
       <color>dddddd</color>
       <zIndex>150</zIndex>
     </image>
-    
     <image name="md_nosavestate">
       <color>80808030</color>
     </image>
-
-		<image name="md_kidgame, md_notkidgame"> 
-			<origin>0.5 0.5</origin>
-			<pos>0.976 0.57</pos>
-			<path>./../art/kid.svg</path>
-			<maxSize>0.02 0.03</maxSize>
-			<color>dddddd</color>
-			<zIndex>100</zIndex>
-			<linearSmooth>true</linearSmooth>
-		</image>
-		
-		<image name="md_notkidgame"> 
-			<color>80808000</color>
-		</image>
-
-		<image name="md_hidden">
-			<origin>0.5 0.5</origin>
-			<pos>0.976 0.92</pos>
-			<path>./../art/hidden.svg</path>
-			<maxSize>0.02 0.03</maxSize>
-			<color>ff0000</color>
-			<zIndex>100</zIndex>
-		</image>
-		
-		<datetime name="md_releasedate">
-			<origin>0.5 1</origin>
-			<pos>0.976 0.78</pos>
-			<size>0.1 0.035</size>
-			<format>%Y</format>
-			<color>dddddd</color>
-			<forceUppercase>0</forceUppercase>
-			<fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
-			<rotation>-90</rotation>
-			<alignment>left</alignment>
-			<fontSize>0.025</fontSize>
-		</datetime>
-
-		<image name="md_flag">
-			<origin>0.5 0</origin>
-			<pos>0.976 0.88</pos>
-			<maxSize>0.022 0.05</maxSize>
-			<linearSmooth>true</linearSmooth>
-		</image>
-
-	</view>	
-
-<!-- DETAILED -->  	
-	<view name="detailed,gamecarousel"> 
-	
+    <image name="md_kidgame, md_notkidgame">
+      <origin>0.5 0.5</origin>
+      <pos>0.976 0.57</pos>
+      <path>./../art/kid.svg</path>
+      <maxSize>0.02 0.03</maxSize>
+      <color>dddddd</color>
+      <zIndex>100</zIndex>
+      <linearSmooth>true</linearSmooth>
+    </image>
+    <image name="md_notkidgame">
+      <color>80808000</color>
+    </image>
+    <image name="md_hidden">
+      <origin>0.5 0.5</origin>
+      <pos>0.976 0.92</pos>
+      <path>./../art/hidden.svg</path>
+      <maxSize>0.02 0.03</maxSize>
+      <color>ff0000</color>
+      <zIndex>100</zIndex>
+    </image>
+    <datetime name="md_releasedate">
+      <origin>0.5 1</origin>
+      <pos>0.976 0.78</pos>
+      <size>0.1 0.035</size>
+      <format>%Y</format>
+      <color>dddddd</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
+      <rotation>-90</rotation>
+      <alignment>left</alignment>
+      <fontSize>0.025</fontSize>
+    </datetime>
+    <image name="md_flag">
+      <origin>0.5 0</origin>
+      <pos>0.976 0.88</pos>
+      <maxSize>0.022 0.05</maxSize>
+      <linearSmooth>true</linearSmooth>
+    </image>
+  </view>
+  <!-- DETAILED -->
+  <view name="detailed,gamecarousel">
     <video name="md_video">
-			<pos>0.74 0.39</pos>
-			<maxSize>0.39 0.4</maxSize>
-		</video>
- 
-		<text name="md_description">
-			<pos>0.55 0.615</pos>
-			<size>0.38 0.25</size>
-		</text> 
-	<!--
+      <pos>0.74 0.39</pos>
+      <maxSize>0.39 0.4</maxSize>
+    </video>
+    <control name="md_image">
+      <pos>0.74 0.39</pos>
+      <maxSize>0.39 0.4</maxSize>
+    </control>
+    <text name="md_description">
+      <pos>0.55 0.615</pos>
+      <size>0.38 0.25</size>
+    </text>
+    <!--
 		<image name="developerImage" extra="true">
 			<origin>1 0.5</origin>
 			<pos>0.56 0.64</pos>
@@ -153,11 +298,11 @@
 			<zIndex>100</zIndex>
 		</image>
 	-->
-		<text name="md_developer">
-			<pos>0.55 0.88</pos>
+    <text name="md_developer">
+      <pos>0.55 0.88</pos>
       <size>0.34 0.035</size>
-		</text> 
-<!--
+    </text>
+    <!--
 		<image name="genreImage" extra="true">
 			<origin>1 0.5</origin>
 			<pos>0.57 0.91</pos>
@@ -167,12 +312,12 @@
 			<zIndex>100</zIndex>
 		</image>
 	-->
-		<text name="md_genre">
-				<pos>0.55 0.88</pos>
+    <text name="md_genre">
+      <pos>0.55 0.88</pos>
       <size>0.38 0.035</size>
-			<alignment>right</alignment>
-		</text>
-	<!--
+      <alignment>right</alignment>
+    </text>
+    <!--
 		<image name="releaseDateImage" extra="true">
 			<visible>false</visible>
 		</image>
@@ -180,26 +325,32 @@
     <text name="md_lbl_releasedate">
       <visible>false</visible>
     </text>
-
-		<text name="md_lbl_players">
-			<visible>false</visible>
-		</text>	
-	
-	</view>
-
-<!--   GRID  -->
-	<view name="grid"> 
-		<imagegrid name="gamegrid">
-			<pos>0.01 0.16</pos>
-			<size>0.935 0.84</size>
-		</imagegrid>
-	</view>
-<!--   CAROUSEL  -->
-	<customView name="Carousel">
-		<imagegrid name="gamegrid">
-			<pos>0 0.16</pos>
-			<size>0.95 0.84</size>
-		</imagegrid>
-	</customView>
-	
+    <text name="md_lbl_players">
+      <visible>false</visible>
+    </text>
+  </view>
+  <view name="detailed,gamecarousel">
+    <video name="md_video">
+      <pos>0.74 0.45</pos>
+      <maxSize>0.39 0.55</maxSize>
+    </video>
+    <text name="md_description">
+      <pos>0.55 0.73</pos>
+      <size>0.38 0.132</size>
+    </text>
+  </view>
+  <!--   GRID  -->
+  <view name="grid">
+    <imagegrid name="gamegrid">
+      <pos>0.01 0.16</pos>
+      <size>0.935 0.84</size>
+    </imagegrid>
+  </view>
+  <!--   CAROUSEL  -->
+  <customView name="Carousel">
+    <imagegrid name="gamegrid">
+      <pos>0 0.16</pos>
+      <size>0.95 0.84</size>
+    </imagegrid>
+  </customView>
 </theme>

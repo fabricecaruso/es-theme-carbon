@@ -7,9 +7,9 @@
     </image>
     <video name="backgroundvideo" extra="true">
       <path>{random}</path>
-      <pos>0.5 0.475</pos>
+      <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <minSize>1 0.95</minSize>
+      <minSize>1 1</minSize>
       <delay>0</delay>
       <color>FFFFFFA0</color>
       <effect>none</effect>

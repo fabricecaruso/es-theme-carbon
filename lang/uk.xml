@@ -4,11 +4,17 @@
   <!-- Ukranian -->
   <variables lang="uk">
     <dateFormat>%d.%m.%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>Регіон</subset.region>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>карусель з ящиків</gameCarouselViewName>
+    <basicGridName>Сітка</basicGridName>
+    <carouselViewName>Карусель</carouselViewName>
+    <tilesViewName>Мініатюри</tilesViewName>
+    <iconsViewName>Ікони</iconsViewName>
+    <contentViewName>Зміст</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Карусель</subset.carouselViewName>
     <!-- Colorsets  -->
     <subset.colorset>Кольорова схема</subset.colorset>
-    <iconsViewName>Ікони</iconsViewName>
     <blue>Синій</blue>
     <red>Червоний</red>
     <green>Зелений</green>
@@ -17,31 +23,25 @@
     <violet>Фіалка</violet>
     <orange>Помаранчевий</orange>
     <gray>Сірий</gray>
-    <!-- Common views  -->
-    <tilesViewName>Мініатюри</tilesViewName>
-    <basicGridName>Сітка</basicGridName>
-    <gameCarouselViewName>карусель з ящиків</gameCarouselViewName>
-    <carouselViewName>Карусель</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Карусель</subset.carouselViewName>
+    <!-- Region -->
+    <subset.region>Регіон</subset.region>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>Покращена інформація про систему</systemViewExInfos>
     <yes>Так</yes>
     <no>Немає</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>Системний вигляд</systemViewName>
     <systemview.darkened>затемнений</systemview.darkened>
+    <systemview.gridName>Сітка зображень</systemview.gridName>
     <systemview.horizontal>Горизонтальний</systemview.horizontal>
     <systemview.legacy>Спадщина</systemview.legacy>
     <systemview.transparent>Прозорий</systemview.transparent>
     <systemview.simple>просто</systemview.simple>
     <systemview.vertical>Вертикальний</systemview.vertical>
     <systemview.wheel>Карусель</systemview.wheel>
+    <systemview.textlist>Текстовий список</systemview.textlist>
     <!-- Subset option for System view background -->
     <systemBackgroundName>Фон</systemBackgroundName>
-    <systembackground.miniconsoles>міні відео</systembackground.miniconsoles>
-    <animatedBackground>фонові анімації</animatedBackground>
-    <animatedCovers>Випадкові ящики</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>відео ігри</systembackground.consoles>
     <systembackground.miniconsoles>міні відеоігри</systembackground.miniconsoles>
@@ -55,19 +55,23 @@
     <systembackground.minirandomimage>випадкове міні-зображення</systembackground.minirandomimage>
     <systembackground.minirandombox>міні коробка випадкової гри</systembackground.minirandombox>
     <systembackground.minirandomvideo>випадкове міні-відео</systembackground.minirandomvideo>
+    <animatedBackground>фонові анімації</animatedBackground>
+    <animatedCovers>Випадкові ящики</animatedCovers>
     <!-- Fix for controller image size -->
     <systemview.simple>простий</systemview.simple>
     <systemview.vertical>вертикальний</systemview.vertical>
     <systemview.wheel>карусель</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>спадок</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Ефекти розмиття</subset.blurfx>
       <!-- Subset options for help -->
     <helpSubsetName>піктограми довідки</helpSubsetName>
     <helpbuttons>Розташування кнопок</helpbuttons>
     <xboxbuttons>кнопки xbox</xboxbuttons>
     <psxbuttons>Кнопки PlayStation</psxbuttons>
     <colored>Барвистий</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / Filters -->
     <subset.shader>Фільтри</subset.shader>
     <none>Жодного</none>
     <scanlines>рядки сканування</scanlines>
@@ -81,6 +85,7 @@
     <!-- Subset options for grid views -->
     <videoboxesSubsetName>Показати відео в коробковому режимі</videoboxesSubsetName>
     <zoomboxesSubsetName>коробки масштабування</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>Керівництво</orientationSubsetName>
     <vertical>Вертикальний</vertical>
     <horizontal>Горизонтальний</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>миготливі краї</blinkBorderSubsetName>
     <videosSubsetName>відео</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Мініатюри</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Джерело зображення для Каруселі</gamecarouseltype>
     <marquee>намет</marquee>
     <image>Зображення</image>
     <text>текст</text>
     <thumbnail>Мініатюрний</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>Зміст Передумови</contentBackground>
+    <fanart>Фанарт</fanart>
     <animationsSubsetName>анімації переходів</animationsSubsetName>
   </variables>  
 </theme>

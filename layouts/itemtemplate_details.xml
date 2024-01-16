@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-carbon
+author: Fabrice CARUSO
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+<theme>
+  <variables>
+    <corners>7</corners>
+  </variables>
+  <customView name="Icons">
+    <control name="md_players, md_manual,md_nomanual, md_rating, iconsBk, iconsLine,md_cheevos,md_notcheevos, md_savestate,md_nosavestate, md_kidgame, md_notkidgame, md_hidden, md_releasedate, md_flag">
+      <visible>false</visible>
+    </control>
+    <imagegrid name="gamegrid">
+      <autoLayout>1 17</autoLayout>
+      <centerSelection>partial</centerSelection>
+      <margin>0</margin>
+      <itemTemplate>
+        <container>
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <image>
+            <path>./../art/white.png</path>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <color>${centerFadeColor}</color>
+            <zIndex>2</zIndex>
+            <opacity>0</opacity>
+            <storyboard event="activate">
+              <animation property="opacity" to="1" />
+            </storyboard>
+            <storyboard event="deactivate">
+              <animation property="opacity" to="0"/>
+            </storyboard>
+          </image>
+          <container>
+            <padding>8 0 8 0</padding>
+            <stackpanel>
+              <pos>0 0</pos>
+              <size>1 1</size>
+              <separator>6</separator>
+              <image name="favoriteIcon">
+                <visible>{game:favorite}</visible>
+                <path>./../resources/fontoverrides/F006.png</path>
+                <pos>0.5</pos>
+                <origin>0.5</origin>
+                <maxSize>1</maxSize>
+                <horizontalAlignment>right</horizontalAlignment>
+                <saturation>{game:favorite} ? 1 : 0</saturation>
+                <opacity>{game:favorite} ? 1 : 0.2</opacity>
+                <color>FFFFFFFF</color>
+                <padding>0 6</padding>
+              </image>
+              <text>
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <text>{game:name}</text>
+                <color>C0C0C0</color>
+                <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
+                <fontSize>0.028</fontSize>
+                <glowColor>00000020</glowColor>
+                <glowSize>1</glowSize>
+                <multiLine>false</multiLine>
+                <storyboard event="activate">
+                  <animation property="color" to="FFFFFF"/>
+                </storyboard>
+                <storyboard event="deactivate">
+                  <animation property="color" to="C0C0C0"/>
+                </storyboard>
+              </text>
+              <image>
+                <path>./../resources/fontoverrides/F091.png</path>
+                <pos>0.5</pos>
+                <origin>0.5</origin>
+                <maxSize>1</maxSize>
+                <horizontalAlignment>right</horizontalAlignment>
+                <saturation>{game:cheevos} ? 1 : 0</saturation>
+                <opacity>{game:cheevos} ? 1 : 0.2</opacity>
+                <color>FFFFFFFF</color>
+                <padding>0 6</padding>
+              </image>
+              <image>
+                <path>./../resources/fontoverrides/F0C7.png</path>
+                <pos>0.5</pos>
+                <origin>0.5</origin>
+                <maxSize>1</maxSize>
+                <horizontalAlignment>right</horizontalAlignment>
+                <saturation>{game:savestate} ? 1 : 0</saturation>
+                <opacity>{game:savestate} ? 1 : 0.2</opacity>
+                <color>FFFFFFFF</color>
+                <padding>0 6</padding>
+              </image>
+            </stackpanel>
+          </container>
+        </container>
+      </itemTemplate>
+    </imagegrid>
+  </customView>
+</theme>

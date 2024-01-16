@@ -48,6 +48,28 @@
     </image>
     -->
   </view>
+  <view name="gamecarousel">
+    <control name="md_fanart">      
+      <clipRect>0 0.16 1 0.84</clipRect>
+      <storyboard event="open">
+        <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
+      </storyboard>
+      <storyboard event="activateNext">
+        <animation property="offsetY" from="0.2" to="0" duration="400" mode="easeOut"/>
+        <animation property="opacity" from="0.98" to="1" duration="300" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="activatePrev">
+        <animation property="offsetY" from="-0.2" to="0" duration="400" mode="easeOut"/>
+        <animation property="opacity" from="0.98" to="1" duration="300" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="deactivateNext">        
+        <animation property="opacity" to="0" duration="400" mode="easeIn"/>
+      </storyboard>
+      <storyboard event="deactivatePrev">     
+        <animation property="opacity" to="0" duration="400" mode="easeIn"/>
+      </storyboard>
+    </control>
+  </view>
   <view ifSubset="gameBar:no" name="detailed">
     <control name="md_rating, md_releasedate, md_players, md_kidgame, md_notkidgame, md_manual, md_nomanual, md_cheevos,md_notcheevos, md_savestate, md_nosavestate, md_flag">
       <clipRect>0 0.16 1 0.78</clipRect>
@@ -96,7 +118,6 @@
       </storyboard>
     </control>
   </view>
-  
   <!-- Disable storyboards for Carousel if previewbar is disabled -->
   <customView name="Carousel" ifSubset="previewbar:no">
     <control name="md_rating, md_releasedate, md_players, md_kidgame, md_notkidgame, md_manual, md_nomanual, md_cheevos,md_notcheevos, md_savestate, md_nosavestate, md_flag, md_fanart, md_name, md_image, md_video, md_description, md_genre, md_developer, md_publisher, md_lastplayed, md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_releasedate">
@@ -110,5 +131,4 @@
       <storyboard event="deactivate"/>
     </control>
   </customView>
-  
 </theme>

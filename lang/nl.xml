@@ -4,11 +4,17 @@
   <!-- Dutch -->
   <variables lang="nl">
     <dateFormat>%d-%m-%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>Regio</subset.region>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>Carrousel van dozen</gameCarouselViewName> <!-- NEED REVIEW -->
+    <basicGridName>Rooster</basicGridName>
+    <carouselViewName>Carrousel</carouselViewName>
+    <tilesViewName>Miniaturen</tilesViewName>
+    <iconsViewName>Pictogrammen</iconsViewName>
+    <contentViewName>Inhoud</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED REVIEW -->
     <!-- Colorsets  -->
     <subset.colorset>Kleurenschema</subset.colorset>
-    <iconsViewName>Pictogrammen</iconsViewName>
     <blue>Blauw</blue>
     <red>Rood</red>
     <green>Groen</green>
@@ -17,31 +23,25 @@
     <violet>Violet</violet>
     <orange>Oranje</orange>
     <gray>Grijs</gray>
-    <!-- Common views  -->
-    <tilesViewName>Miniaturen</tilesViewName>
-    <basicGridName>Rooster</basicGridName>
-    <gameCarouselViewName>Carrousel van dozen</gameCarouselViewName> <!-- NEED REVIEW -->
-    <carouselViewName>Carrousel</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED REVIEW -->
+    <!-- Region -->
+    <subset.region>Regio</subset.region>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>Verbeterde systeeminformatie</systemViewExInfos>
     <yes>Ja</yes>
     <no>Nee</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>Visualisatie systeem</systemViewName>
     <systemview.darkened>Gearceerd</systemview.darkened>
+    <systemview.gridName>Afbeelding raster</systemview.gridName>
     <systemview.horizontal>Horizontaal</systemview.horizontal>
     <systemview.legacy>Bestaand</systemview.legacy>
     <systemview.transparent>Transparant</systemview.transparent>
     <systemview.simple>Gewoon</systemview.simple>
     <systemview.vertical>Verticaal</systemview.vertical>
     <systemview.wheel>Carrousel</systemview.wheel>
+    <systemview.textlist>Tekstlijst</systemview.textlist>
     <!-- Subset option for System view background -->
     <systemBackgroundName>Achtergrond</systemBackgroundName>
-    <systembackground.miniconsoles>Minivideo</systembackground.miniconsoles>
-    <animatedBackground>Achtergrond animaties</animatedBackground>
-    <animatedCovers>Willekeurige dozen</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>Video spelletjes</systembackground.consoles>
     <systembackground.miniconsoles>Minivideospelletjes</systembackground.miniconsoles>
@@ -55,19 +55,23 @@
     <systembackground.minirandomimage>Mini willekeurige afbeelding</systembackground.minirandomimage>
     <systembackground.minirandombox>Mini willekeurige spelletjesdoos</systembackground.minirandombox>
     <systembackground.minirandomvideo>Mini willekeurige video</systembackground.minirandomvideo>
+    <animatedBackground>Achtergrond animaties</animatedBackground>
+    <animatedCovers>Willekeurige dozen</animatedCovers>
     <!-- Fix for controller image size -->
     <systemview.simple>eenvoudig</systemview.simple>
     <systemview.vertical>verticaal</systemview.vertical>
     <systemview.wheel>carrousel</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>oude</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Vervagingseffecten</subset.blurfx>
     <!-- Subset options for help -->
     <helpSubsetName>Help-pictogrammen</helpSubsetName>
     <helpbuttons>Positie van knoppen</helpbuttons>
     <xboxbuttons>Xbox-knoppen</xboxbuttons>
     <psxbuttons>PlayStation-knoppen</psxbuttons>
     <colored>Kleur</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / Filters -->
     <subset.shader>Filters</subset.shader>
     <none>Geen</none>
     <scanlines>Scanlijnen</scanlines>
@@ -81,6 +85,7 @@
     <!-- Subset options for grid views -->
     <videoboxesSubsetName>Video weergeven in boxmodus</videoboxesSubsetName>
     <zoomboxesSubsetName>Boxen zoomen</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>Oriëntatie</orientationSubsetName>
     <vertical>Verticaal</vertical>
     <horizontal>Horizontaal</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>Knipperende randen</blinkBorderSubsetName>
     <videosSubsetName>Video's</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Miniaturen</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Carrousel-afbeeldingsbron</gamecarouseltype>
     <marquee>Marquee</marquee>
     <image>Afbeelding</image>
     <text>Tekst</text>
     <thumbnail>Miniatuurafbeelding</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>Inhoud Achtergrond</contentBackground>
+    <fanart>Fanart</fanart>
     <animationsSubsetName>Overgangsanimaties</animationsSubsetName>
   </variables>  
 </theme>

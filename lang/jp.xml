@@ -4,11 +4,17 @@
   <!-- Japanese -->
   <variables lang="jp">
     <dateFormat>年 %Y 月 %m 日 %d</dateFormat>
-    <!-- Region -->
-    <subset.region>地域</subset.region>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>箱のカルーセル</gameCarouselViewName> <!-- NEED REVIEW -->
+    <basicGridName>グリッド</basicGridName>
+    <carouselViewName>カルーセル</carouselViewName>
+    <tilesViewName>ミニチュア</tilesViewName>
+    <iconsViewName>アイコンについて</iconsViewName>
+    <contentViewName>内容</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
     <!-- Colorsets  -->
     <subset.colorset>カラースキーム</subset.colorset>
-    <iconsViewName>アイコンについて</iconsViewName>
     <blue>青</blue>
     <red>赤色</red>
     <green>緑色</green>
@@ -17,31 +23,25 @@
     <violet>バイオレット</violet>
     <orange>オレンジ</orange>
     <gray>灰色</gray>
-    <!-- Common views  -->
-    <tilesViewName>ミニチュア</tilesViewName>
-    <basicGridName>グリッド</basicGridName>
-    <gameCarouselViewName>箱のカルーセル</gameCarouselViewName> <!-- NEED REVIEW -->
-    <carouselViewName>カルーセル</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
+    <!-- Region -->
+    <subset.region>地域</subset.region>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>システム情報の充実</systemViewExInfos>
     <yes>あり</yes>
     <no>なし</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>システムビジュアライゼーション</systemViewName>
     <systemview.darkened>シェーディング</systemview.darkened>
+    <systemview.gridName>イメージ・グリッド</systemview.gridName>
     <systemview.horizontal>水平</systemview.horizontal>
     <systemview.legacy>レガシー</systemview.legacy>
     <systemview.transparent>透明</systemview.transparent>
     <systemview.simple>プレーン</systemview.simple>
     <systemview.vertical>縦長</systemview.vertical>
     <systemview.wheel>カルーセル</systemview.wheel>
+    <systemview.textlist>テキストリスト</systemview.textlist>
     <!-- Subset option for System view background -->
     <systemBackgroundName>背景</systemBackgroundName>
-    <systembackground.miniconsoles>ミニビデオ</systembackground.miniconsoles>
-    <animatedBackground>背景アニメーション</animatedBackground>
-    <animatedCovers>ランダムボックス</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>ビデオゲーム</systembackground.consoles>
     <systembackground.miniconsoles>ミニゲーム</systembackground.miniconsoles>
@@ -55,19 +55,23 @@
     <systembackground.minirandomimage>ミニランダム画像</systembackground.minirandomimage>
     <systembackground.minirandombox>ミニランダムゲームボックス</systembackground.minirandombox>
     <systembackground.minirandomvideo>ミニランダム動画</systembackground.minirandomvideo>
+    <animatedBackground>背景アニメーション</animatedBackground>
+    <animatedCovers>ランダムボックス</animatedCovers>
     <!-- Fix for controller image size -->
     <systemview.simple>シンプル</systemview.simple>
     <systemview.vertical>垂直</systemview.vertical>
     <systemview.wheel>カルーセル</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>レガシー</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>ぼかし効果</subset.blurfx>
     <!-- Subset options for help -->
     <helpSubsetName>ヘルプアイコン</helpSubsetName>
     <helpbuttons>ボタンの位置</helpbuttons>
     <xboxbuttons>Xboxボタン</xboxbuttons>
     <psxbuttons>PlayStationボタン</psxbuttons>
     <colored>カラー</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / Filters -->
     <subset.shader>フィルター</subset.shader>
     <none>なし</none>
     <scanlines>スキャンライン</scanlines>
@@ -81,6 +85,7 @@
     <!-- Subset options for grid views -->
     <videoboxesSubsetName>ボックスモードでのビデオ表示</videoboxesSubsetName>
     <zoomboxesSubsetName>ボックスの拡大</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>表示方向</orientationSubsetName>
     <vertical>縦型</vertical>
     <horizontal>水平</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>点滅するエッジ</blinkBorderSubsetName>
     <videosSubsetName>動画</videosSubsetName>
     <logosSubsetNamegamecarouseltype>サムネイル</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>カルーセル画像ソース</gamecarouseltype>
     <marquee>マーキー</marquee>
     <image>画像</image>
     <text>テキスト</text>
     <thumbnail>サムネイル</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>コンテンツの背景</contentBackground>
+    <fanart>ファンアート</fanart>
     <animationsSubsetName>トランジションアニメーション</animationsSubsetName>
   </variables>  
 </theme>

@@ -4,49 +4,49 @@
   <!-- French -->
   <variables lang="fr">
     <dateFormat>%d/%m/%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>Région</subset.region>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>Carrousel de boîtes</gameCarouselViewName>
+    <basicGridName>Boîtes</basicGridName>
+    <carouselViewName>Carrousel</carouselViewName>
+    <tilesViewName>Vignettes</tilesViewName>
+    <iconsViewName>Icônes</iconsViewName>
+    <contentViewName>Contenu</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
     <!-- Colorsets  -->
     <subset.colorset>Jeux de couleurs</subset.colorset>
-    <iconsViewName>Icônes</iconsViewName>
     <blue>Bleu</blue>
     <red>Rouge</red>
     <green>Vert</green>
     <cyan>Cyan</cyan>
     <yellow>Jaune</yellow>
-    <violet>Violet</violet>
+    <violet>Violette</violet>
     <orange>Orange</orange>
     <gray>Gris</gray>
-    <!-- Common views  -->
-    <tilesViewName>Vignettes</tilesViewName>
-    <basicGridName>Boîtes</basicGridName>
-    <gameCarouselViewName>Carrousel de boîtes</gameCarouselViewName>
-    <carouselViewName>Carrousel</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
+        <!-- Region -->
+        <subset.region>Région</subset.region>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>Informations système améliorées</systemViewExInfos>
     <yes>Oui</yes>
     <no>Non</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>Vue système</systemViewName>
     <systemview.darkened>Sombre</systemview.darkened>
-    <systemview.horizontal>Horizontal</systemview.horizontal>
-    <systemview.legacy>Legacy</systemview.legacy>
-    <systemview.transparent>Transparent</systemview.transparent>
+    <systemview.gridName>Grille d'images</systemview.gridName>
+    <systemview.horizontal>Horizontale</systemview.horizontal>
+    <systemview.legacy>Héritage</systemview.legacy>
+    <systemview.transparent>Transparente</systemview.transparent>
     <systemview.simple>Simple</systemview.simple>
-    <systemview.vertical>Vertical</systemview.vertical>
+    <systemview.vertical>Verticale</systemview.vertical>
     <systemview.wheel>Carrousel</systemview.wheel>
+    <systemview.textlist>Liste de textes</systemview.textlist>
     <!-- Subset option for System view background -->
     <systemBackgroundName>Arrière-plan</systemBackgroundName>
-    <systembackground.miniconsoles>Mini vidéo</systembackground.miniconsoles>
-    <animatedBackground>Animation du fond</animatedBackground>
-    <animatedCovers>Boîtes aléatoires</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>Consoles</systembackground.consoles>
     <systembackground.miniconsoles>Mini consoles</systembackground.miniconsoles>
     <systembackground.carboncontrollers>Contrôleurs Carbon</systembackground.carboncontrollers>
-    <systembackground.carbonlegacy>Legacy</systembackground.carbonlegacy>
+    <systembackground.carbonlegacy>Héritage</systembackground.carbonlegacy>
     <systembackground.simple>Simple</systembackground.simple>
     <systembackground.randomvideo>Vidéo aléatoire</systembackground.randomvideo>
     <systembackground.randomfanart>Fanart aléatoire</systembackground.randomfanart>
@@ -55,22 +55,24 @@
     <systembackground.minirandomimage>Mini image aléatoire</systembackground.minirandomimage>
     <systembackground.minirandombox>Mini boîte de jeu aléatoire</systembackground.minirandombox>
     <systembackground.minirandomvideo>Mini vidéo aléatoire</systembackground.minirandomvideo>
+    <animatedBackground>Animation du fond</animatedBackground>
+    <animatedCovers>Boîtes aléatoires</animatedCovers>
     <!-- Fix for controller image size -->
-    <systemview.simple>simple</systemview.simple>
-    <systemview.vertical>vertical</systemview.vertical>
+    <systemview.simple>simples</systemview.simple>
+    <systemview.vertical>verticale</systemview.vertical>
     <systemview.wheel>carrousel</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>héritage</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Effets de flou</subset.blurfx>
       <!-- Subset options for help -->
     <helpSubsetName>Icônes d'aide</helpSubsetName>
     <helpbuttons>Position des boutons</helpbuttons>
     <xboxbuttons>Boutons de la Xbox</xboxbuttons>
     <psxbuttons>Boutons de la PlayStation</psxbuttons>
-    <colored>Colorés</colored> <colored>Colorful</colored>
-      <!-- Subset options for screen -->
+    <colored>Colorés</colored>
+      <!-- Subset options for screen / Filters -->
     <subset.shader>Filtres</subset.shader>
-    <none>Aucun</none>
-    <subset.shader>Effets TV</subset.shader>
     <none>Aucun</none>
     <scanlines>lignes de balayage</scanlines>
     <crt>téléviseur à tube</crt>
@@ -83,6 +85,7 @@
     <!-- Subset options for grid views -->
     <videoboxesSubsetName>Afficher la video en mode boites</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoomer les boites</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>Orientation</orientationSubsetName>
     <vertical>Vertical</vertical>
     <horizontal>Horizontal</horizontal>
@@ -95,11 +98,15 @@
     <blinkBorderSubsetName>Bords clignotants</blinkBorderSubsetName>
     <videosSubsetName>Vidéos</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Vignettes</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Source d'images du carrousel</gamecarouseltype>
     <marquee>Marquee</marquee>
     <image>Image</image>
     <text>Texte</text>
     <thumbnail>Miniature</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>Contexte du contenu</contentBackground>
+    <fanart>Fanart</fanart>
     <animationsSubsetName>Animations de transition</animationsSubsetName>
   </variables>  
 </theme>

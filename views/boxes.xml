@@ -14,6 +14,15 @@ originally based on: "simple" by nils bonenberger
       <autoLayout verticalScreen="true">2 2</autoLayout>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
     </imagegrid>
+    <image name="gridtile.image">
+      <shader>
+        <path>:/shaders/border.glsl</path>
+        <borderSize>0</borderSize>
+        <outerShadowSize>0</outerShadowSize>
+        <innerShadowSize>0</innerShadowSize>
+        <cornerRadius>0.016</cornerRadius>
+      </shader>
+    </image>
     <text name="gridtile">
       <visible>false</visible>
     </text>

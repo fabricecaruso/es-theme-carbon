@@ -16,8 +16,36 @@
       <minLogoOpacity>0.6</minLogoOpacity>
       <logoSize verticalScreen="true">0.35 0.1</logoSize>
       <maxLogoCount verticalScreen="true">1</maxLogoCount>
+      <itemTemplate>
+        <!-- Redefines how the carousel logo is rendered. Here we add a drop shadow to the logo -->
+        <image name="logoDropShadow" pos="0.5" origin="0.5" maxSize="1" linearSmooth="true">
+          <path>{system:logo}</path>
+          <padding>4 4 -4 -4</padding>
+          <color>00000050</color>
+          <!--
+          <shader>
+            <path>:/shaders/blur.glsl</path>
+            <blur>2</blur>
+          </shader>-->
+          <zIndex>1</zIndex>
+        </image>
+        <image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
+          <path>{system:logo}</path>
+          <zIndex>2</zIndex>
+        </image>
+        <text name="substitutionText" color="white" alignment="center" multiLine="true">
+          <visible>!exists({system:logo})</visible>
+          <text>{system:fullName}</text>
+          <fontSize>0.06</fontSize>
+          <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
+          <forceUppercase>false</forceUppercase>
+          <color>white</color>
+          <glowColor>00000010</glowColor>
+          <glowSize>3</glowSize>
+        </text>
+      </itemTemplate>
     </carousel>
-    <image name="logo">      
+    <image name="logo">
       <path>./../../art/logos/${system.theme}-w.png</path>
       <path>./../../art/logos/${system.theme}-w.svg</path>
     </image>
@@ -64,7 +92,6 @@
       <logoScale>2.6</logoScale>
       <logoPos>-1 0.1</logoPos>
     </carousel>
-    
     <!--
     <image name="carousel-inner" extra="true">
       <path>./../../art/carousel.png</path>
