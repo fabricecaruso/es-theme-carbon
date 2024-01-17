@@ -4,11 +4,17 @@
   <!-- Grec -->
   <variables lang="el">
     <dateFormat>%d/%m/%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>Περιοχή</subset.region>
+    <!-- Κοινές απόψεις -->
+    <gameCarouselViewName>Καρουζέλ από κουτιά</gameCarouselViewName> <!-- NEED REVIEW -->
+    <basicGridName>Πλέγμα</basicGridName>
+    <carouselViewName>Καρουσέλ</carouselViewName>
+    <tilesViewName>Μικρογραφίες</tilesViewName>
+    <iconsViewName>Εικονίδια</iconsViewName>
+    <contentViewName>Περιεχόμενο</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
     <!-- Colorsets  -->
     <subset.colorset>Χρωματικός συνδυασμός</subset.colorset>
-    <iconsViewName>Εικονίδια</iconsViewName>
     <blue>Μπλε</blue>
     <red>Κόκκινο</red>
     <green>Πράσινο</green>
@@ -17,50 +23,48 @@
     <violet>Violet</violet>
     <orange>Πορτοκαλί</orange>
     <gray>Γκρι</gray>
-    <!-- Κοινές απόψεις -->
-    <tilesViewName>Μικρογραφίες</tilesViewName>
-    <basicGridName>Πλέγμα</basicGridName>
-    <gameCarouselViewName>Καρουζέλ από κουτιά</gameCarouselViewName> <!-- NEED REVIEW -->
-    <carouselViewName>Καρουσέλ</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRANSLATION -->
+    <!-- Region -->
+    <subset.region>Περιοχή</subset.region>
     <!-- Επιλογή υποσυνόλου για εκτεταμένες πληροφορίες συστήματος -->
     <systemViewExInfos>Βελτιωμένες πληροφορίες συστήματος</systemViewExInfos>
     <yes>Ναι</yes>
-    <no>Όχι</no>
-    <!-- Επιλογές υποσυνόλου για οθόνη -->
+    <no>Όχι</no> 
+    <!-- αλλαγή προεπιλογής για μικρές οθόνες -->
     <systemViewName>Προβολή συστήματος</systemViewName>
-    <systemview.darkened>Σκοτεινό</systemview.darkened>
+    <systemview.darkened>Σκουρόχρωμο</systemview.darkened>
+    <systemview.gridName>Πλέγμα εικόνας</systemview.gridName>
     <systemview.horizontal>Οριζόντια</systemview.horizontal>
-    <systemview.legacy>Παλαιού τύπου</systemview.legacy>
+    <systemview.legacy>Κληρονομιά</systemview.legacy>
     <systemview.transparent>Διαφανές</systemview.transparent>
     <systemview.simple>Απλό</systemview.simple>
-    <systemview.vertical>Κάθετη</systemview.vertical>
+    <systemview.vertical>Κατακόρυφο</systemview.vertical>
     <systemview.wheel>Καρουσέλ</systemview.wheel>
+    <systemview.textlist>Λίστα κειμένου</systemview.textlist>
     <!-- Επιλογή υποσυνόλου για το φόντο προβολής συστήματος -->
-    <systemBackgroundName>Φόντο</systemBackgroundName>
-    <systembackground.miniconsoles>Μίνι βίντεο</systembackground.miniconsoles>
-    <animatedBackground>Κινούμενα σχέδια στο παρασκήνιο</animatedBackground>
-    <animatedCovers>Τυχαία κουτιά</animatedCovers>
-    <!-- αλλαγή προεπιλογής για μικρές οθόνες -->
+    <systemBackgroundName>Φόντο</systemBackgroundName>    
+     <!-- change default for small screens -->
     <systembackground.consoles>Βιντεοπαιχνίδια</systembackground.consoles>
     <systembackground.miniconsoles>Μίνι βιντεοπαιχνίδια</systembackground.miniconsoles>
     <systembackground.carboncontrollers>Στοιχεία ελέγχου άνθρακα</systembackground.carboncontrollers>
     <systembackground.carbonlegacy>Παλαιού τύπου</systembackground.carbonlegacy>
     <systembackground.simple>Απλό</systembackground.simple>
     <systembackground.randomvideo>Τυχαίο βίντεο</systembackground.randomvideo>
-    <systembackground.randomfanart>Τυχαίο fanart</systembackground.randomfanart>
+    <systembackground.randomfanart>τυχαία τέχνη θαυμαστών</systembackground.randomfanart>
     <systembackground.randomimage>Τυχαία εικόνα</systembackground.randomimage>
     <systembackground.randombox>Πλαίσιο τυχαίων παιχνιδιών</systembackground.randombox>
     <systembackground.minirandomimage>Τυχαία μίνι εικόνα</systembackground.minirandomimage>
     <systembackground.minirandombox>Μίνι τυχαίο κουτί παιχνιδιών</systembackground.minirandombox>
     <systembackground.minirandomvideo>Μίνι τυχαίο βίντεο</systembackground.minirandomvideo>
+    <animatedBackground>Κινούμενα σχέδια στο παρασκήνιο</animatedBackground>
+    <animatedCovers>Τυχαία κουτιά</animatedCovers>
     <!-- Διόρθωση για μέγεθος εικόνας ελεγκτή -->
     <systemview.simple>απλό</systemview.simple>
     <systemview.vertical>κάθετο</systemview.vertical>
     <systemview.wheel>καρουσέλ</systemview.wheel>
     <!-- Επιλογή Fix for Legacy στο υποσύνολο systemview : τα χρώματα systemInfo πρέπει να αποκατασταθούν μετά την εφαρμογή του υποσυνόλου systembackground -->
     <systemview.legacy>κληρονομιά</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Εφέ θαμπώματος</subset.blurfx>
     <!-- Επιλογές υποσυνόλου για βοήθεια -->
     <helpSubsetName>Εικονίδια βοήθειας</helpSubsetName>
     <helpbuttons>Θέση κουμπιών</helpbuttons>
@@ -71,7 +75,7 @@
     <subset.shader>Φίλτρα</subset.shader>
     <none>Καμία</none>
     <scanlines>Σαρώσεις</scanlines>
-    <crt>Tube TV</crt>
+    <crt>τηλεόραση με σωλήνα</crt>
     <!-- Specific layout for systems -->
     <!-- <system.theme>Theme</system.theme> -->
     <!-- προσθήκη γραμμής πληροφοριών παιχνιδιού -->
@@ -81,6 +85,7 @@
     <!-- Επιλογές υποσυνόλου για προβολές πλέγματος -->
     <videoboxesSubsetName>Εμφάνιση βίντεο σε λειτουργία πλαισίου</videoboxesSubsetName>
     <zoomboxesSubsetName>Πλαίσια ζουμ</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>Προσανατολισμός</orientationSubsetName>
     <vertical>Κάθετη</vertical>
     <horizontal>Οριζόντια</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>Περίγραμμα που αναβοσβήνουν</blinkBorderSubsetName>
     <videosSubsetName>Βίντεο</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Μικρογραφίες</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Πηγή εικόνας καρουζέλ</gamecarouseltype>
     <marquee>Μαρκησία</marquee>
     <image>Εικόνα</image>
     <text>Κείμενο</text>
     <thumbnail>Μικρογραφία</thumbnail>
-    <animationsSubsetName>Κινούμενες εικόνες μετάβασης</animationsSubsetName>
+    <!-- Subset options for System view content background -->
+    <contentBackground>Υπόβαθρο περιεχομένου</contentBackground>
+    <fanart>φαντασία</fanart>
+    <animationsSubsetName>Κινούμενες εικόνες μετάβασης</animationsSubsetName>    
   </variables>  
 </theme>

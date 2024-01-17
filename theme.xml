@@ -110,14 +110,14 @@ languages and missing systems (batocera v36): by maioni
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="darkened" displayName="${systemview.darkened}">./subsets/systemview/horizontaldark.xml</include>
-    <include name="imagegrid" displayName="${gridName}">./subsets/systemview/imagegrid.xml</include>
+    <include name="imagegrid" displayName="${systemview.gridName}">./subsets/systemview/imagegrid.xml</include>
     <include name="horizontal" displayName="${systemview.horizontal}">./subsets/systemview/horizontal.xml</include>
     <include name="legacy" displayName="${systemview.legacy}" tinyScreen="false">./subsets/systemview/legacy.xml</include>
     <include name="transparent" displayName="${systemview.transparent}" tinyScreen="false">./subsets/systemview/transparent.xml</include>
     <include name="simple" displayName="${systemview.simple}">./subsets/systemview/verticalone.xml</include>
     <include name="vertical"  displayName="${systemview.vertical}">./subsets/systemview/vertical.xml</include>
     <include name="wheel" displayName="${systemview.wheel}">./subsets/systemview/wheel.xml</include>
-    <include name="textlist" displayName="textlist">./subsets/systemview/textlist.xml</include>
+    <include name="textlist" displayName="${systemview.textlist}">./subsets/systemview/textlist.xml</include>
   </subset>
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
@@ -202,8 +202,8 @@ languages and missing systems (batocera v36): by maioni
     <include name="yes" displayName="${yes}">./subsets/grid/zoomboxes.xml</include>
   </subset>
   <subset name="scrolldirection" displayName="${orientationSubsetName}" appliesTo="Tiles,Icons,Boxes,grid">
-    <include name="vertical"/>
-    <include name="horizontal">./subsets/grid/scrollhorz.xml</include>
+    <include name="vertical" displayName="${vertical}"/>
+    <include name="horizontal" displayName="${horizontal}">./subsets/grid/scrollhorz.xml</include>
   </subset>
   <subset name="hideselection" displayName="${hideselectionSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>

@@ -8,7 +8,6 @@
     <subset.region>Região</subset.region>
     <!-- Colorsets  -->
     <subset.colorset>Esquema de cores</subset.colorset>
-    <iconsViewName>Ícones</iconsViewName>
     <blue>Azul</blue>
     <red>Vermelho</red>
     <green>Verde</green>
@@ -17,18 +16,21 @@
     <violet>Violeta</violet>
     <orange>Laranja</orange>
     <gray>Cinza</gray>
-    <!-- Common views  -->
-    <tilesViewName>Miniaturas</tilesViewName>
+    <!-- Common views / Gamelist view -->
+    <gridName>Grid</gridName>
     <basicGridName>Grade</basicGridName>
-    <gameCarouselViewName>Carrossel de caixas</gameCarouselViewName>
     <carouselViewName>Carrossel</carouselViewName>
+    <gameCarouselViewName>Carrossel de caixas</gameCarouselViewName>
+    <tilesViewName>Miniaturas</tilesViewName> 
+    <iconsViewName>Ícones</iconsViewName>
+    <contentViewName>Conteúdo</contentViewName>
     <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
     <subset.carouselViewName>Carrossel sub</subset.carouselViewName> <!-- NEED REVIEW -->
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>Informações de sistema aprimoradas</systemViewExInfos>
     <yes>Sim</yes>
     <no>Não</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>Visualização do sistema</systemViewName>
     <systemview.darkened>Escuro</systemview.darkened>
     <systemview.horizontal>Horizontal</systemview.horizontal>
@@ -41,6 +43,7 @@
     <systemBackgroundName>Plano de fundo</systemBackgroundName>
     <systembackground.miniconsoles>Mini video</systembackground.miniconsoles>
     <animatedBackground>Animações do plano de fundo</animatedBackground>
+    <animatedCovers>Caixas aleatórias</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>Videogames</systembackground.consoles>
     <systembackground.miniconsoles>Mini videogames</systembackground.miniconsoles>
@@ -60,13 +63,15 @@
     <systemview.wheel>carrosel</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>legado</systemview.legacy>
-      <!-- Subset options for help -->
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Efeitos de Desfoque</subset.blurfx>
+    <!-- Subset options for help -->
     <helpSubsetName>Ícones de ajuda</helpSubsetName>
     <helpbuttons>Posição dos botões</helpbuttons>
     <xboxbuttons>Botões do Xbox</xboxbuttons>
     <psxbuttons>Botões do PlayStation</psxbuttons>
     <colored>Colorido</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / Filters -->
     <subset.shader>Filtros</subset.shader>
     <none>Nenhum</none>
     <scanlines>Linhas de varredura</scanlines>
@@ -97,6 +102,8 @@
     <image>Imagem</image>
     <text>Texto</text>
     <thumbnail>Miniatura</thumbnail>
+    <contentBackground>Fonte de imagem para o plano de fundo</contentBackground>
+    <fanart>Fã Arte</fanart>
     <animationsSubsetName>Animações de transição</animationsSubsetName>
   </variables>  
 </theme>

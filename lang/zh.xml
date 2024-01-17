@@ -4,11 +4,17 @@
   <!-- Chinese -->
   <variables lang="zh">
     <dateFormat>%m/%d/%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>地区</subset.region>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>箱子的旋转木马</gameCarouselViewName> <!-- NEED REVIEW -->
+    <basicGridName>网格</basicGridName>
+    <carouselViewName>旋转</carouselViewName>
+    <tilesViewName>缩略图</tilesViewName>
+    <iconsViewName>图标</iconsViewName>
+    <contentViewName>内容</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRNSLATION -->
     <!-- Colorsets  -->
     <subset.colorset>配色方案</subset.colorset>
-    <iconsViewName>图标</iconsViewName>
     <blue>蓝色</blue>
     <red>红色</red>
     <green>绿色</green>
@@ -17,31 +23,25 @@
     <violet>紫色</violet>
     <orange>橙色</orange>
     <gray>灰色</gray>
-    <!-- Common views  -->
-    <tilesViewName>缩略图</tilesViewName>
-    <basicGridName>网格</basicGridName>
-    <gameCarouselViewName>箱子的旋转木马</gameCarouselViewName> <!-- NEED REVIEW -->
-    <carouselViewName>旋转</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED TRNSLATION -->
+    <!-- Region -->
+    <subset.region>地区</subset.region>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>改善系统信息</systemViewExInfos>
     <yes>是</yes>
     <no>否</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>系统视图</systemViewName>
     <systemview.darkened>阴影</systemview.darkened>
+    <systemview.gridName>图像网格</systemview.gridName>
     <systemview.horizontal>横向</systemview.horizontal>
     <systemview.legacy>经典</systemview.legacy>
     <systemview.transparent>透明</systemview.transparent>
     <systemview.simple>简易</systemview.simple>
     <systemview.vertical>垂直</systemview.vertical>
     <systemview.wheel>旋转</systemview.wheel>
+    <systemview.textlist>文本列表</systemview.textlist>
     <!-- Subset option for System view background -->
     <systemBackgroundName>背景</systemBackgroundName>
-    <systembackground.miniconsoles>迷你视频</systembackground.miniconsoles>
-    <animatedBackground>背景动画</animatedBackground>
-    <animatedCovers>随机盒子</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>视频游戏</systembackground.consoles>
     <systembackground.miniconsoles>迷你视频游戏</systembackground.miniconsoles>
@@ -55,19 +55,23 @@
     <systembackground.minirandomimage>随机迷你游戏图像</systembackground.minirandomimage>
     <systembackground.minirandombox>随机迷你游戏盒</systembackground.minirandombox>
     <systembackground.minirandomvideo>随机迷你视频</systembackground.minirandomvideo>
+    <animatedBackground>背景动画</animatedBackground>
+    <animatedCovers>随机盒子</animatedCovers>
     <!-- Fix for controller image size -->
     <systemview.simple>简易</systemview.simple>
     <systemview.vertical>垂直</systemview.vertical>
     <systemview.wheel>旋转</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>经典</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>模糊效果</subset.blurfx>
     <!-- Subset options for help -->
     <helpSubsetName>帮助图标</helpSubsetName>
     <helpbuttons>帮助按钮</helpbuttons>
     <xboxbuttons>Xbox按钮</xboxbuttons>
     <psxbuttons>PlayStation按钮</psxbuttons>
     <colored>颜色</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / Filters -->
     <subset.shader>过滤器</subset.shader>
     <none>无</none>
     <scanlines>扫描线</scanlines>
@@ -81,6 +85,7 @@
     <!-- Subset options for grid views -->
     <videoboxesSubsetName>在方框模式下显示视频</videoboxesSubsetName>
     <zoomboxesSubsetName>缩放框</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>方向</orientationSubsetName>
     <vertical>垂直</vertical>
     <horizontal>横向</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>闪烁边缘</blinkBorderSubsetName>
     <videosSubsetName>视频</videosSubsetName>
     <logosSubsetNamegamecarouseltype>缩略图</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>旋转图片来源</gamecarouseltype>
     <marquee>选框</marquee>
     <image>图像</image>
     <text>文本</text>
     <thumbnail>缩略图</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>内容背景</contentBackground>
+    <fanart>粉丝画</fanart>
     <animationsSubsetName>过渡动画</animationsSubsetName>
   </variables>  
 </theme>

@@ -4,11 +4,18 @@
   <!-- Polski -->
   <variables lang="pl">
     <dateFormat>%d.%m.%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>Region</subset.region>
+    <!-- Typowe widoki -->
+    <gameCarouselViewName>Carrossel de caixas</gameCarouselViewName> <!-- NEED TRANSLATION -->
+    <basicGridName>Siatka</basicGridName>
+    <carouselViewName>Karuzela</carouselViewName>
+    <tilesViewName>Miniatury</tilesViewName>
+    <iconsViewName>Ikony</iconsViewName>
+    <contentViewName>Treść</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED REVIEW -->
     <!-- Zestawy kolorów -->
     <subset.colorset>Schemat kolorów</subset.colorset>
-    <iconsViewName>Ikony</iconsViewName>
+   
     <blue>Niebieski</blue>
     <red>Czerwony</red>
     <green>Zielony</green>
@@ -17,13 +24,8 @@
     <violet>Fioletowy</violet>
     <orange>Pomarańczowy</orange>
     <gray>Szary</gray>
-    <!-- Typowe widoki -->
-    <tilesViewName>Miniatury</tilesViewName>
-    <basicGridName>Siatka</basicGridName>
-    <gameCarouselViewName>Carrossel de caixas</gameCarouselViewName> <!-- NEED TRANSLATION -->
-    <carouselViewName>Karuzela</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED REVIEW -->
+    <!-- Region -->
+    <subset.region>Region</subset.region>
     <!-- Opcja rozszerzonych informacji systemowych -->
     <systemViewExInfos>Rozszerzone informacje o systemie</systemViewExInfos>
     <yes>Tak</yes>
@@ -31,17 +33,16 @@
     <!-- Opcje ekranu -->
     <systemViewName>Widok systemu</systemViewName>
     <systemview.darkened>Przyciemniony</systemview.darkened>
+    <systemview.gridName>Siatka obrazów</systemview.gridName>
     <systemview.horizontal>Poziomy</systemview.horizontal>
     <systemview.legacy>Starsza wersja</systemview.legacy>
     <systemview.transparent>Przejrzysty</systemview.transparent>
     <systemview.simple>Prosty</systemview.simple>
     <systemview.vertical>Pionowy</systemview.vertical>
     <systemview.wheel>Karuzela</systemview.wheel>
+    <systemview.textlist>Lista tekstowa</systemview.textlist>
     <!-- Opcja tła widoku systemu -->
     <systemBackgroundName>Tło</systemBackgroundName>
-    <systembackground.miniconsoles>Mini wideo</systembackground.miniconsoles>
-    <animatedBackground>Animacje</animatedBackground>
-    <animatedCovers>Losowe pudełka</animatedCovers>
     <!-- zmień domyślne dla małych ekranów -->
     <systembackground.consoles>Gry wideo</systembackground.consoles>
     <systembackground.miniconsoles>Mini gry wideo</systembackground.miniconsoles>
@@ -55,12 +56,16 @@
     <systembackground.minirandomimage>Losowy mini obraz gry</systembackground.minirandomimage>
     <systembackground.minirandombox>Losowe mini pudełko gry</systembackground.minirandombox>
     <systembackground.minirandomvideo>Losowe mini wideo</systembackground.minirandomvideo>
+    <animatedBackground>Animacje</animatedBackground>
+    <animatedCovers>Losowe pudełka</animatedCovers>
     <!-- Naprawa rozmiaru obrazu kontrolera -->
     <systemview.simple>Prosty</systemview.simple>
     <systemview.vertical>Pionowy</systemview.vertical>
     <systemview.wheel>Karuzela</systemview.wheel>
     <!-- Naprawa dla Starszej wersji w opcjach Widoku systemu: kolory systemInfo muszą zostać przywrócone po zastosowaniu podzbioru systembackground -->
     <systemview.legacy>Starsza wersja</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Efekty rozmycia</subset.blurfx>
     <!-- Opcje pomocy -->
     <helpSubsetName>Ikony pomocy</helpSubsetName>
     <helpbuttons>Przyciski pomocy</helpbuttons>
@@ -81,6 +86,7 @@
     <!-- Opcje widoku siatki -->
     <videoboxesSubsetName>Pokaż wideo w trybie pudełkowym</videoboxesSubsetName>
     <zoomboxesSubsetName>Powiększ pudełka</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>Orientacja</orientationSubsetName>
     <pionowo>Pionowa</pionowo>
     <poziomo>Pozioma</poziomo>
@@ -93,11 +99,15 @@
     <blinkBorderSubsetName>Migające ramki</blinkBorderSubsetName>
     <videosSubsetName>Wideo</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Miniatury</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Źródło obrazu karuzeli</gamecarouseltype>
     <marquee>Marquee</marquee>
     <image>Obraz</image>
     <text>Tekst</text>
     <thumbnail>Miniatura</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>Kontekst</contentBackground>
+    <fanart>Fanart</fanart>
     <animationsSubsetName>Animacje przejścia</animationsSubsetName>
   </variables>  
 </theme>

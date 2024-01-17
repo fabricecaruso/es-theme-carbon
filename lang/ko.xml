@@ -1,14 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-  <!-- Brazilian Portuguese -->
+  <!-- Korean -->
   <variables lang="ko">
     <dateFormat>%Y년 %m월 %d일</dateFormat>
-    <!-- Region -->
-    <subset.region>지역</subset.region>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>상자 회전 목마</gameCarouselViewName>
+    <basicGridName>그리드</basicGridName>
+    <carouselViewName>회전 목마</carouselViewName>
+    <tilesViewName>썸네일</tilesViewName>
+    <iconsViewName>아이콘</iconsViewName>
+    <contentViewName>콘텐츠</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>회전 목마</subset.carouselViewName>
     <!-- Colorsets  -->
     <subset.colorset>색 구성표</subset.colorset>
-    <iconsViewName>아이콘</iconsViewName>
     <blue>파란색</blue>
     <red>빨간색</red>
     <green>녹색</green>
@@ -17,31 +23,25 @@
     <violet>제비꽃</violet>
     <orange>주황색</orange>
     <gray>회색</gray>
-    <!-- Common views  -->
-    <tilesViewName>썸네일</tilesViewName>
-    <basicGridName>그리드</basicGridName>
-    <gameCarouselViewName>상자 회전 목마</gameCarouselViewName>
-    <carouselViewName>회전 목마</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>회전 목마</subset.carouselViewName>
+    <!-- Region -->
+    <subset.region>지역</subset.region>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>향상된 시스템 정보</systemViewExInfos>
     <yes>예</yes>
     <no>아니요</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>시스템 보기</systemViewName>
     <systemview.darkened>어두워진</systemview.darkened>
+    <systemview.gridName>이미지 그리드</systemview.gridName>
     <systemview.horizontal>수평의</systemview.horizontal>
     <systemview.legacy>유산</systemview.legacy>
     <systemview.transparent>투명한</systemview.transparent>
     <systemview.simple>단순한</systemview.simple>
     <systemview.vertical>수직의</systemview.vertical>
     <systemview.wheel>회전 목마</systemview.wheel>
+    <systemview.textlist>텍스트 목록</systemview.textlist>
     <!-- Subset option for System view background -->
     <systemBackgroundName>배경</systemBackgroundName>
-    <systembackground.miniconsoles>미니 비디오</systembackground.miniconsoles>
-    <animatedBackground>배경 애니메이션</animatedBackground>
-    <animatedCovers>랜덤 박스</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>비디오 게임</systembackground.consoles>
     <systembackground.miniconsoles>미니 비디오 게임</systembackground.miniconsoles>
@@ -55,19 +55,23 @@
     <systembackground.minirandomimage>임의의 미니 이미지</systembackground.minirandomimage>
     <systembackground.minirandombox>미니 랜덤 게임 상자</systembackground.minirandombox>
     <systembackground.minirandomvideo>랜덤 미니 비디오</systembackground.minirandomvideo>
+    <animatedBackground>배경 애니메이션</animatedBackground>
+    <animatedCovers>랜덤 박스</animatedCovers>
     <!-- Fix for controller image size -->
     <systemview.simple>단순한</systemview.simple>
     <systemview.vertical>수직의</systemview.vertical>
     <systemview.wheel>회전 목마</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>유산</systemview.legacy>
-      <!-- Subset options for help -->
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>흐림 효과</subset.blurfx>
+    <!-- Subset options for help -->
     <helpSubsetName>도움말 아이콘</helpSubsetName>
     <helpbuttons>버튼의 위치</helpbuttons>
     <xboxbuttons>Xbox 버튼</xboxbuttons>
     <psxbuttons>PlayStation 버튼</psxbuttons>
     <colored>화려한</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / Filters -->
     <subset.shader>필터</subset.shader>
     <none>없음</none>
     <scanlines>주사선</scanlines>
@@ -81,6 +85,7 @@
     <!-- Subset options for grid views -->
     <videoboxesSubsetName>상자 모드에서 비디오 표시</videoboxesSubsetName>
     <zoomboxesSubsetName>확대/축소 상자</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>안내</orientationSubsetName>
     <vertical>수직의</vertical>
     <horizontal>수평의</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>깜박이는 가장자리</blinkBorderSubsetName>
     <videosSubsetName>동영상</videosSubsetName>
     <logosSubsetNamegamecarouseltype>썸네일</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>캐러셀의 이미지 소스</gamecarouseltype>
     <marquee>큰 천막</marquee>
     <image>영상</image>
     <text>텍스트</text>
     <thumbnail>세밀화</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>콘텐츠 배경</contentBackground>
+    <fanart>팬아트</fanart>
     <animationsSubsetName>전환 애니메이션</animationsSubsetName>
   </variables>  
 </theme>

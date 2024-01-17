@@ -4,11 +4,17 @@
   <!-- English -->
   <variables lang="aa_BB">
     <dateFormat>%m/%d/%Y</dateFormat>
-    <!-- Region -->
-    <subset.region>Region</subset.region>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>Carousel of boxes</gameCarouselViewName>
+    <basicGridName>Boxes</basicGridName>
+    <carouselViewName>Carousel</carouselViewName>
+    <tilesViewName>Thumbnails</tilesViewName>
+    <iconsViewName>Icons</iconsViewName>
+    <contentViewName>Content</contentViewName>
+    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
+    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED REVIEW -->
     <!-- Colorsets  -->
     <subset.colorset>Color scheme</subset.colorset>
-    <iconsViewName>Icons</iconsViewName>
     <blue>Blue</blue>
     <red>Red</red>
     <green>Green</green>
@@ -17,31 +23,25 @@
     <violet>Violet</violet>
     <orange>Orange</orange>
     <gray>Gray</gray>
-    <!-- Common views  -->
-    <tilesViewName>Thumbnails</tilesViewName>
-    <basicGridName>Boxes</basicGridName>
-    <gameCarouselViewName>Carousel of boxes</gameCarouselViewName>
-    <carouselViewName>Carousel</carouselViewName>
-    <!-- <system.carouselViewName>Carrossel sys</system.carouselViewName> -->
-    <subset.carouselViewName>Carousel sub</subset.carouselViewName> <!-- NEED REVIEW -->
+    <!-- Region -->
+    <subset.region>Region</subset.region>
     <!-- Subset option for System extended informations -->
     <systemViewExInfos>Improved system information</systemViewExInfos>
     <yes>Yes</yes>
     <no>No</no>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / System view -->
     <systemViewName>System view</systemViewName>
     <systemview.darkened>Darkened</systemview.darkened>
+    <systemview.gridName>Image Grid</systemview.gridName>
     <systemview.horizontal>Horizontal</systemview.horizontal>
     <systemview.legacy>Legacy</systemview.legacy>
     <systemview.transparent>Transparent</systemview.transparent>
     <systemview.simple>Simple</systemview.simple>
     <systemview.vertical>Vertical</systemview.vertical>
     <systemview.wheel>Carousel</systemview.wheel>
+    <systemview.textlist>Text list</systemview.textlist>
     <!-- Subset option for System view background -->
     <systemBackgroundName>Background</systemBackgroundName>
-    <systembackground.miniconsoles>Mini video</systembackground.miniconsoles>
-    <animatedBackground>Background animations</animatedBackground>
-        <animatedCovers>Random boxes</animatedCovers>
     <!-- change default for small screens -->
     <systembackground.consoles>Video games</systembackground.consoles>
     <systembackground.miniconsoles>Mini video games</systembackground.miniconsoles>
@@ -55,19 +55,23 @@
     <systembackground.minirandomimage>Random mini game image</systembackground.minirandomimage>
     <systembackground.minirandombox>Random mini game box</systembackground.minirandombox>
     <systembackground.minirandomvideo>Random mini video</systembackground.minirandomvideo>
+    <animatedBackground>Background animations</animatedBackground>
+    <animatedCovers>Random boxes</animatedCovers>
     <!-- Fix for controller image size -->
     <systemview.simple>simple</systemview.simple>
     <systemview.vertical>vertical</systemview.vertical>
     <systemview.wheel>carousel</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
     <systemview.legacy>legacy</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Blur Effects</subset.blurfx>
     <!-- Subset options for help -->
     <helpSubsetName>Help icons</helpSubsetName>
     <helpbuttons>Position of buttons</helpbuttons>
     <xboxbuttons>Xbox buttons</xboxbuttons>
     <psxbuttons>PlayStation Buttons</psxbuttons>
     <colored>Colorful</colored>
-    <!-- Subset options for screen -->
+    <!-- Subset options for screen / Filters -->
     <subset.shader>Filters</subset.shader>
     <none>None</none>
     <scanlines>Scan Lines</scanlines>
@@ -81,6 +85,7 @@
     <!-- Subset options for grid views -->
     <videoboxesSubsetName>Show video in box mode</videoboxesSubsetName>
     <zoomboxesSubsetName>Zoom boxes</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
     <orientationSubsetName>Orientation</orientationSubsetName>
     <vertical>Vertical</vertical>
     <horizontal>Horizontal</horizontal>
@@ -93,11 +98,15 @@
     <blinkBorderSubsetName>Blinking edges</blinkBorderSubsetName>
     <videosSubsetName>Vídeos</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Thumbnails</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Image source for Carousel</gamecarouseltype>
     <marquee>Marquee</marquee>
     <image>Image</image>
     <text>Text</text>
     <thumbnail>Miniature</thumbnail>
+    <!-- Subset options for System view content background -->
+    <contentBackground>Content Background</contentBackground>
+    <fanart>Fanart</fanart>
     <animationsSubsetName>Transition animations</animationsSubsetName>
   </variables>  
 </theme>

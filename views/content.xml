@@ -13,10 +13,10 @@
     <blinkColor>FFFF80FF</blinkColor>
     <blinkColor ifSubset="blinkborders:no">${baseColor}</blinkColor>
   </variables>
-  <subset if="!${simpleMode}" name="contentBack" displayName="CONTENT BACKGROUND" appliesTo="Content">
-    <include name="none" displayName="NONE"/>
-    <include name="thumb" displayName="THUMBNAIL"/>
-    <include name="fanart" displayName="FANART"/>
+    <subset if="!${simpleMode}" name="contentBack" displayName="${contentBackground}" appliesTo="Content">
+    <include name="none" displayName="${none}"/>
+    <include name="thumb" displayName="${thumbnail}"/>
+    <include name="fanart" displayName="${fanart}"/>
   </subset>
   <customView name="Content" inherits="grid" displayName="${contentViewName}">
     <!--
