@@ -58,6 +58,11 @@ Dernière partie : {binding:lastPlayedDate}</text>
 Παιχνίδια που παίχτηκαν : {binding:gamesPlayed}
 Περισσότερα παίχτηκαν : {binding:mostPlayed}
 Τελευταία κίνηση : {binding:lastPlayedDate}</text>
+      <text lang="hu">Játékok : {binding:total}
+Kedvencek : {binding:favorites}
+Játszottak : {binding:gamesPlayed}
+Gyakran játszott : {binding:mostPlayed}
+Utoljára játszott : {binding:lastPlayedDate}</text>
       <text lang="it">Numero di giochi : {binding:total}
 Preferiti : {binding:favorites}
 Giochi giocati : {binding:gamesPlayed}
