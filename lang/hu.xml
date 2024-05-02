@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Hungarian -->
+  <variables lang="hu">
+    <dateFormat>%m/%d/%Y</dateFormat>
+    <!-- Általános nézet / Játéklista nézet -->
+    <gameCarouselViewName>Körforgó</gameCarouselViewName>
+    <basicGridName>Borítók</basicGridName>
+    <carouselViewName>Körforgó borítókból</carouselViewName>
+    <tilesViewName>Bélyegképek</tilesViewName>
+    <iconsViewName>Ikonok</iconsViewName>
+    <contentViewName>Tartalom</contentViewName>
+    <!-- Színkészletek  -->
+    <subset.colorset>Color scheme</subset.colorset>
+    <blue>Kék</blue>
+    <red>Piros</red>
+    <green>Zöld</green>
+    <cyan>Cián</cyan>
+    <yellow>Sárga</yellow>
+    <violet>Lila</violet>
+    <orange>Narancs</orange>
+    <gray>Szürke</gray>
+    <!-- Régió -->
+    <subset.region>Terület</subset.region>
+    <!-- Rendszer bővített információk -->
+    <systemViewExInfos>Bővített rendszerinformáció</systemViewExInfos>
+    <yes>Igen</yes>
+    <no>Nem</no>
+    <!-- Képernyő-beállításai / Rendszer nézet -->
+    <systemViewName>Rendszer nézet</systemViewName>
+    <systemview.darkened>Sötétebb</systemview.darkened>
+    <systemview.gridName>Képrács</systemview.gridName>
+    <systemview.horizontal>Vízszintes</systemview.horizontal>
+    <systemview.legacy>Hagyományos</systemview.legacy>
+    <systemview.transparent>Átlátszó</systemview.transparent>
+    <systemview.simple>Egyszerű</systemview.simple>
+    <systemview.vertical>Függőleges</systemview.vertical>
+    <systemview.wheel>Körforgó</systemview.wheel>
+    <systemview.textlist>Szöveg lista</systemview.textlist>
+    <!-- Rendszer háttér -->
+    <systemBackgroundName>Háttér</systemBackgroundName>
+    <!-- kis képernyők alapértelmezett beállításai -->
+    <systembackground.consoles>Videójátékok</systembackground.consoles>
+    <systembackground.miniconsoles>Mini videójátékok</systembackground.miniconsoles>
+    <systembackground.carboncontrollers>Carbon kontroll</systembackground.carboncontrollers>
+    <systembackground.carbonlegacy>Hagyományos</systembackground.carbonlegacy>
+    <systembackground.simple>Egyszerű</systembackground.simple>
+    <systembackground.randomvideo>Véletlen videó</systembackground.randomvideo>
+    <systembackground.randomfanart>Véletlen fanart</systembackground.randomfanart>
+    <systembackground.randomimage>Véletlen kép</systembackground.randomimage>
+    <systembackground.randombox>Véletlen borító</systembackground.randombox>
+    <systembackground.minirandomimage>Véletlen mini játék kép</systembackground.minirandomimage>
+    <systembackground.minirandombox>Véletlen mini játék borító</systembackground.minirandombox>
+    <systembackground.minirandomvideo>Véletlen mini videó</systembackground.minirandomvideo>
+    <animatedBackground>Háttér animáció</animatedBackground>
+    <animatedCovers>Véletln borító</animatedCovers>
+    <!-- Javítás a kontroller képméretéhez -->
+    <systemview.simple>egyszerű</systemview.simple>
+    <systemview.vertical>függőleges</systemview.vertical>
+    <systemview.wheel>körforgó</systemview.wheel>
+    <!-- Javítás a hagyományos beállításhoz a rendszernézetben: a rendszerinformációs színeket vissza kell állítani a rendszer háttér alkalmazása után -->
+    <systemview.legacy>hagyományos</systemview.legacy>
+    <!-- Beállítások az elmosási effektusokhoz -->
+    <subset.blurfx>Elmosás effektus</subset.blurfx>
+    <!-- Beállítások segítséghez -->
+    <helpSubsetName>Segítség ikonok</helpSubsetName>
+    <helpbuttons>Gombok helyzete</helpbuttons>
+    <xboxbuttons>Xbox gombok</xboxbuttons>
+    <psxbuttons>PlayStation gombok</psxbuttons>
+    <colored>Színezett</colored>
+    <!-- Képernyő / szűrők beállításai -->
+    <subset.shader>Szűrők</subset.shader>
+    <none>Nincs</none>
+    <scanlines>Vonalak</scanlines>
+    <crt>Katódsugárcsöves TV</crt>
+    <!-- játék információs sáv hozzáadása -->
+    <gameBar>Játék információs sáv</gameBar>
+    <!-- Elrendezés kis képernyőkhöz -->
+    <optimizesmallscreensSubsetName>Optimalizálás kis képernyőkre</optimizesmallscreensSubsetName>
+    <!-- Rácsnézetek beállításai -->
+    <videoboxesSubsetName>Videó mutatása borító módban</videoboxesSubsetName>
+    <zoomboxesSubsetName>Borítók nagyítása</zoomboxesSubsetName>
+    <!-- A tájolási nézet beállításai -->
+    <orientationSubsetName>Tájolás</orientationSubsetName>
+    <vertical>Függőleges</vertical>
+    <horizontal>Vízszintes</horizontal>
+    <hideselectionSubsetName>Kiválasztás elrejtése</hideselectionSubsetName>
+    <previewBarSubsetName>Előnézeti panel</previewBarSubsetName>
+    <animatedInfobar>Infobar animációk</animatedInfobar>
+    <!-- Csempe nézet beállításai -->
+    <glowSubsetName>Kiválasztás ragyogással</glowSubsetName>
+    <roundBorderSubsetName>Kerekített sarkok</roundBorderSubsetName>
+    <blinkBorderSubsetName>Villogó élek</blinkBorderSubsetName>
+    <videosSubsetName>Vídeók</videosSubsetName>
+    <logosSubsetNamegamecarouseltype>Bélyegképek</logosSubsetNamegamecarouseltype>
+    <!-- Körforgó tartalomtípusának beállításai -->
+    <gamecarouseltype>Körforgó képforrása</gamecarouseltype>
+    <marquee>Plakát</marquee>
+    <image>Kép</image>
+    <text>Szöveg</text>
+    <thumbnail>Miniatűrök</thumbnail>
+     <!-- A rendszer nézet hátterének beállításai -->
+    <contentBackground>Téma háttér</contentBackground>
+    <fanart>Fanart</fanart>
+    <animationsSubsetName>Átmenet animációk</animationsSubsetName>
+  </variables>  
+</theme>
