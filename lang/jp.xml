@@ -23,8 +23,10 @@
     <gray>灰色</gray>
     <!-- Region -->
     <subset.region>地域</subset.region>
-    <!-- Subset option for System extended informations -->
-    <systemViewExInfos>システム情報の充実</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>システムインフォメーション</systemViewInfo>
+    <standard>標準</standard>
+    <extended>拡張された</extended>
     <yes>あり</yes>
     <no>なし</no>
     <!-- Subset options for screen / System view -->

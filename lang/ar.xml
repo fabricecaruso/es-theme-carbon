@@ -23,8 +23,10 @@
     <gray>رمادي</gray>
     <!-- Region -->
     <subset.region>منطقة</subset.region>
-    <!-- Subset option for System extended informations -->
-    <systemViewExInfos>استورد معلومات النظام</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>معلومات النظام</systemViewInfo>
+    <standard>معيار</standard>
+    <extended>ممتد</extended>
     <yes>نعم</yes>
     <no>لا</no>
     <!-- Subset options for screen / System view -->

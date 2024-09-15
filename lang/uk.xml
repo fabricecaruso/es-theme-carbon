@@ -23,8 +23,10 @@
     <gray>Сірий</gray>
     <!-- Region -->
     <subset.region>Регіон</subset.region>
-    <!-- Subset option for System extended informations -->
-    <systemViewExInfos>Покращена інформація про систему</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>Інформація про систему</systemViewInfo>
+    <standard>Standard</standard>
+    <extended>Extended</extended>
     <yes>Так</yes>
     <no>Немає</no>
     <!-- Subset options for screen / System view -->

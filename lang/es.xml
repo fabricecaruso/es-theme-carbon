@@ -23,8 +23,10 @@
      <gray>Gris</gray>
     <!-- Region -->
     <subset.region>Región</subset.region>
-     <!-- Subset option for System extended informations -->
-    <systemViewExInfos>Información de sistemas detallada</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>Información del sistema</systemViewInfo>
+    <standard>Estándar</standard>
+    <extended>Extendido</extended>
     <yes>Sí</yes>
     <no>No</no>
     <!-- Subset options for screen / System view -->

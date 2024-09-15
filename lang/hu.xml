@@ -23,8 +23,10 @@
     <gray>Szürke</gray>
     <!-- Régió -->
     <subset.region>Terület</subset.region>
-    <!-- Rendszer bővített információk -->
-    <systemViewExInfos>Bővített rendszerinformáció</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>Rendszer információ</systemViewInfo>
+    <standard>Alapértelmezett</standard>
+    <extended>Kiterjedt</extended>
     <yes>Igen</yes>
     <no>Nem</no>
     <!-- Képernyő-beállításai / Rendszer nézet -->

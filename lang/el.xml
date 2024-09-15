@@ -23,8 +23,10 @@
     <gray>Γκρι</gray>
     <!-- Region -->
     <subset.region>Περιοχή</subset.region>
-    <!-- Επιλογή υποσυνόλου για εκτεταμένες πληροφορίες συστήματος -->
-    <systemViewExInfos>Βελτιωμένες πληροφορίες συστήματος</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>Πληροφορίες συστήματος</systemViewInfo>
+    <standard>Πρότυπο</standard>
+    <extended>Επεκτάθηκε</extended>
     <yes>Ναι</yes>
     <no>Όχι</no> 
     <!-- αλλαγή προεπιλογής για μικρές οθόνες -->

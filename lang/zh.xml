@@ -23,8 +23,10 @@
     <gray>灰色</gray>
     <!-- Region -->
     <subset.region>地区</subset.region>
-    <!-- Subset option for System extended informations -->
-    <systemViewExInfos>改善系统信息</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>系统信息</systemViewInfo>
+    <standard>标准</standard>
+    <extended>扩展</extended>
     <yes>是</yes>
     <no>否</no>
     <!-- Subset options for screen / System view -->

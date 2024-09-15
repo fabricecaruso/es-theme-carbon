@@ -36,7 +36,7 @@ languages and missing systems (batocera v36): by maioni
     <orientationSubsetName>Orientation</orientationSubsetName>
     <videosSubsetName>Videos</videosSubsetName>
     <logosSubsetName>Logos</logosSubsetName>
-    <systemViewExInfos>Extended system informations</systemViewExInfos>
+    <systemViewInfo>System information</systemViewInfo>
     <animationsSubsetName>Transition Animations</animationsSubsetName>
     <hideselectionSubsetName>Hide selection</hideselectionSubsetName>
     <systemBackgroundName>System background</systemBackgroundName>
@@ -104,10 +104,11 @@ languages and missing systems (batocera v36): by maioni
   <include>./views/screen.xml</include>
   <include>./views/system.xml</include>
   
-  <!-- Subset option for System extended informations -->
-  <subset name="subsetSystemInfoEx" displayName="${systemViewExInfos}" tinyScreen="false">
-    <include name="yes" displayName="${yes}">./subsets/extendedinfo.xml</include>
-    <include name="no" displayName="${no}"/>
+  <!-- Subset option for System information -->
+  <subset name="subsetSystemInfo" displayName="${systemViewInfo}">
+    <include name="extended" displayName="${extended}" tinyScreen="false">./subsets/extendedinfo.xml</include>
+    <include name="standard" displayName="${standard}"/>
+    <include name="none" displayName="${none}">./subsets/noinfo.xml</include>
   </subset>
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">

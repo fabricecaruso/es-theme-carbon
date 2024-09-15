@@ -23,8 +23,10 @@
     <gray>회색</gray>
     <!-- Region -->
     <subset.region>지역</subset.region>
-    <!-- Subset option for System extended informations -->
-    <systemViewExInfos>향상된 시스템 정보</systemViewExInfos>
+    <!-- Subset option for System information -->
+    <systemViewInfo>시스템 정보</systemViewInfo>
+    <standard>기준</standard>
+    <extended>펼친</extended>
     <yes>예</yes>
     <no>아니요</no>
     <!-- Subset options for screen / System view -->
