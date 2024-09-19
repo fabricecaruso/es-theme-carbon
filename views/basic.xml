@@ -42,6 +42,7 @@ originally based on: "simple" by nils bonenberger
       <size>0.950 0.73</size>
       <size ifHelpPrompts="false">0.950 0.76</size>
       <lines>17</lines>
+      <lines ifSubset="optimizesmallscreens:yes">12</lines>
       <horizontalMargin>0.005</horizontalMargin>
       <!--
       <selectorColor>1c1c1c</selectorColor>
@@ -79,7 +80,7 @@ originally based on: "simple" by nils bonenberger
           </storyboard>
           <container>
             <padding>6 0</padding>
-            <text name="nameId" pos="0 0" size="1 1">
+            <text name="nameId" pos="0 0" size="0.5 1">
               <text>{grid:label}</text>
               <!--
               <glowColor>000000A0</glowColor>
@@ -91,6 +92,7 @@ originally based on: "simple" by nils bonenberger
               <multiLine>false</multiLine>
               <autoScrollDelay>250</autoScrollDelay>
               <fontSize>0.026</fontSize>
+              <fontSize ifSubset="optimizesmallscreens:yes">0.034</fontSize>
               <color>C0C0C0</color>
               <storyboard event="activate">
                 <animation property="color" to="FFFFFFFF"/>
@@ -107,6 +109,7 @@ originally based on: "simple" by nils bonenberger
               <alignment>left</alignment>
               <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
               <fontSize>0.016</fontSize>
+              <fontSize ifSubset="optimizesmallscreens:yes">0.021</fontSize>
               <color>A0A0A0</color>
               <multiLine>false</multiLine>
               <autoScrollDelay>250</autoScrollDelay>
@@ -123,6 +126,7 @@ originally based on: "simple" by nils bonenberger
               <alignment>left</alignment>
               <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
               <fontSize>0.016</fontSize>
+              <fontSize ifSubset="optimizesmallscreens:yes">0.021</fontSize>
               <color>A0A0A0</color>
               <multiLine>false</multiLine>
               <autoScrollDelay>250</autoScrollDelay>
@@ -139,6 +143,7 @@ originally based on: "simple" by nils bonenberger
               <alignment>left</alignment>
               <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
               <fontSize>0.016</fontSize>
+              <fontSize ifSubset="optimizesmallscreens:yes">0.021</fontSize>
               <color>FFCC00D0</color>
               <multiLine>false</multiLine>
               <autoScrollDelay>250</autoScrollDelay>

@@ -16,6 +16,7 @@ originally based on: "simple" by nils bonenberger
       -->
     <textlist name="gamelist">
       <lines>17</lines>
+      <lines ifSubset="optimizesmallscreens:yes">12</lines>
       <primaryColor>C0C0C0</primaryColor>
       <secondaryColor>F0F0F0</secondaryColor>
       <selectorColor>${centerFadeColor}</selectorColor>
@@ -30,6 +31,7 @@ originally based on: "simple" by nils bonenberger
       <horizontalMargin>0.00</horizontalMargin>
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.028</fontSize>
+      <fontSize ifSubset="optimizesmallscreens:yes">0.0366</fontSize>
       <scrollSound>./../art/sounds/scroll.wav</scrollSound>
       <scrollbarColor>96969620</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
