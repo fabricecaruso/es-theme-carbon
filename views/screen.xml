@@ -12,8 +12,8 @@ originally based on: "simple" by nils bonenberger
     <text name="clock">
       <color>777777FF</color>
       <fontSize>0.035</fontSize>
-      <pos>0.90 0.94</pos>
-      <size>0.09 0.058</size>
+      <pos>0.85 0.94</pos>
+      <size>0.14 0.058</size>
       <fontSize verticalScreen="true">0.028</fontSize>
       <pos verticalScreen="true">0.90 0.012</pos>
       <size verticalScreen="true">0.09 0.0275</size>
