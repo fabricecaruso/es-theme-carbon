@@ -256,15 +256,14 @@
       <zIndex>100</zIndex>
     </image>
     <datetime name="md_releasedate">
-      <origin>0.5 1</origin>
+      <origin>0.5 0.5</origin>
       <pos>0.976 0.78</pos>
       <size>0.1 0.035</size>
       <format>%Y</format>
       <color>dddddd</color>
       <forceUppercase>0</forceUppercase>
       <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
-      <rotation>-90</rotation>
-      <alignment>left</alignment>
+      <alignment>center</alignment>
       <fontSize>0.025</fontSize>
     </datetime>
     <image name="md_flag">
