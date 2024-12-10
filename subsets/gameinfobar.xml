@@ -312,11 +312,13 @@
 			<zIndex>100</zIndex>
 		</image>
 	-->
+<!--
     <text name="md_genre">
       <pos>0.55 0.88</pos>
       <size>0.38 0.035</size>
       <alignment>right</alignment>
     </text>
+-->
     <!--
 		<image name="releaseDateImage" extra="true">
 			<visible>false</visible>
