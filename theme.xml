@@ -58,6 +58,7 @@ languages and missing systems (batocera v36): by maioni
     <helpbuttons>Button location</helpbuttons>
     <xboxbuttons>Xbox buttons</xboxbuttons>
     <psxbuttons>Playstation buttons</psxbuttons>
+    <buttons6>6 Buttons</buttons6>
     <marquee>marquee</marquee>
     <image>image</image>
     <text>text</text>
@@ -166,6 +167,7 @@ languages and missing systems (batocera v36): by maioni
 
   <!-- Subset options for help -->
   <subset name="helpsystem" displayName="${helpSubsetName}">
+  	<include name="6buttons" displayName="${buttons6}">./subsets/help/6buttons.xml</include>  
     <include name="buttons" displayName="${helpbuttons}">./subsets/help/buttons.xml</include>
     <include name="xboxbuttons" displayName="${xboxbuttons}">./subsets/help/xboxbuttons.xml</include>
     <include name="psxbuttons" displayName="${psxbuttons}">./subsets/help/psxbuttons.xml</include>
