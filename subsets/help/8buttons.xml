@@ -7,11 +7,10 @@
       <iconColor>${baseColor}</iconColor>
 
  		<!-- Add in relative location within the theme -->
- 		<iconA>./../../art/buttons/6buttons_east.svg</iconA>
-		<iconB>./../../art/buttons/6buttons_south.svg</iconB>
-		<iconX>./../../art/buttons/6buttons_north.svg</iconX>
-		<iconY>./../../art/buttons/6buttons_west.svg</iconY>
-
+ 		<iconA>./../../art/buttons/8buttons_east.svg</iconA>
+		<iconB>./../../art/buttons/8buttons_south.svg</iconB>
+		<iconX>./../../art/buttons/8buttons_north.svg</iconX>
+		<iconY>./../../art/buttons/8buttons_west.svg</iconY>
 
       <!-- XBox layout
       <iconA>:/help/buttons_south.svg</iconA>
