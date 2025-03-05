@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./default.xml</include>
+  <customView name="system,basic,detailed,gamecarousel,grid,Carousel,Tiles,Boxes,Icons,Content">
+    <helpsystem name="help">
+      <iconColor>${baseColor}</iconColor>
+
+ 		<!-- Add in relative location within the theme -->
+ 		<iconA>./../../art/buttons/8buttons_east.svg</iconA>
+		<iconB>./../../art/buttons/8buttons_south.svg</iconB>
+		<iconX>./../../art/buttons/8buttons_north.svg</iconX>
+		<iconY>./../../art/buttons/8buttons_west.svg</iconY>
+
+      <!-- XBox layout
+      <iconA>:/help/buttons_south.svg</iconA>
+      <iconB>:/help/buttons_east.svg</iconB>
+      <iconX>:/help/buttons_west.svg</iconX>
+      <iconY>:/help/buttons_north.svg</iconY> -->
+    </helpsystem>
+  </customView>
+</theme>
