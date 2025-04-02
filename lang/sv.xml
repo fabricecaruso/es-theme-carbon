@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <!-- Swedish -->
+  <variables lang="sv">
+    <dateFormat>%Y-%m-%d/</dateFormat>
+    <!-- Common views / Gamelist view -->
+    <gameCarouselViewName>Karusell</gameCarouselViewName>
+    <basicGridName>Lådor</basicGridName>
+    <carouselViewName>Lådkarusell</carouselViewName>
+    <tilesViewName>Miniatyrbilder</tilesViewName>
+    <iconsViewName>Ikoner</iconsViewName>
+    <contentViewName>Innehåll</contentViewName>
+    <!-- Colorsets  -->
+    <subset.colorset>Färgschema</subset.colorset>
+    <blue>Blå</blue>
+    <red>Röd</red>
+    <green>Grön</green>
+    <cyan>Cyan</cyan>
+    <yellow>Gul</yellow>
+    <violet>Lila</violet>
+    <orange>Orange</orange>
+    <gray>Grå</gray>
+    <!-- Region -->
+    <subset.region>Region</subset.region>
+    <!-- Subset option for System information -->
+    <systemViewInfo>Systeminformation</systemViewInfo>
+    <standard>Standard</standard>
+    <extended>Utökad</extended>
+    <yes>Ja</yes>
+    <no>Nej</no>
+    <!-- Subset options for screen / System view -->
+    <systemViewName>Systemvy</systemViewName>
+    <systemview.darkened>Mörkad</systemview.darkened>
+    <systemview.gridName>Bildrutnät</systemview.gridName>
+    <systemview.horizontal>Horisontell</systemview.horizontal>
+    <systemview.legacy>Föråldrad</systemview.legacy>
+    <systemview.transparent>Genomskinlig</systemview.transparent>
+    <systemview.simple>Enkel</systemview.simple>
+    <systemview.vertical>Vertikal</systemview.vertical>
+    <systemview.wheel>Karusell</systemview.wheel>
+    <systemview.textlist>Textlista</systemview.textlist>
+    <!-- Subset option for System view background -->
+    <systemBackgroundName>Bakgrund</systemBackgroundName>
+    <!-- change default for small screens -->
+    <systembackground.consoles>Videospel</systembackground.consoles>
+    <systembackground.miniconsoles>Små videospel</systembackground.miniconsoles>
+    <systembackground.carboncontrollers>Carbon-kontroller</systembackground.carboncontrollers>
+    <systembackground.carbonlegacy>Föråldrad</systembackground.carbonlegacy>
+    <systembackground.simple>Enkel</systembackground.simple>
+    <systembackground.randomvideo>Slumpmässig video</systembackground.randomvideo>
+    <systembackground.randomfanart>Slumpmässig fan-bild</systembackground.randomfanart>
+    <systembackground.randomimage>Slumpmässig bild</systembackground.randomimage>
+    <systembackground.randombox>Slumpmässig spelomslag</systembackground.randombox>
+    <systembackground.minirandomimage>Slumpmässig bild småspel</systembackground.minirandomimage>
+    <systembackground.minirandombox>Slumpmässigt omslag småspel</systembackground.minirandombox>
+    <systembackground.minirandomvideo>Slumpmässig minivideo</systembackground.minirandomvideo>
+    <animatedBackground>Bakgrundsanimeringar</animatedBackground>
+    <animatedCovers>Slumpmässiga lådor</animatedCovers>
+    <!-- Fix for controller image size -->
+    <systemview.simple>enkel</systemview.simple>
+    <systemview.vertical>vertikal</systemview.vertical>
+    <systemview.wheel>karusell</systemview.wheel>
+    <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
+    <systemview.legacy>föråldrad</systemview.legacy>
+    <!-- Subset options for blur effects -->
+    <subset.blurfx>Oskarpa effekter</subset.blurfx>
+    <!-- Subset options for help -->
+    <helpSubsetName>Hjälpikoner</helpSubsetName>
+    <helpbuttons>Position för knappar</helpbuttons>
+    <xboxbuttons>Xbox-knappar</xboxbuttons>
+    <psxbuttons>PlayStation-knappar</psxbuttons>
+    <colored>Färgrik</colored>
+    <!-- Subset options for screen / Filters -->
+    <subset.shader>Filter</subset.shader>
+    <none>None</none>
+    <scanlines>Skanlinjer</scanlines>
+    <crt>CRT TV</crt>
+    <!-- add game info bar -->
+    <gameBar>Fält för spelinformation</gameBar>
+    <!-- Layout for small screens -->
+    <optimizesmallscreensSubsetName>Optimera för små skärmar</optimizesmallscreensSubsetName>
+    <!-- Subset options for grid views -->
+    <videoboxesSubsetName>Visa video i lådläge</videoboxesSubsetName>
+    <zoomboxesSubsetName>Zooma in lådor</zoomboxesSubsetName>
+    <!-- Subset options for Orientantion view -->
+    <orientationSubsetName>Orientering</orientationSubsetName>
+    <vertical>Vertikal</vertical>
+    <horizontal>Horisontell</horizontal>
+    <hideselectionSubsetName>Dölj val</hideselectionSubsetName>
+    <previewBarSubsetName>Förhandsvisning</previewBarSubsetName>
+    <animatedInfobar>Infofältets animeringar</animatedInfobar>
+    <!-- Subset options for Tiles view -->
+    <glowSubsetName>Välj med halo</glowSubsetName>
+    <roundBorderSubsetName>Runda kanter</roundBorderSubsetName>
+    <blinkBorderSubsetName>Blinkande kanter</blinkBorderSubsetName>
+    <videosSubsetName>Vídeor</videosSubsetName>
+    <logosSubsetNamegamecarouseltype>Miniatyrbilder</logosSubsetNamegamecarouseltype>
+    <!-- Subset options for Carousel content type -->
+    <gamecarouseltype>Bildkälla för karusell</gamecarouseltype>
+    <marquee>Draperier</marquee>
+    <image>Bild</image>
+    <text>Text</text>
+    <thumbnail>Miniatyr</thumbnail>
+     <!-- Subset options for System view content background -->
+    <contentBackground>Temats innehållsbakgrund</contentBackground>
+    <fanart>Fan-bilder</fanart>
+    <animationsSubsetName>Övergångsanimeringar</animationsSubsetName>
+  </variables>  
+</theme>
