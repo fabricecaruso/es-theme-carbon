@@ -118,6 +118,11 @@ Favoriter : {binding:favorites}
 Spel spelade : {binding:gamesPlayed}
 Mest spelat : {binding:mostPlayed}
 Senast spelat : {binding:lastPlayedDate}</text>
+      <text lang="tr">Oyun sayısı : {binding:total}
+Favoriler : {binding:favorites}
+Oynanan oyunlar : {binding:gamesPlayed}
+Son oynanan : {binding:mostPlayed}
+Son oynanma : {binding:lastPlayedDate}</text>
       <text lang="uk">Кількість ігор : {binding:total}
 Вибране : {binding:favorites}
 Зіграні ігри : {binding:gamesPlayed}
@@ -161,6 +166,7 @@ Senast spelat : {binding:lastPlayedDate}</text>
       <text lang="ro_RO">Numărul de colecții : {binding:subSystems}</text>
       <text lang="ru">Количество коллекций : {binding:subSystems}</text>
       <text lang="sv">Antal samlingar : {binding:subSystems}</text>
+      <text lang="tr">Koleksiyon sayısı : {binding:subSystems}</text>
       <text lang="uk">Кількість колекцій : {binding:subSystems}</text>
       <text lang="zh">收集的数量 : {binding:subSystems}</text>
     </text>
@@ -186,6 +192,7 @@ Senast spelat : {binding:lastPlayedDate}</text>
       <text lang="ro_RO">Numărul de elemente : {binding:total}</text>
       <text lang="ru">Количество элементов : {binding:total}</text>
       <text lang="sv">Antal poster : {binding:total}</text>
+      <text lang="tr">Giriş sayısı : {binding:total}</text>
       <text lang="uk">Кількість елементів : {binding:total}</text>
       <text lang="zh">元素的数量 : {binding:total}</text>      
     </text>
