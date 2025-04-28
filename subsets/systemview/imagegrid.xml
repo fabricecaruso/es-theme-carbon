@@ -98,6 +98,8 @@
             </image>
           </image>
           <image name="systemBack" extra="true">
+            <!-- Don't share the image if we have consoles background, or the images will be stored and sized fullscreen-->
+            <shared ifSubset="systembackground:consoles">false</shared> 
             <path>${themePath}/art/background/${system.theme}.jpg</path>
             <!-- this line is just to make sure the image size was preloaded for async, but is not dynamic -->
             <path>none</path>
