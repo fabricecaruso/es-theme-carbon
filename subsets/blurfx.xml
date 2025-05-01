@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
   <view name="menu">
@@ -11,8 +11,9 @@
         <blur>4</blur>
       </fadeShader>
       <!-- menuShader applies under the menu only -->
-      <menuShader>
-        <path>:/shaders/kawase_blur_9pass.glslp</path>
+      <menuShader>        
+        <path>./gaussianblur.glsl</path>
+        <path ifSubset="blurfx:multipass">:/shaders/kawase_blur_9pass.glslp</path> <!-- Multipass does not work with every machines -->
       </menuShader>
     </menuBackground>
   </view>

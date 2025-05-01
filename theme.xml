@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Theme: es-theme-carbon
 author: Fabrice CARUSO
@@ -54,6 +54,7 @@ languages and missing systems (batocera v36): by maioni
     <subset.colorset>Colorset</subset.colorset>
     <subset.shader>Shader</subset.shader>
     <subset.blurfx>Blur Effects</subset.blurfx>
+    <subset.multipassblur>Kawase</subset.multipassblur>
     <glowSubsetName>Glow selection</glowSubsetName>
     <helpbuttons>Button location</helpbuttons>
     <xboxbuttons>Xbox buttons</xboxbuttons>
@@ -163,6 +164,7 @@ languages and missing systems (batocera v36): by maioni
   <!-- Subset option for blur effects -->
   <subset name="blurfx" displayName="${subset.blurfx}" ifArch="windows,x86_64" tinyScreen="false">
     <include name="yes" displayName="${yes}">./subsets/blurfx.xml</include>
+    <include name="multipass" displayName="${subset.multipassblur}">./subsets/blurfx.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
 
