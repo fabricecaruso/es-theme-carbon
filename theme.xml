@@ -87,6 +87,8 @@ languages and missing systems (batocera v36): by maioni
   <include lang="br">./lang/br.xml</include>
   <include lang="ro_RO">./lang/ro_RO.xml</include>
   <include lang="ru">./lang/ru.xml</include>
+  <include lang="sv">./lang/sv.xml</include>
+  <include lang="tr">./lang/tr.xml</include>
   <include lang="uk">./lang/ru.xml</include>
   <include lang="zh">./lang/zh.xml</include> 
 
