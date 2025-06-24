@@ -5,106 +5,106 @@
   <variables lang="tr">
     <dateFormat>%d/%m/%Y</dateFormat>
     <!-- Common views / Gamelist view -->
-    <gameCarouselViewName>Dönen menü</gameCarouselViewName>
-    <basicGridName>Kutular</basicGridName>
-    <carouselViewName>Dönen menü kutuları</carouselViewName>
-    <tilesViewName>Minyatürler</tilesViewName>
-    <iconsViewName>Simgeler</iconsViewName>
-    <contentViewName>İçerikler</contentViewName>
+    <gameCarouselViewName>DÖNEN MENÜ</gameCarouselViewName>
+    <basicGridName>KUTULAR</basicGridName>
+    <carouselViewName>DÖNEN MENÜ KUTULARI</carouselViewName>
+    <tilesViewName>MİNYATÜRLER</tilesViewName>
+    <iconsViewName>SİMGELER</iconsViewName>
+    <contentViewName>İÇERİKLER</contentViewName>
     <!-- Colorsets  -->
-    <subset.colorset>Renk paleti</subset.colorset>
-    <blue>Mavi</blue>
-    <red>Kırmızı</red>
-    <green>Yeşil</green>
-    <cyan>Camgöbeği</cyan>
-    <yellow>Sarı</yellow>
-    <violet>Menekşe</violet>
-    <orange>Turuncu</orange>
-    <gray>Gri</gray>
+    <subset.colorset>RENK PALETİ</subset.colorset>
+    <blue>MAVİ</blue>
+    <red>KIRMIZI</red>
+    <green>YEŞİL</green>
+    <cyan>CAMGÖBEĞİ</cyan>
+    <yellow>SARI</yellow>
+    <violet>MENEKŞE</violet>
+    <orange>TURUNCU</orange>
+    <gray>GRİ</gray>
     <!-- Region -->
-    <subset.region>Bölge</subset.region>    
+    <subset.region>BÖLGE</subset.region>    
     <!-- Subset option for System information -->
-    <systemViewInfo>Sistem bilgileri</systemViewInfo>
-    <standard>Standart</standard>
-    <extended>Gelişmiş</extended>
-    <yes>Evet</yes>
-    <no>Hayır</no>
+    <systemViewInfo>SİSTEM BİLGİLERİ</systemViewInfo>
+    <standard>STANDART</standard>
+    <extended>GELİŞMİŞ</extended>
+    <yes>EVET</yes>
+    <no>HAYIR</no>
     <!-- Subset options for screen / System view -->
-    <systemViewName>Sistem görselleştirmesi</systemViewName>
-    <systemview.darkened>Gölgeli</systemview.darkened>
-    <systemview.gridName>Tablo görüntüsü</systemview.gridName>
-    <systemview.horizontal>Yatay</systemview.horizontal>
-    <systemview.legacy>Eski</systemview.legacy>
-    <systemview.transparent>Şeffaf</systemview.transparent>
-    <systemview.simple>Basit</systemview.simple>
-    <systemview.vertical>Dikey</systemview.vertical>
-    <systemview.wheel>Dönen menü</systemview.wheel>
-    <systemview.textlist>Metin listesi</systemview.textlist>
+    <systemViewName>SİSTEM GÖRSELLEŞTİRMESİ</systemViewName>
+    <systemview.darkened>GÖLGELİ</systemview.darkened>
+    <systemview.gridName>TABLO GÖRÜNTÜSÜ</systemview.gridName>
+    <systemview.horizontal>YATAY</systemview.horizontal>
+    <systemview.legacy>ESKİ</systemview.legacy>
+    <systemview.transparent>ŞEFFAF</systemview.transparent>
+    <systemview.simple>BASİT</systemview.simple>
+    <systemview.vertical>DİKEY</systemview.vertical>
+    <systemview.wheel>DÖNEN MENÜ</systemview.wheel>
+    <systemview.textlist>YAZILI LİSTE</systemview.textlist>
     <!-- Subset option for System view background -->
-    <systemBackgroundName>Arka plan</systemBackgroundName>
+    <systemBackgroundName>ARKA PLAN</systemBackgroundName>
     <!-- change default for small screens -->
-    <systembackground.consoles>Video oyunları</systembackground.consoles>
-    <systembackground.miniconsoles>Mini video oyunları</systembackground.miniconsoles>
-    <systembackground.carboncontrollers>Karbon kontrolleri</systembackground.carboncontrollers>
-    <systembackground.carbonlegacy>Eski</systembackground.carbonlegacy>
-    <systembackground.simple>Basit</systembackground.simple>
-    <systembackground.randomvideo>Rasgele video</systembackground.randomvideo>
-    <systembackground.randomfanart>Rasgele fan görseli</systembackground.randomfanart>
-    <systembackground.randomimage>Rasgele görüntü</systembackground.randomimage>
-    <systembackground.randombox>Rasgele oyun kutusu</systembackground.randombox>
-    <systembackground.minirandomimage>Rasgele mini oyun görüntüsü</systembackground.minirandomimage>
-    <systembackground.minirandombox>Rasgele mini oyun kutusu</systembackground.minirandombox>
-    <systembackground.minirandomvideo>Rasgele mini video</systembackground.minirandomvideo>
-    <animatedBackground>Arka plan animasyonları</animatedBackground>
-    <animatedCovers>Rasgele kutular</animatedCovers>
+    <systembackground.consoles>VİDEO OYUNLARI</systembackground.consoles>
+    <systembackground.miniconsoles>MİNİ VİDEO OYUNLARI</systembackground.miniconsoles>
+    <systembackground.carboncontrollers>KARBON KONTROLCÜLERİ</systembackground.carboncontrollers>
+    <systembackground.carbonlegacy>ESKİ</systembackground.carbonlegacy>
+    <systembackground.simple>BASİT</systembackground.simple>
+    <systembackground.randomvideo>RASGELE VİDEO</systembackground.randomvideo>
+    <systembackground.randomfanart>RASGELE FAN GÖRSELİ</systembackground.randomfanart>
+    <systembackground.randomimage>RASGELE GÖRÜNTÜ</systembackground.randomimage>
+    <systembackground.randombox>RASGELE OYUN KUTUSU</systembackground.randombox>
+    <systembackground.minirandomimage>RASGELE MİNİ OYUN GÖRÜNTÜSÜ</systembackground.minirandomimage>
+    <systembackground.minirandombox>RASGELE MİNİ OYUN KUTUSU</systembackground.minirandombox>
+    <systembackground.minirandomvideo>RASGELE MİNİ VİDEO</systembackground.minirandomvideo>
+    <animatedBackground>ARKA PLAN ANİMASYONLARI</animatedBackground>
+    <animatedCovers>RASGELE KUTULAR</animatedCovers>
     <!-- Fix for controller image size -->
-    <systemview.simple>basit</systemview.simple>
-    <systemview.vertical>dikey</systemview.vertical>
-    <systemview.wheel>dönen menü</systemview.wheel>
+    <systemview.simple>BASİT</systemview.simple>
+    <systemview.vertical>DİKEY</systemview.vertical>
+    <systemview.wheel>DÖNEN MENÜ</systemview.wheel>
     <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
-    <systemview.legacy>eski</systemview.legacy>
+    <systemview.legacy>ESKİ</systemview.legacy>
     <!-- Subset options for blur effects -->
-    <subset.blurfx>Bulanıklaştırma Efektleri</subset.blurfx>
+    <subset.blurfx>BULANIKLAŞTIRMA EFEKTLERİ</subset.blurfx>
     <!-- Subset options for help -->
-    <helpSubsetName>Yardım simgeleri</helpSubsetName>
-    <helpbuttons>Düğmelerin konumu</helpbuttons>
-    <xboxbuttons>Xbox düğmeleri</xboxbuttons>
-    <psxbuttons>PlayStation düğmeleri</psxbuttons>
-    <colored>Renkli</colored>
+    <helpSubsetName>YARDIM SİMGELERİ</helpSubsetName>
+    <helpbuttons>DÜĞMELERİN KONUMU</helpbuttons>
+    <xboxbuttons>XBOX DÜĞMELERİ</xboxbuttons>
+    <psxbuttons>PLAYSTATİON DÜĞMELERİ</psxbuttons>
+    <colored>RENKLİ</colored>
     <!-- Subset options for screen / Filters -->
-    <subset.shader>Filtreler</subset.shader>
-    <none>Yok</none>
-    <scanlines>Tarama Çizgileri</scanlines>
-    <crt>Tüplü TV</crt>
+    <subset.shader>FİLTRELER</subset.shader>
+    <none>YOK</none>
+    <scanlines>TARAMA ÇİZGİLERİ</scanlines>
+    <crt>TÜPLÜ TV</crt>
     <!-- add game info bar -->
-    <gameBar>Oyun bilgi çubuğu</gameBar>
+    <gameBar>OYUN BİLGİ ÇUBUĞU</gameBar>
     <!-- Layout for small screens -->
-    <optimizesmallscreensSubsetName>Küçük ekranlar için iyileştir</optimizesmallscreensSubsetName>
+    <optimizesmallscreensSubsetName>KÜÇÜK EKRANLAR İÇİN İYİLEŞTİR</optimizesmallscreensSubsetName>
     <!-- Subset options for grid views -->
-    <videoboxesSubsetName>Videoyu kutu modunda göster</videoboxesSubsetName>
-    <zoomboxesSubsetName>Kutuları yakınlaştır</zoomboxesSubsetName>
+    <videoboxesSubsetName>VİDEOYU KUTU MODUNDA GÖSTER</videoboxesSubsetName>
+    <zoomboxesSubsetName>KUTULARI YAKINLAŞTIR</zoomboxesSubsetName>
     <!-- Subset options for Orientantion view -->
-    <orientationSubsetName>Yön</orientationSubsetName>
-    <vertical>Dikey</vertical>
-    <horizontal>Yatay</horizontal>
-    <hideselectionSubsetName>Seçimi gizle</hideselectionSubsetName>
-    <previewBarSubsetName>Önizleme bölmesi</previewBarSubsetName>
-    <animatedInfobar>Bilgi animasyonları</animatedInfobar>
+    <orientationSubsetName>YÖN</orientationSubsetName>
+    <vertical>DİKEY</vertical>
+    <horizontal>YATAY</horizontal>
+    <hideselectionSubsetName>SEÇİMİ GİZLE</hideselectionSubsetName>
+    <previewBarSubsetName>ÖNİZLEME BÖLMESİ</previewBarSubsetName>
+    <animatedInfobar>BİLGİ ANİMASYONLARI</animatedInfobar>
     <!-- Subset options for Tiles view -->
-    <glowSubsetName>Areolalı seçim</glowSubsetName>
-    <roundBorderSubsetName>Yuvarlak kenarlar</roundBorderSubsetName>
-    <blinkBorderSubsetName>Yanıp sönen kenarlar</blinkBorderSubsetName>
-    <videosSubsetName>Vídeolar</videosSubsetName>
-    <logosSubsetNamegamecarouseltype>Küçük resimler</logosSubsetNamegamecarouseltype>
+    <glowSubsetName>AREOLA SEÇİMİ</glowSubsetName>
+    <roundBorderSubsetName>YUVARLAK KENARLAR</roundBorderSubsetName>
+    <blinkBorderSubsetName>YANIP SÖNEN KENARLAR</blinkBorderSubsetName>
+    <videosSubsetName>VİDEOLAR</videosSubsetName>
+    <logosSubsetNamegamecarouseltype>KÜÇÜK RESİMLER</logosSubsetNamegamecarouseltype>
     <!-- Subset options for Carousel content type -->
-    <gamecarouseltype>Dönen menü için görsel kaynağı</gamecarouseltype>
-    <marquee>Çerçeve</marquee>
-    <image>Görüntü</image>
-    <text>Metin</text>
-    <thumbnail>Minyatür</thumbnail>
+    <gamecarouseltype>DÖNEN MENÜ İÇİN GÖRSEL KAYNAĞI</gamecarouseltype>
+    <marquee>ÇERÇEVE</marquee>
+    <image>GÖRÜNTÜ</image>
+    <text>YAZI</text>
+    <thumbnail>MİNYATÜR</thumbnail>
     <!-- Subset options for System view content background -->
-    <contentBackground>İçerik arka planı</contentBackground>
-    <fanart>Fan görseli</fanart>
-    <animationsSubsetName>Geçiş animasyonları</animationsSubsetName>
+    <contentBackground>İÇERİK ARKA PLANI</contentBackground>
+    <fanart>FAN GÖRSELİ</fanart>
+    <animationsSubsetName>GEÇİŞ ANİMASYONLARI</animationsSubsetName>
   </variables>  
 </theme>
