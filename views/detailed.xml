@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Theme: es-theme-carbon
 author: Fabrice CARUSO
@@ -160,15 +160,15 @@ originally based on: "simple" by nils bonenberger
     <text name="md_developer">
       <color>EFEFFF</color>
       <pos>0.578 0.875</pos>
-      <size>0.30 0.05</size>
+      <size>0.16 0.05</size>
       <alignment>left</alignment>
       <fontSize>0.025</fontSize>
     </text>
     <text name="md_genre">
       <color>EFEFFF</color>
-      <pos>0.700 0.875</pos>
-      <size>0.30 0.05</size>
-      <alignment>left</alignment>
+      <pos>0.74 0.875</pos>
+      <size>0.15 0.05</size>
+      <alignment>right</alignment>
       <fontSize>0.025</fontSize>
     </text>
     <rating name="md_rating">
