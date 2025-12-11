@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Theme: es-theme-carbon
 author: Fabrice CARUSO
@@ -30,6 +30,9 @@ originally based on: "simple" by nils bonenberger
       <selectedColor>FFFFFF</selectedColor>
       <selectorGradientType>horizontal</selectorGradientType>
     </menuText>
+    <menuGrid name="menugrid">
+      <separatorColor>FFFFFF08</separatorColor>
+    </menuGrid>
     <menuTextSmall name="menutextsmall">
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.016</fontSize>
@@ -39,7 +42,7 @@ originally based on: "simple" by nils bonenberger
       <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.018</fontSize>
       <color>${groupColor}</color>
-  <!-- <separatorColor>${groupSeparatorColor}</separatorColor>-->
+      <!-- <separatorColor>${groupSeparatorColor}</separatorColor>-->
       <backgroundColor>00000000</backgroundColor>
       <lineSpacing>2.5</lineSpacing>
     </menuGroup>
