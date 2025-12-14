@@ -1,18 +1,189 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-  <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
+  <variables>
+    <cornersOfMedias>9 9</cornersOfMedias>
+    <cornersOfMedias ifSubset="tileborders:no">0</cornersOfMedias>
+    <favoriteSystem>${system.name} == "favorites"</favoriteSystem>
+    <borderFrame>./../art/framewsel.png</borderFrame>
+    <borderFrame ifSubset="tileborders:no">./../art/framewselsq.png</borderFrame>
+    <blinkColor>FFFF80FF</blinkColor>
+    <blinkColor ifSubset="blinkborders:no">${baseColor}</blinkColor>
+  </variables>
+  <customView name="Icons" inherits="grid" displayName="${iconsViewName}">
     <imagegrid name="gamegrid">
       <autoLayout>0 2</autoLayout>
       <cellProportion>0.99</cellProportion>
       <cellProportion verticalScreen="true">0.77</cellProportion>
       <autoLayout verticalScreen="true">2 0</autoLayout>
       <margin>0.008 0.010</margin>
+      <itemTemplate>
+        <container name="contentRoot">
+          <pos>0 0</pos>
+          <size>1 1</size>
+          <opacity>1</opacity>
+          <container name="inside">
+            <padding>5 5</padding>
+            <container name="selection" padding="-8 -7 -8 -10" zIndex="1">
+              <ninepatch>
+                <pos>0 0</pos>
+                <size>1 0.84</size>
+                <path>./../art/framew.png</path>
+                <cornerSize>20 20</cornerSize>
+                <padding>-2 -2</padding>
+                <color>000000B0</color>
+                <zIndex>3</zIndex>
+                <storyboard event="activate" repeat="forever">
+                  <animation property="path" to="${borderFrame}"/>
+                  <animation property="padding" to="-15 -15"/>
+                  <animation property="cornerSize" to="36 36"/>
+                  <animation property="color" from="${baseColor}" to="${blinkColor}" duration="1500" mode="easeOut"/>
+                  <animation property="color" from="${blinkColor}" to="${baseColor}" begin="1500" duration="1500" mode="easeOut"/>
+                </storyboard>
+                <storyboard event="deactivate">
+                  <animation property="path" to="./../art/framew.png"/>
+                  <animation property="color" to="000000B0"/>
+                  <animation property="padding" to="-2 -2"/>
+                  <animation property="cornerSize" to="20 20"/>
+                </storyboard>
+              </ninepatch>
+            </container>
+            <image name="backgroundOfFolder">
+              <visible>{game:folder} || !exists({game:image})</visible>
+              <path>!{game:folder} &amp;&amp; !exists({game:image}) ? "${themePath}/art/grid/defgame.png" :
+              {game:virtualfolder} ? "${themePath}/art/grid/deflogobk.png" : "${themePath}/art/grid/deffolder.png"</path>
+              <pos>0 0</pos>
+              <origin>0 0</origin>
+              <size>1 0.84</size>
+              <color>B0B0B0FF</color>
+              <zIndex>3</zIndex>
+              <roundCorners>${cornersOfMedias}</roundCorners>
+              <storyboard event="activate">
+                <animation property="color" to="white"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="color" to="B0B0B0FF" duration="150"/>
+              </storyboard>
+            </image>
+            <image name="emptyBackgroundOfTile">
+              <visible>!{game:folder} &amp;&amp; exists({game:image})</visible>
+              <path>${themePath}/art/white.png</path>
+              <pos>0 0</pos>
+              <origin>0 0</origin>
+              <size>1 0.84</size>
+              <color>080808FF</color>
+              <zIndex>3</zIndex>
+              <roundCorners>${cornersOfMedias}</roundCorners>
+            </image>
+            <image name="imageofVirtualFolder">
+              <visible>{game:virtualfolder}</visible>
+              <path>{game:system:logo}</path>
+              <origin>0.5</origin>
+              <pos>0.5 0.42</pos>
+              <maxSize>0.6 0.5</maxSize>
+              <linearSmooth>true</linearSmooth>
+              <zIndex>4</zIndex>
+              <color>white</color>
+            </image>
+            <image name="imageOfGame" shared="false">
+              <visible>!{game:folder}</visible>
+              <path>{game:image}</path>
+              <origin>0.5</origin>
+              <pos>0.5 0.42</pos>
+              <minSize>1 0.84</minSize>
+              <color>FFFFFFB0</color>
+              <linearSmooth>true</linearSmooth>
+              <roundCorners>${cornersOfMedias}</roundCorners>
+              <zIndex>4</zIndex>
+              <storyboard event="activate">
+                <animation property="color" to="white"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="color" to="FFFFFFB0" duration="150"/>
+              </storyboard>
+              <shader name="shaderOfGame">
+                <enabled>inlist({game:tags}, 'NOT WORKING') || inlist({game:tags}, 'BUGGY') || inlist({game:tags}, 'SLOW')</enabled>
+                <path>:/shaders/grayscale.glsl</path>
+                <colorize>(inlist({game:tags}, 'BUGGY') || inlist({game:tags}, 'SLOW')) ? FFA040FF : FF4040FF</colorize>
+              </shader>
+            </image>
+            <video name="videoOfGame" ifSubset="videotiles:yes,previewbar:no">
+              <visible>exists({game:video})</visible>
+              <path>{game:video}</path>
+              <origin>0.5</origin>
+              <pos>0.5 0.42</pos>
+              <minSize>1 0.84</minSize>
+              <roundCorners>${cornersOfMedias}</roundCorners>
+              <linearSmooth>false</linearSmooth>
+              <zIndex>41</zIndex>
+              <roundCorners>${cornersOfMedias}</roundCorners>
+              <enabled>false</enabled>
+              <storyboard event="activate">
+                <animation property="opacity" to="0"/>
+                <animation property="enabled" begin="1100" to="true"/>
+                <animation property="opacity" begin="1500" from="0" to="1" duration="400" mode="easeIn"/>
+                <animation property="scale" to="0"/>
+                <animation property="scale" begin="1500" from="0.5" to="1" duration="400" mode="easeOut"/>
+              </storyboard>
+              <storyboard event="deactivate">
+                <animation property="enabled" to="false" begin="150"/>
+                <animation property="opacity" from="1" to="0" duration="150"/>
+                <animation property="scale" from="1" to="0.5" duration="150"/>
+              </storyboard>
+            </video>
+            <text name="tagsOfGame">
+              <visible>!empty({game:tags})</visible>
+              <pos>0 0.34</pos>
+              <origin>0 0</origin>
+              <size>1 0.16</size>
+              <backgroundColor>inlist({game:tags}, 'NOT WORKING') ? FF4040A0 : inlist({game:tags}, 'BUGGY') || inlist({game:tags}, 'SLOW') ? FFA040A0 : A0A0A0A0</backgroundColor>
+              <text>{game:tags}.translatelist()</text>
+              <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+              <fontSize>0.022</fontSize>
+              <alignment>center</alignment>
+              <verticalAlignment>center</verticalAlignment>
+              <multiLine>false</multiLine>
+              <extraTextColor>707070</extraTextColor>
+              <color>FFFFFFFF</color>
+              <glowColor>00000040</glowColor>
+              <glowSize>1</glowSize>
+            </text>
+            <text name="textOfGame">
+              <pos>0 0.84</pos>
+              <origin>0 0</origin>
+              <size>1 0.16</size>
+              <text>{game:fullNameNoTags}</text>
+              <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+              <fontSize>0.022</fontSize>
+              <alignment>center</alignment>
+              <verticalAlignment>center</verticalAlignment>
+              <multiLine>false</multiLine>
+              <extraTextColor>707070</extraTextColor>
+              <color>FFFFFFFF</color>
+              <glowColor>00000040</glowColor>
+              <glowSize>1</glowSize>
+            </text>
+            <image if="!${favoriteSystem}" name="favoriteOfGame">
+              <visible>{game:favorite}</visible>
+              <path>./art/favorite.png</path>
+              <pos>0.93 0.07</pos>
+              <maxSize>0.08 0.08</maxSize>
+              <origin>0.5 0.5</origin>
+              <horizontalAlignment>right</horizontalAlignment>
+              <linearSmooth>true</linearSmooth>
+              <color>FFFF00E0</color>
+              <zIndex>45</zIndex>
+            </image>
+          </container>
+        </container>
+      </itemTemplate>
     </imagegrid>
+    <!--
     <text name="gridtile">
       <fontSize>0.020</fontSize>
       <size>1 0.18</size>
       <padding>0 0.01 0 0.1</padding>
     </text>
+    -->
   </customView>
 </theme>
