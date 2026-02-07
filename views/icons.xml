@@ -49,7 +49,7 @@
               </ninepatch>
             </container>
             <image name="backgroundOfFolder">
-              <visible>{game:folder} || !exists({game:image})</visible>
+              <visible>{game:virtualfolder} || !exists({game:image})</visible>
               <path>!{game:folder} &amp;&amp; !exists({game:image}) ? "${themePath}/art/grid/defgame.png" :
               {game:virtualfolder} ? "${themePath}/art/grid/deflogobk.png" : "${themePath}/art/grid/deffolder.png"</path>
               <pos>0 0</pos>
@@ -86,7 +86,7 @@
               <color>white</color>
             </image>
             <image name="imageOfGame" shared="false">
-              <visible>!{game:folder}</visible>
+              <visible>!{game:virtualfolder} &amp;&amp; exists({game:image})</visible>
               <path>{game:image}</path>
               <origin>0.5</origin>
               <pos>0.5 0.42</pos>
