@@ -119,6 +119,7 @@ languages and missing systems (batocera v36): by maioni
   <subset name="systemview" displayName="${systemViewName}">
     <include name="darkened" displayName="${systemview.darkened}">./subsets/systemview/horizontaldark.xml</include>
     <include name="imagegrid" displayName="${systemview.gridName}">./subsets/systemview/imagegrid.xml</include>
+    <include name="groupimagegrid" displayName="${systemview.groupGridName}">./subsets/systemview/groupgrid.xml</include>
     <include name="horizontal" displayName="${systemview.horizontal}">./subsets/systemview/horizontal.xml</include>
     <include name="legacy" displayName="${systemview.legacy}" tinyScreen="false">./subsets/systemview/legacy.xml</include>
     <include name="transparent" displayName="${systemview.transparent}" tinyScreen="false">./subsets/systemview/transparent.xml</include>

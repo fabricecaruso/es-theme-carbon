@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
   <!-- English -->
@@ -33,6 +33,7 @@
     <systemViewName>System view</systemViewName>
     <systemview.darkened>Darkened</systemview.darkened>
     <systemview.gridName>Image Grid</systemview.gridName>
+    <systemview.groupGridName>Image Grid with groups</systemview.groupGridName>
     <systemview.horizontal>Horizontal</systemview.horizontal>
     <systemview.legacy>Legacy</systemview.legacy>
     <systemview.transparent>Transparent</systemview.transparent>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./imagegrid.xml</include>
+  <view name="system" extraTransition="fade &amp; slide" extraTransitionSpeed="400" extraTransitionDirection="vertical">
+    <imagegrid name="imagegrid">
+      <groupBy>manufacturer</groupBy>
+      <groupHeight>0.038</groupHeight>
+      <groupBands>1</groupBands>
+  <!--    <sortBy>lastPlayedDateTime</sortBy>
+      <sortDescending>1</sortDescending>-->
+    </imagegrid>
+    <text name="gridgroup">
+      <color>FFFFFFFF</color>
+      <fontPath>${themePath}/art/fonts/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.022</fontSize>
+      <verticalAlignment>top</verticalAlignment>
+      <forceUppercase>1</forceUppercase>
+    </text>
+    
+    <!--
+       <image name="headerLine" extra="static">
+      <pos>0 0.10</pos>
+    </image>
+    <image name="headerLineShadow" extra="true">
+      <pos>0 0.105</pos>
+    </image>
+    <image name="backgroundEraser" extra="static">
+      <pos>0 0.10</pos>
+      <size>1 0.90</size>
+    </image>
+    <text name="systemInfoEx" extra="true">
+      <visible>false</visible>
+    </text>
+    -->
+  </view>
+</theme>
