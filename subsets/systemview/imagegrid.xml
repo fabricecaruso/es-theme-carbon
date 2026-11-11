@@ -12,12 +12,12 @@
   </variables>
   <view name="system" extraTransition="fade &amp; slide" extraTransitionSpeed="400" extraTransitionDirection="vertical">
     <imagegrid name="imagegrid">
+      <autoLayout>0 2</autoLayout>
       <zIndex>20</zIndex>
       <pos>0.005 0.22</pos>
       <size>0.99 0.78</size>
       <pos verticalScreen="true">0.005 0.17</pos>
-      <size verticalScreen="true">0.99 0.83</size>
-      <autoLayout>0 2</autoLayout>
+      <size verticalScreen="true">0.99 0.83</size>      
       <cellProportion>1.25</cellProportion>
       <autoLayout verticalScreen="true">2 0</autoLayout>
       <cellProportion verticalScreen="true">1.33</cellProportion>
@@ -99,7 +99,7 @@
           </image>
           <image name="systemBack" extra="true">
             <!-- Don't share the image if we have consoles background, or the images will be stored and sized fullscreen-->
-            <shared ifSubset="systembackground:consoles">false</shared> 
+            <shared ifSubset="systembackground:consoles">false</shared>
             <path>${themePath}/art/background/${system.theme}.jpg</path>
             <!-- this line is just to make sure the image size was preloaded for async, but is not dynamic -->
             <path>none</path>
@@ -111,7 +111,6 @@
               "${themePath}/art/background/collections/${region}/" + {system:theme} + ".jpg", 
               "${themePath}/art/background/collections/" + {system:theme} + ".jpg", 
               {system:ascollection:random:fanart})</path>
-
             <!-- Redeclare the line to make the image dynamic with binding -->
             <pos>0.5</pos>
             <origin>0.5</origin>
