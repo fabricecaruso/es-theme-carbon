@@ -94,7 +94,7 @@
     <glowSubsetName>Selection with halo</glowSubsetName>
     <roundBorderSubsetName>Round edges</roundBorderSubsetName>
     <blinkBorderSubsetName>Blinking edges</blinkBorderSubsetName>
-    <videosSubsetName>Vídeos</videosSubsetName>
+    <videosSubsetName>Videos</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Thumbnails</logosSubsetNamegamecarouseltype>
     <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Image source for Carousel</gamecarouseltype>
