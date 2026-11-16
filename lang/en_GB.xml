@@ -94,7 +94,7 @@
     <glowSubsetName>Selection with areola</glowSubsetName>
     <roundBorderSubsetName>Round edges</roundBorderSubsetName>
     <blinkBorderSubsetName>Flashing edges</blinkBorderSubsetName>
-    <videosSubsetName>Vídeos</videosSubsetName>
+    <videosSubsetName>Videos</videosSubsetName>
     <logosSubsetNamegamecarouseltype>Thumbnails</logosSubsetNamegamecarouseltype>
     <!-- Subset options for Carousel content type -->
     <gamecarouseltype>Image source for Carousel</gamecarouseltype>
